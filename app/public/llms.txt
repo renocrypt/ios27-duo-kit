@@ -1,0 +1,17 @@
+# iOS 27 Duo Kit — iPhone Duo and iOS 27 on the web
+
+A web UI kit for iPhone Duo, Apple's foldable, and iOS 27: a 3D model of the device that folds, its system UI in HTML and SVG, and Liquid Glass rendered in WebGL and fitted to the iOS 27.1 simulator. Developers and AI agents use it as a template for app landing pages and concept mockups. Live at https://duo.renocrypt.com/.
+
+The showcase, "a day with Duo," follows one day across the device's poses: Standing at dawn, Closed for a glance, Open to plan, Book for research, Seated in the kitchen. The screens are drawn with Chrome's HTML-in-Canvas (chrome://flags/#canvas-draw-element); other browsers show the device with dark screens.
+
+## Pages
+
+- [A day with Duo](https://duo.renocrypt.com/): the scroll-driven showcase, nine scenes.
+
+## Source
+
+- [Repository](https://github.com/renocrypt/ios27-duo-kit): code, tokens, and docs (Apache-2.0).
+- [How Liquid Glass is rendered](https://github.com/renocrypt/ios27-duo-kit/blob/main/docs/liquid-glass.md): the optical model and its calibration against iOS.
+- [Duo's system UI](https://github.com/renocrypt/ios27-duo-kit/blob/main/docs/duo-ui.md): bars, status, and layouts to the numbers of Apple's iOS 27 UI Kit.
+
+Not affiliated with Apple. iPhone and iOS are trademarks of Apple Inc.

@@ -235,6 +235,7 @@ export class Journey {
     const behind = mixColor(backdropAt(a, 0.5), backdropAt(b, 0.5), u);
     const ink = inkFor(behind);
     this.copy.dataset.ink = ink; this.rail.dataset.ink = ink; this.hint.dataset.ink = ink;
+    document.body.dataset.ink = ink; // for the page's own chrome (journey/pageChrome.ts)
     // On mid-tone skies neither secondary grey holds contrast, so secondary copy takes the primary ink.
     this.copy.toggleAttribute('data-mid', luminance(behind) > 0.08 && luminance(behind) < 0.4);
     const minute = 41 + Math.round(17 * smoothstep(0.05, 0.95, progress));
@@ -265,6 +266,7 @@ export class Journey {
     this.copy.removeAttribute('data-mid');
     this.rail.dataset.ink = moods[mood].ink;
     this.hint.dataset.ink = moods[mood].ink;
+    document.body.dataset.ink = moods[mood].ink;
   }
 
   // ---- Copy --------------------------------------------------------------------------------------

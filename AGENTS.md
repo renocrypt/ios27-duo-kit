@@ -1,6 +1,6 @@
-# Duo — agent rules
+# iOS 27 Duo Kit — agent rules
 
-A concept prototype: iPhone Duo reimagined as a centralized personal hub, shown on the web as a realistic 3D device (Three.js) whose screens run Duo's system UI (DOM and SVG through HTML-in-Canvas), with motion by Anime.js. `README.md` is the map.
+iOS 27 Duo Kit (live at https://duo.renocrypt.com): a web UI kit for iPhone Duo and iOS 27, whose showcase is a concept prototype of iPhone Duo reimagined as a centralized personal hub, shown on the web as a realistic 3D device (Three.js) whose screens run Duo's system UI (DOM and SVG through HTML-in-Canvas), with motion by Anime.js. `README.md` is the map.
 
 ## Laws
 
@@ -30,7 +30,7 @@ Skip unless a task is about them: `app/src/tokens/` and `app/tokens/glass.sim.to
 
 - `npm run check` in `app/`: tokens, types, the hinge sweep, the production build.
 - The dev server is `127.0.0.1:5190`. Inside Claude Code's sandbox, start it with `DUO_POLL=1 npm run dev`: file events do not reach the sandbox, and without polling it serves stale modules. On the presentation, `window.duo` holds `{ stage, journey, surfaces }`; the progress rail's buttons jump between scenes. Dev labs are listed in `app/README.md`.
-- Git: `github.com/renocrypt/duo` (private), branch `main`. Inside Claude Code's sandbox, commits work; pushing and `gh` do not (the token is in the Keychain, and TLS cannot be verified there), so run them outside it.
+- Git: `github.com/renocrypt/ios27-duo-kit` (public), branch `main`. Every push to `main` deploys `app/` to GitHub Pages (`.github/workflows/pages.yml`), served at https://duo.renocrypt.com (DNS: a CNAME `duo` → `renocrypt.github.io`, not proxied, in the renocrypt.com zone, managed from `~/dev/containers/armada/edge/cloudflare/`). Inside Claude Code's sandbox, commits work; pushing and `gh` do not (the token is in the Keychain, and TLS cannot be verified there), so run them outside it.
 - Screenshots are for the agent's own checks: take them with the chrome-devtools MCP, keep them in `/tmp/duo/<task>/`, never in this folder, and report in words what they show; the owner does not need them. The MCP writes only inside the workspace, so save to `.shots/` there (ignored) and move the file to `/tmp/duo/<task>/` at once. Scratch files go to `/tmp/duo/<task>/` too.
 - The glass probe keeps its captures in `.references/glass-probe/captures/<device>-<os>-<display>/<set>/` (iOS; `npm run probe` rebuilds them) and its disposable output in `/tmp/duo/glass-probe/`: `inspect/<date>/` (pictures to look at, from `?calibrate`), `scratch/`, and `build/`. Its report of residuals is ours: `app/tools/glass-probe/report.json`, next to the tokens it explains.
 
