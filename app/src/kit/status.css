@@ -1,0 +1,18 @@
+/*
+ * iPhone Duo's status indicator (status.ts). Sizes are the kit's, in points: vertical 48 x 86
+ * (11 above the time, 5 between the time and the ring, 5 below), horizontal 104 x 48 (the time
+ * right-aligned in a 46 pt box at x 8, the ring at x 57). The time is SF Pro Rounded Bold 16/19.
+ */
+.duo-status { position: relative; flex: none; color: inherit; }
+.duo-status--vertical { width: 48px; height: 86px; box-sizing: border-box; padding-top: 11px;
+  display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.duo-status--horizontal { width: 104px; height: 48px; }
+.st-time { display: block; height: 19px; font: 700 16px/19px var(--font-family-rounded); white-space: nowrap; }
+.duo-status--vertical .st-time { width: 48px; text-align: center; }
+.duo-status--horizontal .st-time { position: absolute; left: 8px; top: 15px; width: 46px; text-align: right; }
+.duo-status--horizontal .st-ring { position: absolute; left: 57px; top: 1px; }
+.st-ring { display: block; overflow: visible; }
+.st-ring .st-battery, .st-ring .st-wifi-band { fill: none; stroke: currentColor; stroke-linecap: round; }
+.st-ring .st-wifi-wedge, .st-ring .st-cell-dot { fill: currentColor; }
+.st-ring .st-battery { transition: stroke-dasharray 600ms ease; }
+.st-ring .st-wifi-band, .st-ring .st-wifi-wedge, .st-ring .st-cell-dot { transition: opacity 400ms ease; }

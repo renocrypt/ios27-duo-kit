@@ -1,0 +1,15 @@
+/* Glass Lab chrome. */
+#lab { position: fixed; inset: 0; background: #050506; }
+#lab canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; }
+.lab-panel { position: absolute; top: 20px; right: 20px; bottom: 20px; width: 320px; overflow: auto; padding: 16px;
+  display: grid; align-content: start; gap: 10px; border-radius: var(--radius-lg);
+  background: var(--color-background-secondary); color: var(--color-label-primary); }
+.lab-panel h1, .lab-panel h2 { margin: 4px 0 0; }
+.lab-muted { color: var(--color-label-secondary); margin: 0; }
+.lab-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.lab-row label { display: inline-flex; gap: 4px; align-items: center; }
+.lab-panel button { font: inherit; padding: 5px 10px; border: 0; border-radius: var(--radius-capsule); cursor: pointer;
+  background: var(--color-fill-secondary); color: var(--color-label-primary); }
+.lab-panel button[aria-pressed="true"] { background: var(--color-accent); color: #fff; }
+.lab-slider { display: grid; grid-template-columns: 84px 1fr 40px; gap: 8px; align-items: center; }
+.lab-slider output { font-family: var(--font-family-mono); text-align: right; }

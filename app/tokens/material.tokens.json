@@ -1,0 +1,111 @@
+{
+  "material": {
+    "$description": "Materials. Liquid Glass is rendered by the WebGL glass compositor (docs/liquid-glass.md) and fitted to iOS 27.1 itself with the glass probe (app/tools/glass-probe/, app/labs/probe.html): each value says whether it is measured there [SIM] or our choice [C]. Apple publishes none of them except the 35% dimming layer, which is the app's to add.",
+    "glass": {
+      "$description": "Liquid Glass optics, per variant. Lengths in points (1 pt = 1 CSS px on the display canvas).",
+      "regular": {
+        "ior": {
+          "$type": "number",
+          "$value": 1.5,
+          "$description": "Index of refraction, now only for dispersion: the rim's shift is split per channel by (n − 1). Our choice: crown glass"
+        },
+        "bezel": {
+          "$type": "number",
+          "$value": 10,
+          "$description": "Reference width of the lensing band, pt, at which the rim shifts content by `lens`. The band itself is bezelRatio × the corner radius (capped by the half height)"
+        },
+        "lensSizePower": {
+          "$type": "number",
+          "$value": 0.5,
+          "$description": "Shapes larger than their corners (panels, sheets) lens more: the rim's shift also grows as (half height / corner radius)^this; capsules are unaffected. [SIM] glass probe: a 360 × 180 panel with 40 pt corners shifts content 1.26 times as far as a 96 pt capsule, with the same profile (one shape, so an estimate)"
+        },
+        "dispersion": {
+          "$type": "number",
+          "$value": 0.4,
+          "$description": "Our choice: KHR_materials_dispersion knob, 0-1+"
+        },
+        "frost": {
+          "$type": "number",
+          "$value": 1.0,
+          "$description": "Regular glass fully blurs the content under it (HIG: 'blurs and adjusts the luminosity'); Calibrated 2026-09-23 against Apple's HIG Materials illustrations (regular over light/dark, clear), measured in linear luminance"
+        },
+        "shadow": {
+          "$type": "number",
+          "$value": 0.02,
+          "$description": "Shadow strength below the glass. [SIM] glass probe, iOS 27.1 on the iPhone Duo simulator (docs/research/2026-09-24-glass-probe-ios27.0.md): content 6 pt below is 1 to 3 levels darker"
+        }
+      },
+      "clear": {
+        "ior": {
+          "$type": "number",
+          "$value": 1.5,
+          "$description": "Index of refraction, now only for dispersion: the rim's shift is split per channel by (n − 1). Our choice: crown glass"
+        },
+        "bezel": {
+          "$type": "number",
+          "$value": 10,
+          "$description": "Reference width of the lensing band, pt, at which the rim shifts content by `lens`. The band itself is bezelRatio × the corner radius (capped by the half height)"
+        },
+        "lensSizePower": {
+          "$type": "number",
+          "$value": 0.5,
+          "$description": "Shapes larger than their corners (panels, sheets) lens more: the rim's shift also grows as (half height / corner radius)^this; capsules are unaffected. [SIM] glass probe: a 360 × 180 panel with 40 pt corners shifts content 1.26 times as far as a 96 pt capsule, with the same profile (one shape, so an estimate)"
+        },
+        "dispersion": {
+          "$type": "number",
+          "$value": 0.5,
+          "$description": "Our choice: a touch more colour fringing, since the glass is clearer"
+        },
+        "frost": {
+          "$type": "number",
+          "$value": 1.0,
+          "$description": "Share of the frosted content in the body (the rest is sharp). [SIM]: iOS's clear glass has no sharp share at any tint; its clarity comes from its small blur (0.5 pt at the clear end)"
+        },
+        "shadow": {
+          "$type": "number",
+          "$value": 0.02,
+          "$description": "Shadow strength below the glass. [SIM] glass probe, iOS 27.1 on the iPhone Duo simulator (docs/research/2026-09-24-glass-probe-ios27.0.md): content 6 pt below is 1 to 3 levels darker"
+        }
+      },
+      "blurWide": {
+        "$type": "number",
+        "$value": 16,
+        "$description": "σ of the wide blur, pt, shared by both variants: the colour of the surroundings with no detail. [SIM] glass probe, iOS 27.1 on the iPhone Duo simulator (docs/research/2026-09-24-glass-probe-ios27.0.md): an edge seen through a 76 × 220 capsule is 27 pt wide (10 to 90%); fitted in labs/probe.html"
+      },
+      "hairline": {
+        "$type": "number",
+        "$description": "The dark line just outside the silhouette, strongest where the rim runs along the light axis (sin²). [SIM] glass probe, iOS 27.1 on the iPhone Duo simulator (docs/research/2026-09-24-glass-probe-ios27.0.md): 113 reads 41 and 77 in the two pixels (1/3 pt each) outside, in every variant and appearance. Dark regular glass multiplies the content (sRGB); light and clear glass subtract (plus-darker), which never goes below black",
+        "width": {
+          "$value": 0.75,
+          "$description": "pt: full strength over the first 40% (the pixel next to the silhouette, 113 → 41), half by the second pixel (113 → 77), none beyond"
+        },
+        "lightTop": {
+          "$value": 0.3,
+          "$description": "light appearance: the share that also darkens where the rim faces the axis (113 reads 91 at 12 o'clock)"
+        }
+      },
+      "container": {
+        "spacing": {
+          "$type": "number",
+          "$value": 10,
+          "$description": "Our choice: distance at which glass shapes in one container begin to merge, pt. Apple publishes no default (GlassEffectContainer spacing = nil). 10 keeps rail buttons 12 pt apart as separate circles; they merge when dragged closer"
+        }
+      },
+      "flipArea": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "Shapes smaller than this area (pt^2) flip between light and dark with the content; an interface can still ask per shape (mayFlip). 0: none by area. [SIM] glass probe: raw iOS glass never flips (a 48 pt shape over grey tiles from 0 to 255, in both appearances); whether system controls do is not measured yet. Was 30,000 [C] from Apple's named categories"
+      },
+      "toneDark": {
+        "$type": "color",
+        "$value": "#1F1F1F",
+        "$description": "Dark tone, neutral: Duo's dark glass shows no colour cast (the Mail Back button over black reads 23, 23, 23 in sRGB). Replaces the earlier blue-grey from the HIG Materials art, whose backdrop tinted it."
+      },
+      "toneLight": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Light-toned glass colour (white lift)"
+      }
+    }
+  }
+}

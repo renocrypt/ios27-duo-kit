@@ -1,0 +1,26 @@
+{
+  "name": "duo-stage",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "check": "npm run tokens && tsc && node tools/check-hinge.ts && vite build",
+    "build": "npm run tokens && tsc && vite build",
+    "tokens": "node tools/tokens.ts",
+    "hinge": "node tools/check-hinge.ts",
+    "fold": "node tools/fold-elastica.ts",
+    "probe": "node tools/glass-probe/probe.ts"
+  },
+  "dependencies": {
+    "animejs": "4.5.0",
+    "delaunator": "5.1.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "@types/three": "0.186.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.6"
+  }
+}

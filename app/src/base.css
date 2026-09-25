@@ -1,0 +1,25 @@
+/*
+ * Base layer for every Duo surface: tokens, box model, and text rendering.
+ * Device screens are appearance scopes: set data-appearance="light|dark" (and optionally
+ * data-contrast="high") on a screen root and every token inside follows.
+ */
+@import './tokens/tokens.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+
+body { margin: 0; }
+
+/* An appearance scope paints its own background and label color, like a UIWindow. */
+[data-appearance] {
+  color: var(--color-label-primary);
+  background-color: var(--color-background-primary);
+  font-family: var(--font-family-sans);
+  color-scheme: light;
+}
+[data-appearance="dark"] { color-scheme: dark; }

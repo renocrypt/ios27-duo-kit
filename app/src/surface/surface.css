@@ -1,0 +1,43 @@
+/*
+ * Device screen interfaces (ScreenSurface). Sizes are points: 1 CSS px = 1 pt on the device.
+ * Everything visual comes from tokens (tokens.css); layout values are this file's own.
+ */
+
+/* The HTML-in-Canvas host: laid out and painting, but clipped to nothing on the page. */
+.screen-host { position: fixed; left: 0; top: 0; clip-path: inset(50%); pointer-events: none; z-index: -1; }
+
+.screen-layer {
+  position: absolute; left: 0; top: 0; overflow: hidden; contain: strict;
+  font-family: var(--font-family-sans); color: var(--color-label-primary);
+  -webkit-font-smoothing: antialiased; font-synthesis: none; text-rendering: optimizeLegibility;
+}
+/* Content layer: the glass controls are drawn by the compositor, not the DOM. */
+.screen-layer--content [data-glass] { visibility: hidden; }
+/* Foreground layer: only the glyphs that sit on glass. The layer itself stays visible (and
+   transparent): a layer with nothing rendered cannot be drawn. */
+.screen-layer--foreground > * { visibility: hidden; }
+.screen-layer--foreground [data-glass] { visibility: visible; background: none !important; box-shadow: none !important; border-color: transparent !important; }
+
+/* ---- Shared screen primitives ---------------------------------------------------------------- */
+
+.scr { position: absolute; inset: 0; overflow: hidden; }
+.scr-wall { position: absolute; inset: 0; }
+.scr-stack { display: flex; flex-direction: column; }
+.scr-row { display: flex; align-items: center; }
+.scr-icon { width: 1em; height: 1em; flex: none; display: block; }
+.scr-num { font-variant-numeric: tabular-nums; }
+.scr-rounded { font-family: var(--font-family-rounded); }
+.scr-serif { font-family: var(--font-family-serif); }
+.scr-mono { font-family: var(--font-family-mono); }
+
+/* A glass control's glyph area (the glass itself is the compositor's). */
+.scr-glass {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  border-radius: 999px; color: var(--color-label-primary);
+}
+.scr-glass--round { width: 44px; height: 44px; font-size: 20px; }
+.scr-glass--pill { height: 44px; padding: 0 18px; font: 600 17px/22px var(--font-family-sans); letter-spacing: -0.02em; }
+
+/* Content cards (standard materials, not glass). */
+.scr-card { border-radius: 26px; background: var(--color-background-secondary); }
+.scr-divider { height: 0.5px; background: var(--color-separator-translucent); }

@@ -1,0 +1,404 @@
+{
+  "color": {
+    "system": {
+      "red": {
+        "$type": "color",
+        "$value": "#FF383C",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#FF4245",
+            "lightHC": "#E9152D",
+            "darkHC": "#FF6165"
+          }
+        }
+      },
+      "orange": {
+        "$type": "color",
+        "$value": "#FF8D28",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#FF9230",
+            "lightHC": "#C55300",
+            "darkHC": "#FFA056"
+          }
+        }
+      },
+      "yellow": {
+        "$type": "color",
+        "$value": "#FFCC00",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#FFD600",
+            "lightHC": "#A16A00",
+            "darkHC": "#FEDF43"
+          }
+        }
+      },
+      "green": {
+        "$type": "color",
+        "$value": "#34C759",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#30D158",
+            "lightHC": "#008932",
+            "darkHC": "#4AD968"
+          }
+        }
+      },
+      "mint": {
+        "$type": "color",
+        "$value": "#00C8B3",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#00DAC3",
+            "lightHC": "#008575",
+            "darkHC": "#54DFCB"
+          }
+        }
+      },
+      "teal": {
+        "$type": "color",
+        "$value": "#00C3D0",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#00D2E0",
+            "lightHC": "#008198",
+            "darkHC": "#3BDDEC"
+          }
+        }
+      },
+      "cyan": {
+        "$type": "color",
+        "$value": "#00C0E8",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#3CD3FE",
+            "lightHC": "#007EAE",
+            "darkHC": "#6DD9FF"
+          }
+        }
+      },
+      "blue": {
+        "$type": "color",
+        "$value": "#0088FF",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#0091FF",
+            "lightHC": "#1E6EF4",
+            "darkHC": "#5CB8FF"
+          }
+        }
+      },
+      "indigo": {
+        "$type": "color",
+        "$value": "#6155F5",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#6D7CFF",
+            "lightHC": "#564ADE",
+            "darkHC": "#A7AAFF"
+          }
+        }
+      },
+      "purple": {
+        "$type": "color",
+        "$value": "#CB30E0",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#DB34F2",
+            "lightHC": "#B02FC2",
+            "darkHC": "#EA8DFF"
+          }
+        }
+      },
+      "pink": {
+        "$type": "color",
+        "$value": "#FF2D55",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#FF375F",
+            "lightHC": "#E7124D",
+            "darkHC": "#FF8AC4"
+          }
+        }
+      },
+      "brown": {
+        "$type": "color",
+        "$value": "#AC7F5E",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#B78A66",
+            "lightHC": "#956D51",
+            "darkHC": "#DBA679"
+          }
+        }
+      }
+    },
+    "gray": {
+      "1": {
+        "$type": "color",
+        "$value": "#8E8E93",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23 (UIKit gray 1)",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#8E8E93",
+            "lightHC": "#6C6C70",
+            "darkHC": "#AEAEB2"
+          }
+        }
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#AEAEB2",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23 (UIKit gray 2)",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#636366",
+            "lightHC": "#8E8E93",
+            "darkHC": "#7C7C80"
+          }
+        }
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#C7C7CC",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23 (UIKit gray 3)",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#48484A",
+            "lightHC": "#AEAEB2",
+            "darkHC": "#545456"
+          }
+        }
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#D1D1D6",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23 (UIKit gray 4)",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#3A3A3C",
+            "lightHC": "#BCBCC0",
+            "darkHC": "#444446"
+          }
+        }
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#E5E5EA",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23 (UIKit gray 5)",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#2C2C2E",
+            "lightHC": "#D8D8DC",
+            "darkHC": "#363638"
+          }
+        }
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#F2F2F7",
+        "$description": "Apple HIG Color (iOS, values updated 2025-06-09), read from the page's swatch data on 2026-09-23 (UIKit gray 6)",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#1C1C1E",
+            "lightHC": "#EBEBF0",
+            "darkHC": "#242426"
+          }
+        }
+      }
+    },
+    "label": {
+      "primary": {
+        "$type": "color",
+        "$value": "#000000",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#FFFFFF"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "#3C3C4399",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#EBEBF599"
+          }
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "#3C3C434C",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#EBEBF54C"
+          }
+        }
+      },
+      "quaternary": {
+        "$type": "color",
+        "$value": "#3C3C432E",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#EBEBF529"
+          }
+        }
+      }
+    },
+    "fill": {
+      "primary": {
+        "$type": "color",
+        "$value": "#78788033",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#7878805C"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "#78788029",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#78788052"
+          }
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "#7676801F",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#7676803D"
+          }
+        }
+      },
+      "quaternary": {
+        "$type": "color",
+        "$value": "#74748014",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#7676802E"
+          }
+        }
+      }
+    },
+    "background": {
+      "primary": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#000000"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "#F2F2F7",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#1C1C1E"
+          }
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#2C2C2E"
+          }
+        }
+      }
+    },
+    "groupedBackground": {
+      "primary": {
+        "$type": "color",
+        "$value": "#F2F2F7",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#000000"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#1C1C1E"
+          }
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "#F2F2F7",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#2C2C2E"
+          }
+        }
+      }
+    },
+    "separator": {
+      "translucent": {
+        "$type": "color",
+        "$value": "#3C3C434A",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#54545899"
+          }
+        }
+      },
+      "opaque": {
+        "$type": "color",
+        "$value": "#C6C6C8",
+        "$description": "UIKit runtime value (iOS 17-18 dumps); the HIG does not publish it. Recheck in the Xcode 27.1 simulator",
+        "$extensions": {
+          "duo.modes": {
+            "dark": "#38383A"
+          }
+        }
+      }
+    },
+    "accent": {
+      "$type": "color",
+      "$value": "{color.system.blue}",
+      "$description": "Our choice: the system blue is the default tint",
+      "$extensions": {
+        "duo.modes": {
+          "dark": "{color.system.blue}"
+        }
+      }
+    }
+  }
+}

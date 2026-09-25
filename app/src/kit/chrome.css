@@ -1,0 +1,70 @@
+/*
+ * Duo's system chrome (chrome.ts), sized by the kit's numbers in tokens (size.rail*, tab*, camera*,
+ * topBar*, sheet*; docs/duo-ui.md section 2). Ink follows the screen: black
+ * on light content, white on dark (.app-dark, .lock, and the dark wallpapers set it).
+ */
+
+/* The Vertical Bar: 84 wide on the trailing edge, the camera punchout (outer), the status and the
+   toolbar at the top, the tab bar or bottom groups at the foot. */
+.rail { position: absolute; top: 0; bottom: 0; right: 0; z-index: 3; width: var(--size-rail); box-sizing: border-box;
+  padding: var(--size-rail-edge) var(--size-rail-edge) var(--size-rail-edge) var(--size-rail-lead);
+  display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #000; }
+.app-dark .rail, .lock .rail, .wall-noon .rail, .kitchen .rail { color: #fff; }
+.rail-top { display: flex; flex-direction: column; align-items: center; gap: var(--size-rail-camera-gap); }
+.rail-stack { display: flex; flex-direction: column; align-items: center; gap: var(--size-rail-gap); }
+.rail-punch { position: relative; width: var(--size-camera-punch); height: var(--size-camera-punch-height); flex: none; }
+.rail-lens, .island-camera { width: var(--size-camera-lens); height: var(--size-camera-lens); flex: none; border-radius: 50%; background: #080808; }
+.rail-lens { position: absolute; left: calc((var(--size-camera-punch) - var(--size-camera-lens)) / 2); top: var(--size-camera-lens-top); }
+.duo-status.is-timeless .st-time { visibility: hidden; }
+
+/* Controls. A single button is a 48 pt circle; a group shares one capsule (10 at each end, 36 pt
+   buttons 18 apart); the tab bar is a capsule of 54 pt tabs with a pill behind the selected one. */
+.rb, .pb { width: var(--size-rail-button); height: var(--size-rail-button); border-radius: 50%; flex: none;
+  display: grid; place-items: center; font-size: var(--size-symbol); color: inherit; }
+.rg { width: var(--size-rail-button); border-radius: calc(var(--size-rail-button) / 2); flex: none; box-sizing: border-box;
+  display: flex; flex-direction: column; align-items: center; gap: var(--size-rail-group-gap); padding: var(--size-rail-group-pad) 0; }
+.rg--h { width: auto; height: var(--size-rail-button); flex-direction: row; padding: 0 var(--size-rail-group-pad); }
+.rg-item { width: var(--size-rail-symbol); height: var(--size-rail-symbol); display: grid; place-items: center; font-size: var(--size-symbol); }
+.rt { display: flex; flex-direction: column; align-items: center; gap: var(--size-tab-search-gap); }
+.rt-tabs { width: var(--size-rail-button); border-radius: calc(var(--size-rail-button) / 2); box-sizing: border-box;
+  display: flex; flex-direction: column; gap: 2px; padding: var(--size-tab-pad) 0; }
+.rt-tab { position: relative; width: var(--size-rail-button); height: var(--size-tab-item); display: grid; place-items: center; font-size: var(--size-symbol-tab); }
+.rt-tab.is-selected { color: var(--color-system-blue); }
+.rt-tab.is-selected::before { content: ""; position: absolute; z-index: -1; width: var(--size-tab-pill-width); height: var(--size-tab-pill);
+  left: calc((var(--size-rail-button) - var(--size-tab-pill-width)) / 2); top: calc((var(--size-tab-item) - var(--size-tab-pill)) / 2);
+  border-radius: calc(var(--size-tab-pill-width) / 2); background: var(--color-fill-secondary); }
+.app-dark .rt-tab.is-selected, .lock .rt-tab.is-selected { color: #fff; }
+.app-dark .rt-tab.is-selected::before { background: #78788052; }
+
+/* A Live Activity grown from the outer camera: a black capsule the punchout's width, the lens at its
+   top, the app's glyph and its progress below. */
+.rail-punch.has-island { height: auto; }
+.island { position: relative; top: calc(var(--size-camera-lens-top) - 3px); width: var(--size-camera-punch); box-sizing: border-box;
+  border-radius: calc(var(--size-camera-punch) / 2); background: #000; padding: 3px 0 8px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px; box-shadow: 0 0 0 0.5px #FFFFFF1A; }
+.island-glyph { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-size: 18px; color: #fff; }
+.island-progress { width: 30px; height: 30px; }
+
+/* Top bar, the inner display in portrait: the title leading; glass groups, then the horizontal
+   status, trailing, 24 from the top and the trailing edge, 12 apart. */
+.topbar { position: absolute; left: 0; right: 0; top: 0; height: var(--size-top-bar); z-index: 3; color: inherit; }
+.topbar-title { position: absolute; left: var(--size-top-bar-title-x); top: var(--size-top-bar-title-y); }
+.topbar-trailing { position: absolute; right: var(--size-rail-edge); top: var(--size-rail-edge); height: var(--size-rail-button);
+  display: flex; align-items: center; gap: var(--size-rail-gap); }
+
+/* An outer sheet at its medium detent: 8 from the edges, corners concentric with the display
+   (large at the top and the trailing bottom, small on the hinge side), a grabber, the title
+   leading and a close button trailing. */
+.sheet { position: absolute; left: var(--size-sheet-inset); right: var(--size-sheet-inset); bottom: var(--size-sheet-inset);
+  border-radius: var(--size-sheet-radius) var(--size-sheet-radius) var(--size-sheet-radius-trailing) var(--size-sheet-radius-hinge);
+  padding: 0 22px 22px; color: #000; text-align: center; }
+.sheet-grabber { position: absolute; left: 50%; top: 10px; width: var(--size-sheet-grabber); height: 4px;
+  margin-left: calc(var(--size-sheet-grabber) / -2); border-radius: 2px; background: #3C3C434D; }
+.sheet-bar { display: flex; align-items: center; justify-content: space-between; height: var(--size-rail-button); margin: 14px -6px 2px -6px; text-align: left; }
+.sheet-close { color: #1C1C1E; }
+
+/* Content-local controls: a pane's own header buttons (.pb, above) and its search field. */
+.search-field { position: absolute; left: 16px; right: 16px; bottom: 22px; height: 46px; border-radius: 23px; padding: 0 16px;
+  display: flex; align-items: center; gap: 8px; font: 400 17px var(--font-family-sans); color: #3C3C4399; }
+.search-field span { flex: 1; }
+.search-field .scr-icon { font-size: 18px; color: #3C3C43B3; }

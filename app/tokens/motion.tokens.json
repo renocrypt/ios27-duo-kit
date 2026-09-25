@@ -1,0 +1,104 @@
+{
+  "motion": {
+    "spring": {
+      "$description": "SwiftUI spring presets. Apple documents Spring.smooth, .snappy, and .bouncy with a default perceptual duration of 0.5 s and base bounces of 0, 0.15, and 0.3 (SwiftUI docs, checked 2026-09-23). Anime.js 4.5 spring({ bounce, duration }) implements the same perceptual model. The compiler also emits a CSS linear() easing and settle time for each.",
+      "smooth": {
+        "$type": "duo.spring",
+        "$value": {
+          "bounce": 0,
+          "duration": 500
+        },
+        "$description": "SwiftUI Spring.smooth"
+      },
+      "snappy": {
+        "$type": "duo.spring",
+        "$value": {
+          "bounce": 0.15,
+          "duration": 500
+        },
+        "$description": "SwiftUI Spring.snappy"
+      },
+      "bouncy": {
+        "$type": "duo.spring",
+        "$value": {
+          "bounce": 0.3,
+          "duration": 500
+        },
+        "$description": "SwiftUI Spring.bouncy"
+      },
+      "hinge": {
+        "$type": "duo.spring",
+        "$value": {
+          "bounce": 0,
+          "duration": 900
+        },
+        "$description": "Our choice: a damped, unhurried hinge, since reviewers describe the real hinge as tight and well damped (physical-reference note)"
+      },
+      "glance": {
+        "$type": "duo.spring",
+        "$value": {
+          "bounce": 0.1,
+          "duration": 350
+        },
+        "$description": "Our choice: quick outer-display responses"
+      },
+      "cameraSettle": {
+        "$type": "duo.spring",
+        "$value": {
+          "bounce": 0.05,
+          "duration": 700
+        },
+        "$description": "Presentation brief: camera moves that follow a device move, between smooth and hinge"
+      }
+    },
+    "duration": {
+      "instant": {
+        "$type": "duration",
+        "$value": "100ms",
+        "$description": "Our choice"
+      },
+      "quick": {
+        "$type": "duration",
+        "$value": "200ms",
+        "$description": "Our choice"
+      },
+      "standard": {
+        "$type": "duration",
+        "$value": "350ms",
+        "$description": "Our choice"
+      },
+      "deliberate": {
+        "$type": "duration",
+        "$value": "600ms",
+        "$description": "Our choice"
+      },
+      "ambient": {
+        "$type": "duration",
+        "$value": "2000ms",
+        "$description": "Upper bound for ambient-state animation (time-and-knowledge note, guardrails)"
+      }
+    },
+    "easing": {
+      "standard": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.25,
+          0.1,
+          0.25,
+          1
+        ],
+        "$description": "CSS ease, for the rare non-spring transition"
+      },
+      "linear": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "$description": "Linear, for scrubbed and time-mapped values"
+      }
+    }
+  }
+}

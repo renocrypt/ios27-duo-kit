@@ -1,0 +1,261 @@
+{
+  "space": {
+    "$description": "Spacing in points (1 CSS px = 1 pt on the display canvases). Our choice: a 4 pt base unit, the rhythm iOS layouts follow.",
+    "0": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "1": {
+      "$type": "dimension",
+      "$value": "2px"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "7": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "32px"
+    },
+    "9": {
+      "$type": "dimension",
+      "$value": "40px"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "48px"
+    },
+    "margin": {
+      "compact": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "UIKit default layout margin in compact width (iPhone)"
+      },
+      "regular": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "UIKit default layout margin in regular width"
+      }
+    }
+  },
+  "size": {
+    "hitTarget": {
+      "$type": "dimension",
+      "$value": "44px",
+      "$description": "Apple HIG minimum hit target on iOS (44 x 44 pt)"
+    },
+    "glassButton": {
+      "$type": "dimension",
+      "$value": "44px",
+      "$description": "Our choice: circular Liquid Glass bar button, matching the hit target"
+    },
+    "rail": {
+      "$type": "dimension",
+      "$value": "84px",
+      "$description": "Width of Duo's Vertical Bar (the rail), the content's trailing limit: 12 leading + 48 column + 24 trailing. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railInset": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Rail column centre from the trailing edge of the display (24 + 48 / 2), on both displays; on the outer display this is the camera's column. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railEdge": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Rail padding at the top, bottom, and trailing edge. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railLead": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Rail padding on its leading side. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railButton": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Rail column width; a single toolbar button ('Toolbars / Buttons / 48pt / Symbol 1') is a 48 x 48 glass circle. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railSymbol": {
+      "$type": "dimension",
+      "$value": "36px",
+      "$description": "A button inside a toolbar group: 36 x 36, its symbol centred. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railGroupPad": {
+      "$type": "dimension",
+      "$value": "10px",
+      "$description": "Padding at each end of a vertical toolbar group ('Vertical Group - Symbol 2/3': 48 x 110 / 164). [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railGroupGap": {
+      "$type": "dimension",
+      "$value": "18px",
+      "$description": "Space between buttons in a toolbar group (a 54 pt pitch). [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railGap": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Space between the status and the toolbar, and between toolbar groups. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "railCameraGap": {
+      "$type": "dimension",
+      "$value": "6px",
+      "$description": "Outer display: space between the camera punchout (43 x 42) and the status. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "cameraPunch": {
+      "$type": "dimension",
+      "$value": "43px",
+      "$description": "Outer display: width of the camera punchout at the top of the rail (42 tall). [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "cameraPunchHeight": {
+      "$type": "dimension",
+      "$value": "42px",
+      "$description": "Outer display: height of the camera punchout. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "cameraLens": {
+      "$type": "dimension",
+      "$value": "37px",
+      "$description": "Outer Display Lens: the camera drawn in the punchout, #080808. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "cameraLensTop": {
+      "$type": "dimension",
+      "$value": "5.33px",
+      "$description": "The lens's offset from the punchout's top (centre 47.8 pt from the display's top). [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "symbol": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Font size that draws a 17 pt SF Symbol with our icons (a 24-unit box is 24 pt at 17 pt; icons.ts). Toolbar symbols are 17 pt in the kit. Derived"
+    },
+    "symbolTab": {
+      "$type": "dimension",
+      "$value": "25.4px",
+      "$description": "Font size for an 18 pt symbol (tab bar), 24 x 18 / 17. Derived from the kit's 18 pt tab symbols"
+    },
+    "tabItem": {
+      "$type": "dimension",
+      "$value": "54px",
+      "$description": "Height of a tab in Duo's vertical tab bar (48 wide). [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "tabPad": {
+      "$type": "dimension",
+      "$value": "6px",
+      "$description": "Padding at each end of the vertical tab bar; tabs are 2 pt apart. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "tabPill": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "Height of the selected tab's pill (44 wide, centred on its tab). [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "tabPillWidth": {
+      "$type": "dimension",
+      "$value": "44px",
+      "$description": "Width of the selected tab's pill (64 tall), 2 pt in from the tab bar's sides. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "tabSearchGap": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Space between the tab bar and its separate search button (48 x 48). [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "topBar": {
+      "$type": "dimension",
+      "$value": "82px",
+      "$description": "Inner display in portrait: height of the top toolbar row; title at (20, 37), trailing actions (glass groups, then the horizontal status) 24 pt from the top and trailing edges, 12 pt apart. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "topBarTitleX": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": "Portrait top bar: the title's leading inset. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "topBarTitleY": {
+      "$type": "dimension",
+      "$value": "37px",
+      "$description": "Portrait top bar: the title's top. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "sheetInset": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Outer display: a sheet's inset from the display edges; corners 40 (top), 48 (trailing bottom), 8 (hinge-side bottom), concentric with the display. [KIT] Apple iOS 27 UI Kit (Sketch, public library, Sept 2026), read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "sheetRadius": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": "Outer sheet: top corner radius. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "sheetRadiusTrailing": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Outer sheet: trailing bottom corner, concentric with the display's large corner. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "sheetRadiusHinge": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Outer sheet: hinge-side bottom corner, concentric with the display's small corner. [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "sheetGrabber": {
+      "$type": "dimension",
+      "$value": "60px",
+      "$description": "Outer sheet: grabber width (4 tall, 10 from the top). [KIT] Apple iOS 27 UI Kit, read in its Inspector; docs/duo-ui.md section 2"
+    },
+    "sidebar": {
+      "$type": "dimension",
+      "$value": "320px",
+      "$description": "Leading pane of a split view on the inner display, open flat: ≈ 34% of 951 pt. Folded (Book) it snaps to half. Measured from Apple's HIG figures (Mail, Notes) and owner-supplied references; docs/duo-ui.md section 2"
+    },
+    "foldBand": {
+      "$type": "dimension",
+      "$value": "28px",
+      "$description": "Folding region excluded from interactive content while partially folded: ≈ 27 pt in Apple's inner-display diagram (not a published value)."
+    }
+  },
+  "radius": {
+    "$description": "Corner radii in points. Nested shapes should be concentric: child radius = parent radius - padding (Apple WWDC25-356).",
+    "xs": {
+      "$type": "dimension",
+      "$value": "6px",
+      "$description": "Our choice"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "10px",
+      "$description": "Our choice"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Our choice"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "26px",
+      "$description": "Our choice: widget-scale cards"
+    },
+    "capsule": {
+      "$type": "dimension",
+      "$value": "9999px",
+      "$description": "Capsule: radius = half the height"
+    },
+    "concentricMin": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Our choice: the minimum radius a concentric corner may resolve to (Apple's concentric(minimum:) idea), so hinge-side corners never go square"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "presentation": {
+    "$description": "Stage copy type scale, separate from the in-device Dynamic Type scale (presentation brief, principle 4). Measured on apple.com/iphone-duo/ at a 1440 x 862 viewport in Chrome 154 on 2026-09-23 unless noted.",
+    "stageHero": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "80px",
+        "fontWeight": 600,
+        "lineHeight": "84px",
+        "letterSpacing": "-0.015em"
+      },
+      "$description": "Measured: 80px, weight 600, line height 84px, tracking -1.2px"
+    },
+    "stageHeadline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "48px",
+        "fontWeight": 600,
+        "lineHeight": "52px",
+        "letterSpacing": "-0.003em"
+      },
+      "$description": "Measured: 48px, weight 600, line height 52px, tracking -0.144px"
+    },
+    "stageKicker": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "22px",
+        "fontWeight": 600,
+        "lineHeight": "28px",
+        "letterSpacing": "0.01em"
+      },
+      "$description": "Derived: the page's fluid kicker resolved to 25.5px; rounded to our 4pt rhythm (our choice)"
+    },
+    "stageBody": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "19px",
+        "fontWeight": 400,
+        "lineHeight": "27px",
+        "letterSpacing": "0.006em"
+      },
+      "$description": "Derived, between the 17px UI body and Apple's intro paragraphs; to verify against a second Apple page"
+    }
+  }
+}

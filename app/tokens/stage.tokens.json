@@ -1,0 +1,251 @@
+{
+  "stage": {
+    "$description": "The presentation stage around the device: camera, light moods per scene, and the ground shadow. Backgrounds are CSS behind a transparent WebGL canvas; light moods pick one of three studio environment maps and set its intensity.",
+    "shadow": {
+      "$type": "number",
+      "$value": 0.55,
+      "$description": "Our choice: contact shadow darkness (0-1)"
+    },
+    "exposure": {
+      "$type": "number",
+      "$value": 1.0,
+      "$description": "Our choice: tone mapping exposure"
+    },
+    "light": {
+      "key": {
+        "$type": "number",
+        "$value": 7,
+        "$description": "Our choice: studio key softbox radiance"
+      },
+      "fill": {
+        "$type": "number",
+        "$value": 1.6,
+        "$description": "Our choice"
+      },
+      "rim": {
+        "$type": "number",
+        "$value": 5.5,
+        "$description": "Our choice: vertical strips that draw the frame's edges"
+      },
+      "top": {
+        "$type": "number",
+        "$value": 4,
+        "$description": "Our choice: overhead strip for long highlights on the frame"
+      },
+      "bounce": {
+        "$type": "number",
+        "$value": 1.4,
+        "$description": "Our choice: a low card in front of the set, below the lens, that draws a highlight along the frame's near edges"
+      },
+      "studio": {
+        "$type": "number",
+        "$value": 0.08,
+        "$description": "Our choice: the off-camera studio's walls (linear radiance), so polished edges keep their outline on a dark set"
+      }
+    },
+    "camera": {
+      "$description": "Framing: the camera solves its distance so the device fills a fraction of the frame's short axis (presentation brief, principle 1), and a lens shift places it on screen without changing perspective.",
+      "fov": {
+        "default": {
+          "$type": "number",
+          "$value": 22,
+          "$description": "Degrees, vertical. The long, flattening lens of product photography (presentation brief, principle 7)"
+        },
+        "tight": {
+          "$type": "number",
+          "$value": 18,
+          "$description": "Our choice: poster-like compression for held, close shots"
+        },
+        "wide": {
+          "$type": "number",
+          "$value": 26,
+          "$description": "Our choice: the widest lens in the journey, for resting postures that show a surface"
+        }
+      },
+      "fill": {
+        "$type": "number",
+        "$value": 0.6,
+        "$description": "Presentation brief, principle 1: the device fills 50 to 70 percent of the frame's short axis, measured from Apple's iPhone Duo page (57 to 65 percent)"
+      }
+    },
+    "mood": {
+      "$description": "Light and background per scene (presentation brief, principle 3). sky and ground are the backdrop's top and bottom colours; ink is the copy's appearance; env picks the studio's light colour (neutral, warm, cool) and the studio's room takes the sky and ground; intensity scales it; turn rotates the lights about the vertical (degrees) relative to the camera, since the studio turns with the camera as the backdrop does; shadow is the contact shadow's darkness. floor and floorStrength light a pool of ground under the device on dark moods (drawn in WebGL with dithering; a CSS gradient bands on dark colours).",
+      "black": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#000000",
+          "ground": "#000000",
+          "ink": "dark",
+          "env": "neutral",
+          "intensity": 0.0,
+          "exposure": 1.0,
+          "turn": 0,
+          "shadow": 0.0,
+          "floor": "#000000",
+          "floorStrength": 0
+        },
+        "$description": "Title: pure black, the key light rises from nothing (brief, scene 0)"
+      },
+      "night": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#07080B",
+          "ground": "#000000",
+          "ink": "dark",
+          "env": "cool",
+          "intensity": 0.14,
+          "exposure": 1.0,
+          "turn": -6,
+          "shadow": 0.35,
+          "floor": "#1B2130",
+          "floorStrength": 0.55
+        },
+        "$description": "Our choice: the screen's glow carries the device at night"
+      },
+      "dawn": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#9DB0CF",
+          "ground": "#E9D8CF",
+          "ink": "light",
+          "env": "cool",
+          "intensity": 0.85,
+          "exposure": 1.0,
+          "turn": -16,
+          "shadow": 0.45,
+          "floor": "#FFFFFF",
+          "floorStrength": 0
+        },
+        "$description": "Our choice: pale dawn, the end of the scene 1 ramp"
+      },
+      "morning": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#F5F5F7",
+          "ground": "#E6E6EB",
+          "ink": "light",
+          "env": "neutral",
+          "intensity": 1.0,
+          "exposure": 1.0,
+          "turn": 0,
+          "shadow": 0.5,
+          "floor": "#FFFFFF",
+          "floorStrength": 0
+        },
+        "$description": "Measured: Apple's background-alt rgb(245, 245, 247), the calmest frame (brief, scene 2)"
+      },
+      "day": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#FBFBFD",
+          "ground": "#E9ECF1",
+          "ink": "light",
+          "env": "neutral",
+          "intensity": 1.15,
+          "exposure": 1.02,
+          "turn": 25,
+          "shadow": 0.5,
+          "floor": "#FFFFFF",
+          "floorStrength": 0
+        },
+        "$description": "Our choice: brighter, a rim along the hinge for the work register (brief, scene 3)"
+      },
+      "office": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#E7ECF2",
+          "ground": "#D5DDE6",
+          "ink": "light",
+          "env": "cool",
+          "intensity": 1.0,
+          "exposure": 1.0,
+          "turn": 23,
+          "shadow": 0.5,
+          "floor": "#FFFFFF",
+          "floorStrength": 0
+        },
+        "$description": "Our choice: cooler and flatter than the morning (brief, scene 4)"
+      },
+      "book": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#F4EEE7",
+          "ground": "#D8CBBD",
+          "ink": "light",
+          "env": "warm",
+          "intensity": 0.95,
+          "exposure": 1.0,
+          "turn": -26,
+          "shadow": 0.5,
+          "floor": "#FFFFFF",
+          "floorStrength": 0
+        },
+        "$description": "Our choice: warm and close, held in the hands (brief, scene 5)"
+      },
+      "evening": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#2B2119",
+          "ground": "#0E0A07",
+          "ink": "dark",
+          "env": "warm",
+          "intensity": 0.8,
+          "exposure": 1.0,
+          "turn": -75,
+          "shadow": 0.6,
+          "floor": "#6A4A2F",
+          "floorStrength": 0.5
+        },
+        "$description": "Our choice: golden-hour kitchen, a warm key low from the side (brief, scene 6)"
+      },
+      "dusk": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#394452",
+          "ground": "#171C24",
+          "ink": "dark",
+          "env": "cool",
+          "intensity": 0.95,
+          "exposure": 1.0,
+          "turn": -20,
+          "shadow": 0.5,
+          "floor": "#394862",
+          "floorStrength": 0.45
+        },
+        "$description": "Measured: Apple's hinge-story blue-gray rgb(57, 68, 82) at the top (brief, scene 7)"
+      },
+      "title": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#000000",
+          "ground": "#000000",
+          "ink": "dark",
+          "env": "neutral",
+          "intensity": 0.9,
+          "exposure": 1.0,
+          "turn": -35,
+          "shadow": 0.0,
+          "floor": "#000000",
+          "floorStrength": 0
+        },
+        "$description": "Title: after the black, a single key rises until the device's edges read (brief, scene 0)"
+      },
+      "twilight": {
+        "$type": "duo.mood",
+        "$value": {
+          "sky": "#1E2A4A",
+          "ground": "#4A3F55",
+          "ink": "dark",
+          "env": "cool",
+          "intensity": 0.4,
+          "exposure": 1.0,
+          "turn": -16,
+          "shadow": 0.4,
+          "floor": "#3A3C56",
+          "floorStrength": 0.35
+        },
+        "$description": "Our choice: the blue hour between night and dawn, so the scrubbed dawn passes through blue, not grey"
+      }
+    }
+  }
+}

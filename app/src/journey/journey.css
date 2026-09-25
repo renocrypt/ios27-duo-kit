@@ -1,0 +1,77 @@
+/*
+ * The journey: a scroll-driven presentation (docs/presentation.md). The page scrolls a
+ * tall track; the backdrop, the stage, the copy and the progress rail stay fixed above it.
+ * Type comes from the presentation tokens (.type-stage-*), motion from the spring tokens.
+ */
+html, body { margin: 0; background: #000; }
+body { overscroll-behavior: none; }
+
+.j-backdrop, .j-viewport, .j-copy, .j-rail, .j-fade { position: fixed; inset: 0; }
+.j-backdrop { z-index: 0; }
+.j-sky { position: absolute; inset: 0; opacity: 0; transition: opacity 700ms var(--motion-spring-smooth-easing); }
+.j-sky.is-on { opacity: 1; }
+.j-viewport { z-index: 1; }
+.j-viewport canvas { display: block; width: 100%; height: 100%; }
+/* Dissolve cuts: a veil in the next scene's colour covers the change of set. */
+.j-fade { z-index: 2; pointer-events: none; opacity: 0; transition: opacity 320ms ease; }
+.j-fade.is-on { opacity: 1; }
+
+.j-copy { z-index: 3; pointer-events: none; display: grid; }
+.j-block { grid-area: 1 / 1; align-self: center; justify-self: start; width: min(34vw, 520px); margin-left: 7.5vw;
+  opacity: 0; transform: translateY(18px);
+  transition: opacity 600ms var(--motion-spring-smooth-easing), transform 900ms var(--motion-spring-smooth-easing); }
+.j-block.is-in { opacity: 1; transform: none; }
+.j-block[data-place="right"] { justify-self: end; margin-left: 0; margin-right: 7.5vw; }
+.j-block[data-place="center"] { justify-self: center; margin: 0; width: min(80vw, 980px); text-align: center; }
+.j-block.is-hero { width: min(46vw, 760px); }
+.j-kicker { margin: 0 0 10px; }
+/* Stage type scales down with narrow windows (the tokens hold the full size, reached at 1440 px). */
+.j-headline.type-stage-hero { font-size: clamp(46px, 5.55vw, 80px); line-height: 1.05; }
+.j-headline.type-stage-headline { font-size: clamp(32px, 3.34vw, 48px); line-height: 1.09; }
+.j-body.type-stage-body { font-size: clamp(16px, 1.32vw, 19px); line-height: 1.42; }
+.j-headline { margin: 0; text-wrap: balance; }
+.j-body { margin: 14px 0 0; max-width: 34ch; text-wrap: pretty; }
+.j-block[data-place="center"] .j-body { margin-left: auto; margin-right: auto; }
+.j-copy, .j-copy .j-kicker, .j-copy .j-body, .j-rail { transition: color 450ms ease; }
+.j-copy[data-ink="light"] { color: #1D1D1F; }
+.j-copy[data-ink="light"] .j-kicker, .j-copy[data-ink="light"] .j-body { color: #6E6E73; }
+.j-copy[data-ink="dark"] { color: #F5F5F7; }
+.j-copy[data-ink="dark"] .j-kicker, .j-copy[data-ink="dark"] .j-body { color: #A1A1A6; }
+.j-copy[data-mid] .j-kicker, .j-copy[data-mid] .j-body { color: inherit; }
+.j-kicker .j-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 10px; vertical-align: 2px; background: currentColor; }
+
+/* Progress rail: one mark per scene, the current one long. */
+.j-rail { z-index: 4; inset: 0 22px 0 auto; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+.j-rail button { all: unset; width: 6px; height: 6px; border-radius: 3px; cursor: pointer; background: currentColor; opacity: 0.35;
+  transition: height 500ms var(--motion-spring-snappy-easing), opacity 300ms ease; }
+.j-rail button[aria-current="step"] { height: 26px; opacity: 1; }
+.j-rail button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.j-rail[data-ink="light"] { color: #1D1D1F; }
+.j-rail[data-ink="dark"] { color: #F5F5F7; }
+
+/* First-use hints, glass pills of the page's own chrome (standard material, not the device's glass). */
+.j-hint { position: fixed; z-index: 4; left: 50%; bottom: 34px; transform: translateX(-50%); display: flex; align-items: center; gap: 8px;
+  height: 40px; padding: 0 18px; border-radius: 20px; font: 500 15px var(--font-family-sans); letter-spacing: -0.01em;
+  color: #F5F5F7; background: #FFFFFF1F; backdrop-filter: blur(20px) saturate(1.6); -webkit-backdrop-filter: blur(20px) saturate(1.6);
+  box-shadow: inset 0 0 0 0.5px #FFFFFF33; opacity: 0; transition: opacity 500ms ease; pointer-events: none; }
+.j-hint.is-on { opacity: 1; }
+.j-hint[data-ink="light"] { color: #1D1D1F; background: #0000000F; box-shadow: inset 0 0 0 0.5px #0000001A; }
+.j-hint svg { width: 16px; height: 16px; }
+.j-replay { border: 0; cursor: pointer; font: 500 15px var(--font-family-sans); }
+.j-replay.is-on { pointer-events: auto; transition-delay: 1400ms; }
+.j-replay:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+
+.j-track section { height: 140vh; }
+.j-track section.is-long { height: 230vh; }
+
+/* The device can be turned by hand in scenes that allow it. */
+.j-viewport.is-draggable { cursor: grab; }
+.j-viewport.is-dragging { cursor: grabbing; }
+
+@media (max-aspect-ratio: 1/1) {
+  .j-block, .j-block[data-place="right"] { align-self: start; justify-self: center; margin: 12vh 0 0; width: 86vw; text-align: center; }
+  .j-body { margin-left: auto; margin-right: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .j-block, .j-sky, .j-fade { transition-duration: 1ms; }
+}

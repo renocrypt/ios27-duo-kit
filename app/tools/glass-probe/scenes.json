@@ -1,0 +1,468 @@
+{
+  "$description": "Scenes for the glass probe (tools/glass-probe/). Each is a stimulus we control, drawn pixel-exact, with Liquid Glass shapes over it. Units are points; shape offsets (x, y) are from the window's centre; colours are sRGB; r is the corner radius, absent for a capsule. Stimuli: flat {color}; edge {top, bottom}, split at the centre line; sine {low, high, period, axis}, a grating that varies along axis x or y, shifted by phase/phases of a period; tiles {levels, tile, color}, a centred grid of grey tiles (sRGB levels, row-major) with the first shape placed on every tile and color filling the margins. Shape sizes are Duo's: 48 button [KIT], 56 × 150 rail group [KIT], 76 × 220 and 220 × 96 capsules, a 360 × 180 panel with the sheet's 40 pt radius [KIT]. The sizes layout (it fits either Duo display) asks what makes large glass frost more: shapes of equal area and different short sides (360 × 56, 150 × 150), of equal short side and different areas (96 × 96, 420 × 96), 48 and 76 pt circles, and a large clear panel. Sets: what `npm run probe` captures, each at a position of Settings > Liquid Glass's clear-to-tinted slider (\"default\" removes it, as on a device nobody has changed); scene lists accept * wildcards.",
+  "scenes": {
+    "edge": {
+      "appearance": "dark",
+      "stimulus": {
+        "kind": "edge",
+        "top": "#3A3B61",
+        "bottom": "#0E0E17"
+      },
+      "shapes": [
+        {
+          "w": 76,
+          "h": 220,
+          "x": -110,
+          "glass": "regular"
+        },
+        {
+          "w": 48,
+          "h": 48,
+          "x": 40,
+          "glass": "regular"
+        },
+        {
+          "w": 48,
+          "h": 48,
+          "x": 150,
+          "glass": "clear"
+        }
+      ]
+    },
+    "edge-light": {
+      "appearance": "light",
+      "stimulus": {
+        "kind": "edge",
+        "top": "#FFFFFF",
+        "bottom": "#C7C7CC"
+      },
+      "shapes": [
+        {
+          "w": 76,
+          "h": 220,
+          "x": -110,
+          "glass": "regular"
+        },
+        {
+          "w": 48,
+          "h": 48,
+          "x": 40,
+          "glass": "regular"
+        },
+        {
+          "w": 48,
+          "h": 48,
+          "x": 150,
+          "glass": "clear"
+        }
+      ]
+    },
+    "sine-dark-x24": {
+      "appearance": "dark",
+      "phases": 8,
+      "stimulus": {
+        "kind": "sine",
+        "low": "#141414",
+        "high": "#5A5A5A",
+        "period": 24,
+        "axis": "x"
+      },
+      "shapes": "grating"
+    },
+    "sine-dark-y24": {
+      "appearance": "dark",
+      "phases": 8,
+      "stimulus": {
+        "kind": "sine",
+        "low": "#141414",
+        "high": "#5A5A5A",
+        "period": 24,
+        "axis": "y"
+      },
+      "shapes": "grating"
+    },
+    "sine-dark-x48": {
+      "appearance": "dark",
+      "phases": 8,
+      "stimulus": {
+        "kind": "sine",
+        "low": "#141414",
+        "high": "#5A5A5A",
+        "period": 48,
+        "axis": "x"
+      },
+      "shapes": "grating"
+    },
+    "sizes-dark-x24": {
+      "appearance": "dark",
+      "phases": 8,
+      "stimulus": {
+        "kind": "sine",
+        "low": "#141414",
+        "high": "#5A5A5A",
+        "period": 24,
+        "axis": "x"
+      },
+      "shapes": "sizes"
+    },
+    "sizes-dark-x48": {
+      "appearance": "dark",
+      "phases": 8,
+      "stimulus": {
+        "kind": "sine",
+        "low": "#141414",
+        "high": "#5A5A5A",
+        "period": 48,
+        "axis": "x"
+      },
+      "shapes": "sizes"
+    },
+    "sine-light-x24": {
+      "appearance": "light",
+      "phases": 8,
+      "stimulus": {
+        "kind": "sine",
+        "low": "#A5A5A5",
+        "high": "#EBEBEB",
+        "period": 24,
+        "axis": "x"
+      },
+      "shapes": "grating"
+    },
+    "sine-light-x48": {
+      "appearance": "light",
+      "phases": 8,
+      "stimulus": {
+        "kind": "sine",
+        "low": "#A5A5A5",
+        "high": "#EBEBEB",
+        "period": 48,
+        "axis": "x"
+      },
+      "shapes": "grating"
+    },
+    "tone-regular-dark": {
+      "appearance": "dark",
+      "stimulus": {
+        "kind": "tiles",
+        "tile": 96,
+        "color": "#808080",
+        "levels": [
+          0,
+          9,
+          19,
+          28,
+          38,
+          47,
+          57,
+          66,
+          76,
+          85,
+          94,
+          104,
+          113,
+          123,
+          132,
+          142,
+          151,
+          161,
+          170,
+          179,
+          189,
+          198,
+          208,
+          217,
+          227,
+          236,
+          246,
+          255
+        ]
+      },
+      "shapes": [
+        {
+          "w": 48,
+          "h": 48,
+          "glass": "regular"
+        }
+      ]
+    },
+    "tone-regular-light": {
+      "appearance": "light",
+      "stimulus": {
+        "kind": "tiles",
+        "tile": 96,
+        "color": "#808080",
+        "levels": [
+          0,
+          9,
+          19,
+          28,
+          38,
+          47,
+          57,
+          66,
+          76,
+          85,
+          94,
+          104,
+          113,
+          123,
+          132,
+          142,
+          151,
+          161,
+          170,
+          179,
+          189,
+          198,
+          208,
+          217,
+          227,
+          236,
+          246,
+          255
+        ]
+      },
+      "shapes": [
+        {
+          "w": 48,
+          "h": 48,
+          "glass": "regular"
+        }
+      ]
+    },
+    "tone-clear-dark": {
+      "appearance": "dark",
+      "stimulus": {
+        "kind": "tiles",
+        "tile": 96,
+        "color": "#808080",
+        "levels": [
+          0,
+          9,
+          19,
+          28,
+          38,
+          47,
+          57,
+          66,
+          76,
+          85,
+          94,
+          104,
+          113,
+          123,
+          132,
+          142,
+          151,
+          161,
+          170,
+          179,
+          189,
+          198,
+          208,
+          217,
+          227,
+          236,
+          246,
+          255
+        ]
+      },
+      "shapes": [
+        {
+          "w": 48,
+          "h": 48,
+          "glass": "clear"
+        }
+      ]
+    },
+    "tone-clear-light": {
+      "appearance": "light",
+      "stimulus": {
+        "kind": "tiles",
+        "tile": 96,
+        "color": "#808080",
+        "levels": [
+          0,
+          9,
+          19,
+          28,
+          38,
+          47,
+          57,
+          66,
+          76,
+          85,
+          94,
+          104,
+          113,
+          123,
+          132,
+          142,
+          151,
+          161,
+          170,
+          179,
+          189,
+          198,
+          208,
+          217,
+          227,
+          236,
+          246,
+          255
+        ]
+      },
+      "shapes": [
+        {
+          "w": 48,
+          "h": 48,
+          "glass": "clear"
+        }
+      ]
+    }
+  },
+  "layouts": {
+    "grating": [
+      {
+        "w": 360,
+        "h": 180,
+        "r": 40,
+        "y": -200,
+        "glass": "regular"
+      },
+      {
+        "w": 220,
+        "h": 96,
+        "y": -20,
+        "glass": "regular"
+      },
+      {
+        "w": 48,
+        "h": 48,
+        "x": -130,
+        "y": 170,
+        "glass": "regular"
+      },
+      {
+        "w": 56,
+        "h": 150,
+        "y": 170,
+        "glass": "regular"
+      },
+      {
+        "w": 48,
+        "h": 48,
+        "x": 130,
+        "y": 170,
+        "glass": "clear"
+      }
+    ],
+    "sizes": [
+      {
+        "w": 420,
+        "h": 96,
+        "y": -270,
+        "glass": "regular"
+      },
+      {
+        "w": 360,
+        "h": 56,
+        "x": -39,
+        "y": -170,
+        "glass": "regular"
+      },
+      {
+        "w": 48,
+        "h": 48,
+        "x": 195,
+        "y": -170,
+        "glass": "regular"
+      },
+      {
+        "w": 150,
+        "h": 150,
+        "r": 40,
+        "x": -116,
+        "y": -45,
+        "glass": "regular"
+      },
+      {
+        "w": 96,
+        "h": 96,
+        "x": 37,
+        "y": -45,
+        "glass": "regular"
+      },
+      {
+        "w": 76,
+        "h": 76,
+        "x": 153,
+        "y": -45,
+        "glass": "regular"
+      },
+      {
+        "w": 360,
+        "h": 180,
+        "r": 40,
+        "y": 145,
+        "glass": "clear"
+      }
+    ]
+  },
+  "sets": {
+    "default": {
+      "tint": "default",
+      "scenes": [
+        "*"
+      ]
+    },
+    "tint-0": {
+      "tint": 0,
+      "scenes": [
+        "tone-*",
+        "sine-dark-x24",
+        "sine-dark-x48",
+        "edge",
+        "sizes-*"
+      ]
+    },
+    "tint-0.25": {
+      "tint": 0.25,
+      "scenes": [
+        "tone-*",
+        "sine-dark-x24",
+        "sine-dark-x48",
+        "edge"
+      ]
+    },
+    "tint-0.5": {
+      "tint": 0.5,
+      "scenes": [
+        "tone-*",
+        "sine-dark-x24",
+        "sine-dark-x48",
+        "edge",
+        "sizes-*"
+      ]
+    },
+    "tint-0.75": {
+      "tint": 0.75,
+      "scenes": [
+        "tone-*",
+        "sine-dark-x24",
+        "sine-dark-x48",
+        "edge"
+      ]
+    },
+    "tint-1": {
+      "tint": 1,
+      "scenes": [
+        "tone-*",
+        "sine-dark-x24",
+        "sine-dark-x48",
+        "edge"
+      ]
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "device": {
+    "$description": "iPhone Duo values that the UI and the 3D stage share. Points: 1 CSS px = 1 pt. Sources are the research notes in duo/research/ (geometry and physical reference, 2026-09-23).",
+    "display": {
+      "outer": {
+        "width": {
+          "$type": "dimension",
+          "$value": "466px",
+          "$description": "Beta simulator profile read by a developer (geometry note), medium confidence"
+        },
+        "height": {
+          "$type": "dimension",
+          "$value": "678px",
+          "$description": "Same source"
+        },
+        "scale": {
+          "$type": "number",
+          "$value": 3,
+          "$description": "@3x: renders 1398 x 2034 px, the published panel size"
+        },
+        "radiusFree": {
+          "$type": "dimension",
+          "$value": "59px",
+          "$description": "Simulator profile; corners on the free edge"
+        },
+        "radiusHinge": {
+          "$type": "dimension",
+          "$value": "8px",
+          "$description": "Simulator profile; corners on the hinge edge"
+        }
+      },
+      "inner": {
+        "width": {
+          "$type": "dimension",
+          "$value": "951px",
+          "$description": "Landscape-native; simulator profile, medium confidence"
+        },
+        "height": {
+          "$type": "dimension",
+          "$value": "669px",
+          "$description": "Same source"
+        },
+        "scale": {
+          "$type": "number",
+          "$value": 3,
+          "$description": "@3x: 2853 x 2007 px canvas, matching Apple's App Store device resolution"
+        },
+        "radius": {
+          "$type": "dimension",
+          "$value": "55px",
+          "$description": "Simulator profile"
+        },
+        "foldBand": {
+          "$type": "dimension",
+          "$value": "27px",
+          "$description": "PLACEHOLDER: division region width when folded; measured from the HIG diagram. Apple exposes it only at runtime"
+        }
+      },
+      "pointsPerMillimeter": {
+        "$type": "number",
+        "$value": 6.02,
+        "$description": "Derived: 466 pt across the measured 77.39 mm outer display"
+      }
+    },
+    "finish": {
+      "$description": "Per-finish surface colours and the few PBR values that differ between finishes, all read from Apple's AR model materials (both Color variants). Shared PBR values (roughness, clearcoat) live in the device materials module with the same provenance.",
+      "starWhite": {
+        "frame": {
+          "$type": "color",
+          "$value": "#F2EEE5",
+          "$description": "Polished titanium base colour (metallic 1, roughness 0.05): Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "antenna": {
+          "$type": "color",
+          "$value": "#BCB8B3",
+          "$description": "Antenna bands, coated polymer: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "hingeCover": {
+          "$type": "color",
+          "$value": "#F2EFE7",
+          "$description": "Hinge cover, textured titanium (metallic 1): Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "back": {
+          "$type": "color",
+          "$value": "#FFFDF8",
+          "$description": "Back glass colour layer: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "backMetalness": {
+          "$type": "number",
+          "$value": 0,
+          "$description": "Back glass metallic: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "backClearcoat": {
+          "$type": "number",
+          "$value": 0,
+          "$description": "Back glass clearcoat: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "flash": {
+          "$type": "color",
+          "$value": "#F7F0E6",
+          "$description": "Flash diffuser: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "sensor": {
+          "$type": "color",
+          "$value": "#FCF5EB",
+          "$description": "Sensor window: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "buttonFace": {
+          "$type": "color",
+          "$value": "#F3F1EE",
+          "$description": "Touch ID and Camera Control faces under sapphire (metallic 0.8): Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "buttonFaceMetalness": {
+          "$type": "number",
+          "$value": 0.8,
+          "$description": "Button face metallic: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "screw": {
+          "$type": "color",
+          "$value": "#F2F1F0",
+          "$description": "Pentalobe screws: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        }
+      },
+      "nightSky": {
+        "frame": {
+          "$type": "color",
+          "$value": "#3F4B59",
+          "$description": "Polished titanium base colour (metallic 1, roughness 0.05): Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "antenna": {
+          "$type": "color",
+          "$value": "#072433",
+          "$description": "Antenna bands: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "hingeCover": {
+          "$type": "color",
+          "$value": "#2F3A4B",
+          "$description": "Hinge cover (metallic 0.8): Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "back": {
+          "$type": "color",
+          "$value": "#1D3545",
+          "$description": "Back glass colour layer (metallic 0.2, clearcoat 1): Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "backMetalness": {
+          "$type": "number",
+          "$value": 0.2,
+          "$description": "Back glass metallic: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "backClearcoat": {
+          "$type": "number",
+          "$value": 1,
+          "$description": "Back glass clearcoat: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "flash": {
+          "$type": "color",
+          "$value": "#1E3748",
+          "$description": "Flash diffuser, seen through the tinted plateau: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "sensor": {
+          "$type": "color",
+          "$value": "#10222E",
+          "$description": "Sensor window: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "buttonFace": {
+          "$type": "color",
+          "$value": "#0D2130",
+          "$description": "Touch ID and Camera Control faces (metallic 0.2): Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "buttonFaceMetalness": {
+          "$type": "number",
+          "$value": 0.2,
+          "$description": "Button face metallic: Apple's AR Quick Look model, UsdPreviewSurface baseColor (linear) converted to sRGB (device-physical-reference note, geometry pass)"
+        },
+        "screw": {
+          "$type": "color",
+          "$value": "#3F4B59",
+          "$description": "Pentalobe screws, frame colour (Apple's value not recorded; assumption)"
+        }
+      }
+    }
+  }
+}

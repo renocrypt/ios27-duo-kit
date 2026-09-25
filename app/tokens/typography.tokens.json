@@ -1,0 +1,464 @@
+{
+  "font": {
+    "family": {
+      "sans": {
+        "$type": "fontFamily",
+        "$value": [
+          "system-ui",
+          "-apple-system",
+          "sans-serif"
+        ],
+        "$description": "SF Pro through the system font on macOS Chrome; optical size switches automatically"
+      },
+      "rounded": {
+        "$type": "fontFamily",
+        "$value": [
+          "ui-rounded",
+          "SF Pro Rounded",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "SF Pro Rounded. Chrome exposes neither ui-rounded nor an installed SF Pro Rounded (Chrome 154, 2026-09-23); on the dev server tools/vite-plugin-fonts.ts serves it from this Mac's font folders. Production falls back to the system font"
+      },
+      "serif": {
+        "$type": "fontFamily",
+        "$value": [
+          "ui-serif",
+          "New York",
+          "serif"
+        ],
+        "$description": "New York. macOS keeps it as a hidden system font and Chrome 154 does not expose ui-serif; on the dev server tools/vite-plugin-fonts.ts serves it. Production falls back to serif"
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "ui-monospace",
+          "SF Mono",
+          "Menlo",
+          "monospace"
+        ],
+        "$description": "SF Mono. Hidden system font on macOS; on the dev server tools/vite-plugin-fonts.ts serves it. Production falls back to Menlo"
+      }
+    }
+  },
+  "text": {
+    "largeTitle": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "34px",
+        "fontWeight": 400,
+        "lineHeight": "41px",
+        "letterSpacing": "0.012em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 700
+      }
+    },
+    "title1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "28px",
+        "fontWeight": 400,
+        "lineHeight": "34px",
+        "letterSpacing": "0.014em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 700
+      }
+    },
+    "title2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "22px",
+        "fontWeight": 400,
+        "lineHeight": "28px",
+        "letterSpacing": "-0.012em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 700
+      }
+    },
+    "title3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "20px",
+        "fontWeight": 400,
+        "lineHeight": "25px",
+        "letterSpacing": "-0.023em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    },
+    "headline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "17px",
+        "fontWeight": 590,
+        "lineHeight": "22px",
+        "letterSpacing": "-0.026em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "17px",
+        "fontWeight": 400,
+        "lineHeight": "22px",
+        "letterSpacing": "-0.026em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    },
+    "callout": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "21px",
+        "letterSpacing": "-0.020em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    },
+    "subheadline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "15px",
+        "fontWeight": 400,
+        "lineHeight": "20px",
+        "letterSpacing": "-0.016em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    },
+    "footnote": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": "18px",
+        "letterSpacing": "-0.006em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    },
+    "caption1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": "16px",
+        "letterSpacing": "0.000em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    },
+    "caption2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontSize": "11px",
+        "fontWeight": 400,
+        "lineHeight": "13px",
+        "letterSpacing": "0.006em"
+      },
+      "$description": "Apple HIG Typography, iOS Dynamic Type 'Large (default)'; tracking from the SF Pro tracking table",
+      "$extensions": {
+        "duo.emphasizedWeight": 590
+      }
+    }
+  },
+  "tracking": {
+    "sfPro": {
+      "$type": "duo.trackingTable",
+      "$value": [
+        [
+          6,
+          41
+        ],
+        [
+          7,
+          34
+        ],
+        [
+          8,
+          26
+        ],
+        [
+          9,
+          19
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          13,
+          -6
+        ],
+        [
+          14,
+          -11
+        ],
+        [
+          15,
+          -16
+        ],
+        [
+          16,
+          -20
+        ],
+        [
+          17,
+          -26
+        ],
+        [
+          18,
+          -25
+        ],
+        [
+          19,
+          -24
+        ],
+        [
+          20,
+          -23
+        ],
+        [
+          21,
+          -18
+        ],
+        [
+          22,
+          -12
+        ],
+        [
+          23,
+          -4
+        ],
+        [
+          24,
+          3
+        ],
+        [
+          25,
+          6
+        ],
+        [
+          26,
+          8
+        ],
+        [
+          27,
+          11
+        ],
+        [
+          28,
+          14
+        ],
+        [
+          29,
+          14
+        ],
+        [
+          30,
+          14
+        ],
+        [
+          31,
+          13
+        ],
+        [
+          32,
+          13
+        ],
+        [
+          33,
+          12
+        ],
+        [
+          34,
+          12
+        ],
+        [
+          35,
+          11
+        ],
+        [
+          36,
+          10
+        ],
+        [
+          37,
+          10
+        ],
+        [
+          38,
+          10
+        ],
+        [
+          39,
+          10
+        ],
+        [
+          40,
+          10
+        ],
+        [
+          41,
+          9
+        ],
+        [
+          42,
+          9
+        ],
+        [
+          43,
+          9
+        ],
+        [
+          44,
+          8
+        ],
+        [
+          45,
+          8
+        ],
+        [
+          46,
+          8
+        ],
+        [
+          47,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          49,
+          7
+        ],
+        [
+          50,
+          7
+        ],
+        [
+          51,
+          7
+        ],
+        [
+          52,
+          6
+        ],
+        [
+          53,
+          6
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          56,
+          6
+        ],
+        [
+          58,
+          5
+        ],
+        [
+          60,
+          4
+        ],
+        [
+          62,
+          4
+        ],
+        [
+          64,
+          4
+        ],
+        [
+          66,
+          3
+        ],
+        [
+          68,
+          2
+        ],
+        [
+          70,
+          2
+        ],
+        [
+          72,
+          2
+        ],
+        [
+          76,
+          1
+        ],
+        [
+          80,
+          0
+        ],
+        [
+          84,
+          0
+        ],
+        [
+          88,
+          0
+        ],
+        [
+          92,
+          0
+        ],
+        [
+          96,
+          0
+        ]
+      ],
+      "$description": "Apple HIG SF Pro tracking table: [size in pt, tracking in 1/1000 em]"
+    }
+  }
+}
