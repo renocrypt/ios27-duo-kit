@@ -1,0 +1,396 @@
+
+
+===== SCENE OBJECTS =====
+- VozFyMVAwkoHjOE | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+  - ecOFHvzjpmGQnNS | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+    - HSsYFMrRMLtGMxa | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+  - oiUDqkWwTyKwnqQ | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+    - xRLfDaARzGhpJRl | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+      - bLGVKucFHZXPlJf | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+      - ddUtWDgQuBTYSEY | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+      - HPnmzcIImWvVtsh | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+      - pAozAexmhJgprgi | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+        - jrAYWVBOuBEKQMx | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+          - AKVZtTmuRolfwyf | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+            - JMNlJLaRJqsIYOv | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+              - JnJdTkxbQgUtLwU | type=MESH | dims(m)=(0.07885,0.11327,0.00255) | world_loc=(0.00000,0.00000,0.00000)
+                  verts=960 polys=768 materials=['DHVeopyQCCjAHKQ']
+              - MvKPXGSdYDVvSpk | type=MESH | dims(m)=(0.00820,0.00290,0.11558) | world_loc=(-0.03939,0.00000,0.05885)
+                  verts=1300 polys=1289 materials=['isnmyjbXNQZlHGY']
+              - UXtsBZYlaUvHoEh | type=MESH | dims(m)=(0.07768,0.11103,0.00245) | world_loc=(0.00000,0.00000,0.00000)
+                  verts=295 polys=295 materials=['UBwioVSWewZpuRX']
+              - xdyyaajWsatVNxN | type=MESH | dims(m)=(0.01189,0.11575,0.00508) | world_loc=(0.00000,0.00000,0.00000)
+                  verts=1252 polys=1204 materials=['AfMuGuGyrRdWvGa']
+            - lJPfQMFXvvcmdtA | type=MESH | dims(m)=(0.16613,0.11839,0.06109) | world_loc=(0.00000,0.00000,0.00000)
+                verts=24 polys=16 materials=['udkIoumZEJmNcgx']
+            - SiftyleUEEZwLhF | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+              - DsxQCihOdKtPxIe | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - lRoKMVsbfCealtF | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - gCGRiYiWIxXRhXE | type=MESH | dims(m)=(0.01625,0.00187,0.01623) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=576 polys=504 materials=['TJvImvzeubEEDzE']
+                  - MeQNhtSdEDLOoXj | type=MESH | dims(m)=(0.01324,0.00000,0.01323) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=73 polys=72 materials=['VnRXIqfJGJZbeXY']
+                  - MrGmthJDWvDlbwX | type=MESH | dims(m)=(0.00769,0.00071,0.00768) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=120 polys=100 materials=['zzpHLLWMeplrvNu']
+                  - PkkUoNvpaBExwuc | type=MESH | dims(m)=(0.01409,0.00019,0.01408) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=432 polys=360 materials=['KZyHFwBbAcpggBF']
+                  - pYcHgppzzKEphCf | type=MESH | dims(m)=(0.01324,0.00028,0.01323) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=216 polys=144 materials=['iWJmrhAGVXsplAU']
+                  - xcCuAfHYtkJLwuT | type=MESH | dims(m)=(0.01057,0.00025,0.01056) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=192 polys=144 materials=['zzpHLLWMeplrvNu']
+                  - xUSWCKliopnKdBb | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                    - BwdEgNRIvxgoOrX | type=MESH | dims(m)=(0.00134,0.00023,0.00134) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=81 polys=80 materials=['ZdlykFGlVXrMgnF']
+                    - MhDPaBaaHkLYESY | type=MESH | dims(m)=(0.00307,0.00066,0.00307) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=141 polys=140 materials=['ZdlykFGlVXrMgnF']
+                    - pweTZuphtbJXJdM | type=MESH | dims(m)=(0.00134,0.00023,0.00134) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=81 polys=80 materials=['qmxrEFfOvJSYhQO']
+                    - RfedWPXoFcsOTjI | type=MESH | dims(m)=(0.00500,0.00059,0.00500) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=281 polys=280 materials=['ZdlykFGlVXrMgnF']
+                  - zKTkIrxcXzWwBYK | type=MESH | dims(m)=(0.01625,0.00190,0.01623) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=720 polys=648 materials=['pOHYMArkYgGMSvE']
+                - YpWPjdyVXeCQnCk | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - dTUwdegvXYlCPAJ | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                    - BODTjtonsAnwGZC | type=MESH | dims(m)=(0.00339,0.00027,0.00339) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=101 polys=100 materials=['qmxrEFfOvJSYhQO']
+                    - eepRwbmxiYwsBNu | type=MESH | dims(m)=(0.00339,0.00027,0.00339) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=101 polys=100 materials=['ZdlykFGlVXrMgnF']
+                    - eMkYisZsxjfVsku | type=MESH | dims(m)=(0.00357,0.00025,0.00356) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=321 polys=320 materials=['ZdlykFGlVXrMgnF']
+                    - JTfSVVYjoeeDWKv | type=MESH | dims(m)=(0.00406,0.00068,0.00406) | world_loc=(-0.04096,0.00000,0.05885)
+                        verts=321 polys=320 materials=['ZdlykFGlVXrMgnF']
+                  - ieHYvKnnzuKBgyJ | type=MESH | dims(m)=(0.01325,0.00029,0.01324) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=216 polys=144 materials=['iWJmrhAGVXsplAU']
+                  - iUykZAiNlEUXJDD | type=MESH | dims(m)=(0.01409,0.00019,0.01408) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=432 polys=360 materials=['KZyHFwBbAcpggBF']
+                  - NtYMsWnAcbWQvBP | type=MESH | dims(m)=(0.00775,0.00065,0.00774) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=192 polys=144 materials=['zzpHLLWMeplrvNu']
+                  - SxeyDDoPvaCZQxB | type=MESH | dims(m)=(0.01625,0.00187,0.01623) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=576 polys=504 materials=['TJvImvzeubEEDzE']
+                  - TjnQASEQBIHreGe | type=MESH | dims(m)=(0.01625,0.00190,0.01623) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=720 polys=648 materials=['pOHYMArkYgGMSvE']
+                  - zukXlhkizWJIDav | type=MESH | dims(m)=(0.01325,0.00000,0.01324) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=73 polys=72 materials=['VnRXIqfJGJZbeXY']
+              - exPlQoAHuiCYXFo | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - gjdjMOcCfrwBMYH | type=MESH | dims(m)=(0.08122,0.00078,0.11648) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=1698 polys=1615 materials=['AfMuGuGyrRdWvGa']
+                - RwQzmCvUWHGlFfV | type=MESH | dims(m)=(0.08026,0.00403,0.11585) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=424 polys=314 materials=['udkIoumZEJmNcgx']
+              - INryeDDYSSKehNA | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - nrYKEbuMfByWbND | type=MESH | dims(m)=(0.05137,0.00138,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=32 polys=8 materials=['kJeamnuzMHYZdFm']
+              - lDFOThoixLkQaNt | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - bjlUhVsGutUqoZH | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - fbvEqfwjsAMSDkr | type=MESH | dims(m)=(0.00026,0.00261,0.01826) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=102 polys=100 materials=['MyBIzTBvbXlVjff']
+                  - tkSBzAjLTdhANqx | type=MESH | dims(m)=(0.00026,0.00261,0.01826) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=102 polys=100 materials=['lncqqAffdcKCPyc']
+                  - UXtkILReLwCJaov | type=MESH | dims(m)=(0.00105,0.00306,0.01871) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=550 polys=500 materials=['pOHYMArkYgGMSvE']
+                - lThHoEDPRcKxVDj | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - AjfIgUpXxKaENDl | type=MESH | dims(m)=(0.00119,0.00253,0.01713) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=450 polys=400 materials=['pOHYMArkYgGMSvE']
+                  - ejUvJHtjfcqjSvM | type=MESH | dims(m)=(0.00026,0.00209,0.01668) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=102 polys=100 materials=['MyBIzTBvbXlVjff']
+                  - VNIQJMrwFmXgrBf | type=MESH | dims(m)=(0.00026,0.00209,0.01668) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=102 polys=100 materials=['lncqqAffdcKCPyc']
+                - mqejrnidkykjHgp | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - FcJBPLgEScWGyXd | type=MESH | dims(m)=(0.01091,0.00235,0.00105) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=502 polys=500 materials=['pOHYMArkYgGMSvE']
+                - XhlWHFWIcGllwzN | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - YhaSRqOjDUQrQTc | type=MESH | dims(m)=(0.01091,0.00235,0.00105) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=502 polys=500 materials=['pOHYMArkYgGMSvE']
+              - MHKZGNlFPrDkKom | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - GkIhOUZSWGnyiHp | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - bsNHOLGaZbhIluH | type=MESH | dims(m)=(0.06720,0.00341,0.11795) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=884 polys=442 materials=['kUUqfCXsMaJHyje']
+                  - jJermpgmctotTSe | type=MESH | dims(m)=(0.08245,0.00503,0.11795) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=5412 polys=4635 materials=['pOHYMArkYgGMSvE']
+                - jnMRBCmgCrfRBeG | type=MESH | dims(m)=(0.06762,0.00490,0.11795) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=576 polys=414 materials=['yakTRrHfzYtGymu']
+              - mjecbCFnfurWWJV | type=MESH | dims(m)=(0.07607,0.00413,0.11661) | world_loc=(-0.04096,0.00000,0.05885)
+                  verts=72 polys=92 materials=['udkIoumZEJmNcgx']
+              - SCDZMtVjLrcxENj | type=MESH | dims(m)=(0.08140,0.01016,0.11680) | world_loc=(-0.04096,0.00000,0.05885)
+                  verts=804 polys=497 materials=['udkIoumZEJmNcgx']
+              - tgAwAdzrbYmlxSK | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - WzRveeKjvQZVqRA | type=MESH | dims(m)=(0.01623,0.00149,0.00040) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=922 polys=969 materials=['bnbUHmVcBNyhFgl']
+              - xBrLNRikmrHehEX | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - EuKPpVegcQBiQbq | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - msUTSJTbdlDoNLs | type=MESH | dims(m)=(0.00404,0.00014,0.00404) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=2161 polys=2160 materials=['yeSylDxiUWUEdUq']
+                  - ONfbMSsVikXcwwp | type=MESH | dims(m)=(0.00376,0.00084,0.00375) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=80 polys=40 materials=['qMQBeWGUCGfErnO']
+                  - zdStWfgHXiitQgl | type=MESH | dims(m)=(0.00405,0.00000,0.00402) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=31 polys=30 materials=['uJFPWgDhmWStPgF']
+                - fapSTOypmavuPic | type=MESH | dims(m)=(0.08016,0.00373,0.11528) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=2596 polys=2604 materials=['eNDiNFhhBNyrPgP']
+                - LUOprLNHsMrFOaS | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - FafuGBBSaHXLqhj | type=MESH | dims(m)=(0.00331,0.00000,0.00149) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=44 polys=42 materials=['nyGbnltkiVgOVaK']
+                - rTXqhGdxSahVgNw | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - MnPSgwdtGmrkVcg | type=MESH | dims(m)=(0.06388,0.00369,0.02900) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=1812 polys=2002 materials=['hpXWDkYkMocrDql']
+                  - UPeNpLgJbcWzHun | type=MESH | dims(m)=(0.08016,0.00356,0.11528) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=2456 polys=2380 materials=['hpXWDkYkMocrDql']
+                - tLtsGCMtMAZfCYN | type=MESH | dims(m)=(0.08016,0.00404,0.11528) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=2558 polys=2483 materials=['nfSKIKcFQpPcaTk']
+                - ZtCfdmHJJEMcBCX | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - hMQYrwNoNcNjoRj | type=MESH | dims(m)=(0.00341,0.00045,0.00159) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=126 polys=84 materials=['qsaDpVIHURYREdD']
+                  - itODWJLNRbBbHzD | type=MESH | dims(m)=(0.00341,0.00045,0.00159) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=126 polys=84 materials=['qMQBeWGUCGfErnO']
+                  - XziVXUmXQoAudpp | type=MESH | dims(m)=(0.05578,0.00000,0.02115) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=336 polys=270 materials=['toNHgGKgNFeCXva']
+              - xTelJGdtyasCWdl | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - tnxsltexVWtEjsz | type=MESH | dims(m)=(0.01633,0.00000,0.02003) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=169 polys=134 materials=['djGRseSgLsvgsjU']
+                - tYVfzVmYBKhfUhm | type=MESH | dims(m)=(0.01633,0.00000,0.02003) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=169 polys=134 materials=['toNHgGKgNFeCXva']
+            - upTUAKvMVkPOMKq | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+              - aesUeAGqJmkjoaD | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - EHrlCLEEYhQBiQK | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - pmvwSuCeZpxeLmT | type=MESH | dims(m)=(0.01644,0.00270,0.11795) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=996 polys=770 materials=['kUUqfCXsMaJHyje']
+                  - qyiwePzfWzVHIDO | type=MESH | dims(m)=(0.08245,0.00503,0.11795) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=4390 polys=3886 materials=['pOHYMArkYgGMSvE']
+                - fdaipPEGAeomuPG | type=MESH | dims(m)=(0.06762,0.00490,0.11795) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=576 polys=414 materials=['yakTRrHfzYtGymu']
+              - goCnNMWcWNuXUcC | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - hhgAIoCGsHXeDPY | type=MESH | dims(m)=(0.07739,0.00000,0.11251) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=166 polys=170 materials=['bVtHVUZGvQeXwdh']
+                - xpVpaKuQKnXQhFj | type=MESH | dims(m)=(0.08016,0.00040,0.11528) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=614 polys=500 materials=['DHVeopyQCCjAHKQ']
+              - iaRYLxAqmkmJLoG | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - EdsRvWYVMNVqBab | type=MESH | dims(m)=(0.01103,0.00120,0.00521) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=2088 polys=2329 materials=['oEGeLQAOjZgdIFG']
+              - iKZSoAlRlDlkSEw | type=MESH | dims(m)=(0.08132,0.00472,0.11675) | world_loc=(-0.04096,0.00000,0.05885)
+                  verts=642 polys=360 materials=['udkIoumZEJmNcgx']
+              - KwknaiWiXLGNYdF | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - PXwNjghIIgDPXsa | type=MESH | dims(m)=(0.08026,0.00403,0.11585) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=424 polys=314 materials=['udkIoumZEJmNcgx']
+                - svvOILdVxasRAOk | type=MESH | dims(m)=(0.08122,0.00078,0.11648) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=1600 polys=1524 materials=['AfMuGuGyrRdWvGa']
+              - LQEBZxUIvjuXzdw | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - aPxlVqZVqWStoGD | type=MESH | dims(m)=(0.00611,0.00000,0.00610) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=80 polys=40 materials=['DHVeopyQCCjAHKQ']
+                - FyWFSAioEIdKumD | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                  - eTOVbDQVsswgAUz | type=MESH | dims(m)=(0.00156,0.00015,0.00156) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=101 polys=100 materials=['ZdlykFGlVXrMgnF']
+                  - rqynQLtWLECDNtb | type=MESH | dims(m)=(0.00156,0.00015,0.00156) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=101 polys=100 materials=['ZdlykFGlVXrMgnF']
+                  - RsMYVEApMypWrpd | type=MESH | dims(m)=(0.00156,0.00019,0.00156) | world_loc=(-0.04096,0.00000,0.05885)
+                      verts=101 polys=100 materials=['qmxrEFfOvJSYhQO']
+                - vTcSkzvfyxWyWLx | type=MESH | dims(m)=(0.00322,0.00000,0.00321) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=41 polys=40 materials=['VKnKoHfJjSdRybB']
+                - ZcRVEBTagyUDrqj | type=MESH | dims(m)=(0.00359,0.00023,0.00359) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=160 polys=120 materials=['tbdwzjlMQCYGFiW']
+              - ofINavgRnYcOtBd | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - cIpbiCGlEcdljuC | type=MESH | dims(m)=(0.01623,0.00149,0.00040) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=922 polys=970 materials=['bnbUHmVcBNyhFgl']
+              - pPSzFBvbxyRnJyd | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                - pbUtGkaSVSEWCbb | type=MESH | dims(m)=(0.01470,0.00138,0.00000) | world_loc=(-0.04096,0.00000,0.05885)
+                    verts=24 polys=6 materials=['kJeamnuzMHYZdFm']
+              - uWPCbpPKzwJOmUY | type=MESH | dims(m)=(0.07607,0.00413,0.11661) | world_loc=(-0.04096,0.00000,0.05885)
+                  verts=80 polys=101 materials=['udkIoumZEJmNcgx']
+        - lkstqCsTPFGjqkq | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+        - MjVVZAfVRIEvieS | type=EMPTY | dims(m)=(0.00000,0.00000,0.00000) | world_loc=(0.00000,0.00000,0.00000)
+
+
+===== ALL OBJECT NAMES (flat) =====
+aesUeAGqJmkjoaD EMPTY
+AjfIgUpXxKaENDl MESH
+AKVZtTmuRolfwyf EMPTY
+aPxlVqZVqWStoGD MESH
+bjlUhVsGutUqoZH EMPTY
+bLGVKucFHZXPlJf EMPTY
+BODTjtonsAnwGZC MESH
+bsNHOLGaZbhIluH MESH
+BwdEgNRIvxgoOrX MESH
+cIpbiCGlEcdljuC MESH
+ddUtWDgQuBTYSEY EMPTY
+DsxQCihOdKtPxIe EMPTY
+dTUwdegvXYlCPAJ EMPTY
+ecOFHvzjpmGQnNS EMPTY
+EdsRvWYVMNVqBab MESH
+eepRwbmxiYwsBNu MESH
+EHrlCLEEYhQBiQK EMPTY
+ejUvJHtjfcqjSvM MESH
+eMkYisZsxjfVsku MESH
+eTOVbDQVsswgAUz MESH
+EuKPpVegcQBiQbq EMPTY
+exPlQoAHuiCYXFo EMPTY
+FafuGBBSaHXLqhj MESH
+fapSTOypmavuPic MESH
+fbvEqfwjsAMSDkr MESH
+FcJBPLgEScWGyXd MESH
+fdaipPEGAeomuPG MESH
+FyWFSAioEIdKumD EMPTY
+gCGRiYiWIxXRhXE MESH
+gjdjMOcCfrwBMYH MESH
+GkIhOUZSWGnyiHp EMPTY
+goCnNMWcWNuXUcC EMPTY
+hhgAIoCGsHXeDPY MESH
+hMQYrwNoNcNjoRj MESH
+HPnmzcIImWvVtsh EMPTY
+HSsYFMrRMLtGMxa EMPTY
+iaRYLxAqmkmJLoG EMPTY
+ieHYvKnnzuKBgyJ MESH
+iKZSoAlRlDlkSEw MESH
+INryeDDYSSKehNA EMPTY
+itODWJLNRbBbHzD MESH
+iUykZAiNlEUXJDD MESH
+jJermpgmctotTSe MESH
+JMNlJLaRJqsIYOv EMPTY
+JnJdTkxbQgUtLwU MESH
+jnMRBCmgCrfRBeG MESH
+jrAYWVBOuBEKQMx EMPTY
+JTfSVVYjoeeDWKv MESH
+KwknaiWiXLGNYdF EMPTY
+lDFOThoixLkQaNt EMPTY
+lJPfQMFXvvcmdtA MESH
+lkstqCsTPFGjqkq EMPTY
+LQEBZxUIvjuXzdw EMPTY
+lRoKMVsbfCealtF EMPTY
+lThHoEDPRcKxVDj EMPTY
+LUOprLNHsMrFOaS EMPTY
+MeQNhtSdEDLOoXj MESH
+MhDPaBaaHkLYESY MESH
+MHKZGNlFPrDkKom EMPTY
+mjecbCFnfurWWJV MESH
+MjVVZAfVRIEvieS EMPTY
+MnPSgwdtGmrkVcg MESH
+mqejrnidkykjHgp EMPTY
+MrGmthJDWvDlbwX MESH
+msUTSJTbdlDoNLs MESH
+MvKPXGSdYDVvSpk MESH
+nrYKEbuMfByWbND MESH
+NtYMsWnAcbWQvBP MESH
+ofINavgRnYcOtBd EMPTY
+oiUDqkWwTyKwnqQ EMPTY
+ONfbMSsVikXcwwp MESH
+pAozAexmhJgprgi EMPTY
+pbUtGkaSVSEWCbb MESH
+PkkUoNvpaBExwuc MESH
+pmvwSuCeZpxeLmT MESH
+pPSzFBvbxyRnJyd EMPTY
+pweTZuphtbJXJdM MESH
+PXwNjghIIgDPXsa MESH
+pYcHgppzzKEphCf MESH
+qyiwePzfWzVHIDO MESH
+RfedWPXoFcsOTjI MESH
+rqynQLtWLECDNtb MESH
+RsMYVEApMypWrpd MESH
+rTXqhGdxSahVgNw EMPTY
+RwQzmCvUWHGlFfV MESH
+SCDZMtVjLrcxENj MESH
+SiftyleUEEZwLhF EMPTY
+svvOILdVxasRAOk MESH
+SxeyDDoPvaCZQxB MESH
+tgAwAdzrbYmlxSK EMPTY
+TjnQASEQBIHreGe MESH
+tkSBzAjLTdhANqx MESH
+tLtsGCMtMAZfCYN MESH
+tnxsltexVWtEjsz MESH
+tYVfzVmYBKhfUhm MESH
+UPeNpLgJbcWzHun MESH
+upTUAKvMVkPOMKq EMPTY
+uWPCbpPKzwJOmUY MESH
+UXtkILReLwCJaov MESH
+UXtsBZYlaUvHoEh MESH
+VNIQJMrwFmXgrBf MESH
+VozFyMVAwkoHjOE EMPTY
+vTcSkzvfyxWyWLx MESH
+WzRveeKjvQZVqRA MESH
+xBrLNRikmrHehEX EMPTY
+xcCuAfHYtkJLwuT MESH
+xdyyaajWsatVNxN MESH
+XhlWHFWIcGllwzN EMPTY
+xpVpaKuQKnXQhFj MESH
+xRLfDaARzGhpJRl EMPTY
+xTelJGdtyasCWdl EMPTY
+xUSWCKliopnKdBb EMPTY
+XziVXUmXQoAudpp MESH
+YhaSRqOjDUQrQTc MESH
+YpWPjdyVXeCQnCk EMPTY
+ZcRVEBTagyUDrqj MESH
+zdStWfgHXiitQgl MESH
+zKTkIrxcXzWwBYK MESH
+ZtCfdmHJJEMcBCX EMPTY
+zukXlhkizWJIDav MESH
+
+
+===== OVERALL BOUNDING BOX (world, meters) =====
+min=<Vector (-0.0831, -0.0305, -0.0000)>, max=<Vector (0.0830, 0.0305, 0.1184)>
+size (m) = 0.16612 x 0.06109 x 0.11840
+size (mm) = 166.125 x 61.085 x 118.400
+
+
+===== MATERIALS =====
+AfMuGuGyrRdWvGa
+bnbUHmVcBNyhFgl
+bVtHVUZGvQeXwdh
+DHVeopyQCCjAHKQ
+djGRseSgLsvgsjU
+eNDiNFhhBNyrPgP
+hpXWDkYkMocrDql
+isnmyjbXNQZlHGY
+iWJmrhAGVXsplAU
+kJeamnuzMHYZdFm
+kUUqfCXsMaJHyje
+KZyHFwBbAcpggBF
+lncqqAffdcKCPyc
+MyBIzTBvbXlVjff
+nfSKIKcFQpPcaTk
+nyGbnltkiVgOVaK
+oEGeLQAOjZgdIFG
+pOHYMArkYgGMSvE
+qMQBeWGUCGfErnO
+qmxrEFfOvJSYhQO
+qsaDpVIHURYREdD
+tbdwzjlMQCYGFiW
+TJvImvzeubEEDzE
+toNHgGKgNFeCXva
+UBwioVSWewZpuRX
+udkIoumZEJmNcgx
+uJFPWgDhmWStPgF
+VKnKoHfJjSdRybB
+VnRXIqfJGJZbeXY
+yakTRrHfzYtGymu
+yeSylDxiUWUEdUq
+ZdlykFGlVXrMgnF
+zzpHLLWMeplrvNu
+
+
+===== IMAGES / TEXTURES =====
+dkizPfAaJCeekxv.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/dkizPfAaJCeekxv.png (256, 256)
+DRxasyqSkWckIrI.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/DRxasyqSkWckIrI.jpg (512, 512)
+emyijVNNjxbdMoc.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/emyijVNNjxbdMoc.png (256, 256)
+FTaCvSOaoEkwlkh.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/FTaCvSOaoEkwlkh.jpg (256, 256)
+FTOQdACzPirfMtL.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/FTOQdACzPirfMtL.jpg (256, 256)
+FusPnwQfcVrhWbQ.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/FusPnwQfcVrhWbQ.png (256, 256)
+fxAdjuEBqczWSSx.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/fxAdjuEBqczWSSx.jpg (512, 1024)
+GCFUBJEXhtlOOwh.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/GCFUBJEXhtlOOwh.png (256, 256)
+GSWJxiCgBOzzWvI.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/GSWJxiCgBOzzWvI.jpg (512, 1024)
+hquGbaWoaoEEZtM.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/hquGbaWoaoEEZtM.png (256, 128)
+HxgKuovaIMWoJog.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/HxgKuovaIMWoJog.png (16, 16)
+JPjlyCIBrJGaate.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/JPjlyCIBrJGaate.jpg (512, 1024)
+KJqLujGRCuLHVMP.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/KJqLujGRCuLHVMP.png (512, 512)
+OojuzFaMfhmMMQJ.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/OojuzFaMfhmMMQJ.png (4, 4)
+osFUZiKUOMQppcQ.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/osFUZiKUOMQppcQ.jpg (256, 256)
+PxuSYzMqDrQVAED.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/PxuSYzMqDrQVAED.jpg (64, 64)
+QBBzYEDdGGrfdSL.avif /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/QBBzYEDdGGrfdSL.avif (1024, 2048)
+QjcONWCxTjnRgmR.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/QjcONWCxTjnRgmR.png (16, 16)
+QwHxhDOdZRIscbe.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/QwHxhDOdZRIscbe.jpg (64, 64)
+rfsQSaQvLDpPofO.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/rfsQSaQvLDpPofO.png (64, 64)
+SBLhpyPpRJBlAtY.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/SBLhpyPpRJBlAtY.jpg (256, 256)
+TvJgPVlZXbHKHmC.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/TvJgPVlZXbHKHmC.png (256, 256)
+VTnktJhSuvwHttZ.png /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/VTnktJhSuvwHttZ.png (256, 128)
+WtnoGtLPrKgUvTg.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/WtnoGtLPrKgUvTg.jpg (512, 512)
+yBIFDghPQEnweBt.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/yBIFDghPQEnweBt.jpg (256, 128)
+ZsHNiHKcJhErviz.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/ZsHNiHKcJhErviz.jpg (512, 512)
+zzFlgBpVdJMInHJ.jpg /var/folders/gy/2c6sfyl558x0hdh9fs10w65h0000gn/T/blender_YCtFPq/usd_textures_tmp/zzFlgBpVdJMInHJ.jpg (256, 128)
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD import of '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz' took 109.64 ms
+
+Blender quit

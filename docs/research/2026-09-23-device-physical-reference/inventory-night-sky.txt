@@ -1,0 +1,74 @@
+lJPfQMFX udkIou n    24 x[ -83.08,  83.05] y[  -0.00, 118.39] z[-30.54, 30.54] diffu=(0.000,0.000,0.000) rough=1.00
+qyiwePzf pOHYMA n  4390 x[ -82.45,   0.00] y[  -0.00, 117.95] z[ -2.74,  2.28] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+fdaipPEG yakTRr n   576 x[ -82.45, -14.83] y[  -0.00, 117.95] z[ -2.61,  2.28] clear=0.60 clear=0.05 diffu=(0.002,0.018,0.033) metal=0.00 rough=1.00
+uWPCbpPK udkIou n    80 x[ -81.78,  -5.72] y[   0.67, 117.28] z[ -2.18,  1.95] diffu=(0.000,0.000,0.000) rough=1.00
+iKZSoAlR udkIou n   642 x[ -81.77,  -0.45] y[   0.51, 117.27] z[ -2.75,  1.97] diffu=(0.000,0.000,0.000) rough=1.00
+svvOILdV AfMuGu n  1600 x[ -81.72,  -0.50] y[   0.73, 117.22] z[  1.97,  2.76] clear=0.00 diffu=(0.002,0.002,0.002) metal=0.00 opaci=1.00 rough=tex
+xpVpaKuQ DHVeop n   614 x[ -81.12,  -0.96] y[   1.33, 116.62] z[ -2.75, -2.35] clear=0.25 clear=0.05 diffu=(0.000,0.000,0.000) rough=1.00
+PXwNjghI udkIou n   424 x[ -80.26,   0.00] y[   1.05, 116.90] z[ -1.48,  2.56] diffu=(0.000,0.000,0.000) rough=1.00
+JnJdTkxb DHVeop n   960 x[ -80.11,  80.11] y[   2.34, 115.61] z[  2.45,  2.49] clear=0.25 clear=0.05 diffu=(0.000,0.000,0.000) rough=1.00
+hhgAIoCG bVtHVU n   166 x[ -79.73,  -2.34] y[   2.72, 115.23] z[ -2.75, -2.75] clear=0.25 clear=0.05 diffu=(0.000,0.000,0.000) emiss=tex metal=0.00 rough=1.00
+UXtsBZYl UBwioV n   295 x[ -78.99,  78.99] y[   3.46, 114.49] z[  2.49,  2.49] clear=tex clear=tex diffu=(0.000,0.000,0.000) emiss=tex metal=0.00 rough=1.00
+aPxlVqZV DHVeop n    80 x[ -74.85, -68.75] y[ 104.25, 110.35] z[ -2.75, -2.75] clear=0.25 clear=0.05 diffu=(0.000,0.000,0.000) rough=1.00
+ZcRVEBTa tbdwzj n   160 x[ -73.59, -70.00] y[ 105.51, 109.10] z[ -2.64, -2.41] clear=0.00 clear=0.05 diffu=(0.000,0.000,0.000) metal=0.00 rough=0.65
+vTcSkzvf VKnKoH n    41 x[ -73.41, -70.19] y[ 105.70, 108.91] z[ -2.75, -2.75] clear=0.25 clear=0.05 diffu=(0.000,0.000,0.000) opaci=0.01 rough=1.00
+rqynQLtW ZdlykF n   101 x[ -72.58, -71.02] y[ 106.52, 108.08] z[ -2.54, -2.39] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+eTOVbDQV ZdlykF n   101 x[ -72.58, -71.02] y[ 106.52, 108.08] z[ -2.39, -2.24] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+RsMYVEAp qmxrEF n   101 x[ -72.58, -71.02] y[ 106.52, 108.08] z[ -2.37, -2.18] clear=0.00 diffu=(0.020,0.028,0.033) metal=1.00 opaci=1.00 rough=0.50
+pmvwSuCe kUUqfC n   996 x[ -49.23, -32.80] y[  -0.00, 117.95] z[ -1.27,  1.43] clear=0.10 clear=0.15 diffu=(0.018,0.024,0.033) metal=1.00 rough=tex
+cIpbiCGl bnbUHm n   922 x[ -49.13, -32.90] y[   0.12,   0.52] z[ -0.66,  0.83] metal=1.00 rough=0.15
+pbUtGkaS kJeamn n    24 x[ -48.36, -33.66] y[ 117.33, 117.34] z[ -0.77,  0.62] diffu=tex metal=tex rough=tex
+EdsRvWYV oEGeLQ n  2088 x[ -46.53, -35.50] y[   2.00,   7.21] z[ -0.52,  0.68] diffu=(0.086,0.092,0.100) metal=tex rough=tex
+xdyyaajW AfMuGu n  1252 x[ -11.89,  11.89] y[   1.10, 116.85] z[  1.18,  2.85] clear=0.00 diffu=(0.002,0.002,0.002) metal=0.00 opaci=1.00 rough=tex
+MvKPXGSd isnmyj n  1300 x[  -4.11,   4.11] y[   1.18, 116.77] z[ -1.13,  1.76] clear=0.00 diffu=(0.028,0.043,0.070) metal=0.80 opaci=1.00 rough=tex
+jJermpgm pOHYMA n  5412 x[  -0.00,  82.45] y[  -0.00, 117.95] z[ -2.74,  2.28] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+RwQzmCvU udkIou n   424 x[  -0.00,  80.26] y[   1.05, 116.90] z[ -1.48,  2.56] diffu=(0.000,0.000,0.000) rough=1.00
+SCDZMtVj udkIou n   804 x[   0.45,  81.85] y[   0.55, 117.35] z[ -8.19,  1.97] diffu=(0.000,0.000,0.000) rough=1.00
+gjdjMOcC AfMuGu n  1698 x[   0.50,  81.72] y[   0.73, 117.22] z[  1.97,  2.76] clear=0.00 diffu=(0.002,0.002,0.002) metal=0.00 opaci=1.00 rough=tex
+tLtsGCMt nfSKIK n  2558 x[   0.96,  81.12] y[   1.33, 116.62] z[ -6.39, -2.35] diffu=tex metal=0.20 opaci=tex rough=tex
+fapSTOyp eNDiNF n  2596 x[   0.96,  81.12] y[   1.33, 116.62] z[ -6.39, -2.66] clear=1.00 diffu=(0.012,0.036,0.060) metal=0.20 opaci=1.00 rough=tex
+UPeNpLgJ hpXWDk n  2456 x[   0.96,  81.12] y[   1.33, 116.62] z[ -5.81, -2.25] diffu=tex metal=0.20 rough=1.00
+mjecbCFn udkIou n    72 x[   5.72,  81.78] y[   0.67, 117.28] z[ -2.18,  1.95] diffu=(0.000,0.000,0.000) rough=1.00
+jnMRBCmg yakTRr n   576 x[  14.83,  82.45] y[  -0.00, 117.95] z[ -2.61,  2.28] clear=0.60 clear=0.05 diffu=(0.002,0.018,0.033) metal=0.00 rough=1.00
+bsNHOLGa kUUqfC n   884 x[  15.26,  82.45] y[  -0.00, 117.95] z[ -1.78,  1.63] clear=0.10 clear=0.15 diffu=(0.018,0.024,0.033) metal=1.00 rough=tex
+nrYKEbuM kJeamn n    32 x[  15.33,  66.70] y[   0.61,   0.61] z[ -0.77,  0.62] diffu=tex metal=tex rough=tex
+MnPSgwdt hpXWDk n  1812 x[  17.14,  81.02] y[  87.51, 116.52] z[ -5.94, -2.25] diffu=tex metal=0.20 rough=1.00
+XziVXUmX toNHgG n   336 x[  21.72,  77.51] y[  92.09, 113.24] z[ -6.39, -6.39] clear=0.20 clear=0.05 diffu=(1.000,1.000,1.000) metal=0.20 opaci=0.00 rough=0.05
+zdStWfgH uJFPWg n    31 x[  30.70,  34.75] y[  96.20, 100.22] z[ -5.64, -5.63] clear=0.20 clear=0.33 diffu=tex metal=0.00 opaci=1.00 rough=0.33
+msUTSJTb yeSylD n  2161 x[  30.70,  34.75] y[  96.19, 100.23] z[ -5.93, -5.79] clear=0.20 clear=0.25 diffu=(1.000,1.000,1.000) opaci=tex rough=0.25
+ONfbMSsV qMQBeW n    80 x[  30.85,  34.60] y[  96.33, 100.08] z[ -5.94, -5.10] clear=0.00 clear=0.01 diffu=(0.013,0.038,0.064) metal=0.20 opaci=1.00 rough=0.75
+itODWJLN qMQBeW n   126 x[  31.02,  34.43] y[ 106.18, 107.77] z[ -6.39, -5.94] clear=0.00 clear=0.01 diffu=(0.013,0.038,0.064) metal=0.20 opaci=1.00 rough=0.75
+hMQYrwNo qsaDpV n   126 x[  31.02,  34.43] y[ 106.18, 107.77] z[ -6.39, -5.94] clear=0.00 clear=0.01 diffu=(0.005,0.016,0.027) metal=0.20 opaci=1.00 rough=0.50
+FafuGBBS nyGbnl n    44 x[  31.07,  34.38] y[ 106.23, 107.72] z[ -6.24, -6.24] diffu=tex metal=tex rough=tex
+tYVfzVmY toNHgG n   169 x[  32.76,  49.09] y[  48.19,  68.22] z[ -2.75, -2.75] clear=0.20 clear=0.05 diffu=(1.000,1.000,1.000) metal=0.20 opaci=0.00 rough=0.05
+tnxsltex djGRse n   169 x[  32.76,  49.09] y[  48.19,  68.22] z[ -2.55, -2.55] clear=0.00 clear=0.01 diffu=(0.000,0.012,0.028) metal=0.20 opaci=1.00 rough=1.00
+WzRveeKj bnbUHm n   922 x[  32.90,  49.13] y[   0.12,   0.52] z[ -0.82,  0.68] metal=1.00 rough=0.15
+FcJBPLgE pOHYMA n   502 x[  37.22,  48.13] y[ 117.35, 118.40] z[ -1.25,  1.10] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+TjnQASEQ pOHYMA n   720 x[  41.26,  57.51] y[  94.55, 110.78] z[ -8.29, -6.39] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+SxeyDDoP TJvImv n   576 x[  41.26,  57.51] y[  94.55, 110.78] z[ -6.39, -4.52] clear=0.20 clear=0.05 diffu=(0.028,0.045,0.070) metal=1.00 rough=1.00
+iUykZAiN KZyHFw n   432 x[  42.34,  56.43] y[  95.63, 109.71] z[ -8.47, -8.29] diffu=(0.000,0.000,0.000) metal=1.00 rough=0.10
+ieHYvKnn iWJmrh n   216 x[  42.76,  56.01] y[  96.04, 109.29] z[ -8.47, -8.18] diffu=(0.000,0.000,0.000) rough=0.80
+zukXlhki VnRXIq n    73 x[  42.76,  56.01] y[  96.04, 109.29] z[ -8.47, -8.47] clear=0.00 clear=0.01 diffu=(0.000,0.000,0.000) opaci=0.01 rough=0.05
+NtYMsWnA zzpHLL n   192 x[  45.51,  53.26] y[  98.80, 106.54] z[ -7.50, -6.85] diffu=(0.006,0.006,0.010) metal=0.00 rough=0.65
+JTfSVVYj ZdlykF n   321 x[  47.35,  51.42] y[ 100.64, 104.70] z[ -7.45, -6.77] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+eMkYisZs ZdlykF n   321 x[  47.60,  51.17] y[ 100.88, 104.45] z[ -7.02, -6.77] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+eepRwbmx ZdlykF n   101 x[  47.69,  51.08] y[ 100.97, 104.36] z[ -6.77, -6.50] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+BODTjton qmxrEF n   101 x[  47.69,  51.08] y[ 100.97, 104.36] z[ -6.74, -6.46] clear=0.00 diffu=(0.020,0.028,0.033) metal=1.00 opaci=1.00 rough=0.50
+YhaSRqOj pOHYMA n   502 x[  50.64,  61.55] y[ 117.35, 118.40] z[ -1.25,  1.10] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+zKTkIrxc pOHYMA n   720 x[  59.03,  75.28] y[  94.55, 110.78] z[ -8.29, -6.39] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+gCGRiYiW TJvImv n   576 x[  59.03,  75.28] y[  94.55, 110.78] z[ -6.39, -4.52] clear=0.20 clear=0.05 diffu=(0.028,0.045,0.070) metal=1.00 rough=1.00
+PkkUoNvp KZyHFw n   432 x[  60.11,  74.20] y[  95.63, 109.71] z[ -8.47, -8.29] diffu=(0.000,0.000,0.000) metal=1.00 rough=0.10
+MeQNhtSd VnRXIq n    73 x[  60.54,  73.78] y[  96.05, 109.28] z[ -8.47, -8.47] clear=0.00 clear=0.01 diffu=(0.000,0.000,0.000) opaci=0.01 rough=0.05
+pYcHgppz iWJmrh n   216 x[  60.54,  73.78] y[  96.05, 109.28] z[ -8.47, -8.19] diffu=(0.000,0.000,0.000) rough=0.80
+xcCuAfHY zzpHLL n   192 x[  61.87,  72.44] y[  97.38, 107.95] z[ -7.31, -7.06] diffu=(0.006,0.006,0.010) metal=0.00 rough=0.65
+MrGmthJD zzpHLL n   120 x[  63.31,  71.00] y[  98.83, 106.51] z[ -6.73, -6.02] diffu=(0.006,0.006,0.010) metal=0.00 rough=0.65
+RfedWPXo ZdlykF n   281 x[  64.66,  69.66] y[ 100.17, 105.16] z[ -7.13, -6.54] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+MhDPaBaa ZdlykF n   141 x[  65.62,  68.69] y[ 101.13, 104.20] z[ -6.70, -6.04] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+BwdEgNRI ZdlykF n    81 x[  66.49,  67.83] y[ 102.00, 103.34] z[ -6.16, -5.94] clear=0.00 diffu=tex metal=tex opaci=0.17 rough=0.00
+pweTZuph qmxrEF n    81 x[  66.49,  67.83] y[ 102.00, 103.34] z[ -5.94, -5.71] clear=0.00 diffu=(0.020,0.028,0.033) metal=1.00 opaci=1.00 rough=0.50
+AjfIgUpX pOHYMA n   450 x[  81.34,  82.53] y[  24.23,  41.36] z[ -1.34,  1.19] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+UXtkILRe pOHYMA n   550 x[  81.85,  82.90] y[  65.63,  84.34] z[ -1.61,  1.45] diffu=(0.050,0.071,0.100) metal=1.00 rough=0.05
+VNIQJMrw lncqqA n   102 x[  82.27,  82.53] y[  24.46,  41.14] z[ -1.12,  0.97] clear=0.00 diffu=(0.004,0.015,0.030) metal=0.00 opaci=0.40 rough=0.01
+ejUvJHtj MyBIzT n   102 x[  82.27,  82.53] y[  24.46,  41.14] z[ -1.12,  0.97] clear=0.00 diffu=(0.004,0.015,0.030) metal=0.20 opaci=1.00 rough=0.80
+tkSBzAjL lncqqA n   102 x[  82.64,  82.90] y[  65.86,  84.12] z[ -1.38,  1.23] clear=0.00 diffu=(0.004,0.015,0.030) metal=0.00 opaci=0.40 rough=0.01
+fbvEqfwj MyBIzT n   102 x[  82.64,  82.90] y[  65.86,  84.12] z[ -1.38,  1.23] clear=0.00 diffu=(0.004,0.015,0.030) metal=0.20 opaci=1.00 rough=0.80

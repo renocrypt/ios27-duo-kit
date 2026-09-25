@@ -118,7 +118,7 @@ export const tokens = {
         180
       ],
       "sizeBlur": 9.82,
-      "lensSoften": 1.97,
+      "lensSoften": 1.962,
       "curve": {
         "levels": [
           0,
@@ -491,7 +491,7 @@ export const tokens = {
           2.09,
           3.2,
           4.33,
-          9.07
+          9.03
         ],
         "wideShare": [
           0.26,
@@ -514,8 +514,8 @@ export const tokens = {
           0.765,
           0.854
         ],
-        "lens": 16.7505,
-        "lensPower": 1.0165,
+        "lens": 17.0122,
+        "lensPower": 0.9967,
         "bezelRatio": 0.4513,
         "profile": 0.28,
         "rim": 0.3946,
@@ -530,9 +530,9 @@ export const tokens = {
         "blur": [
           0.39,
           0.95,
-          1.29,
+          1.3,
           3.67,
-          10.43
+          8.87
         ],
         "wideShare": [
           0,
@@ -555,10 +555,10 @@ export const tokens = {
           0,
           0
         ],
-        "lens": 16.6295,
+        "lens": 16.5645,
         "bezelRatio": 0.6329,
-        "profile": 0.3402,
-        "lensPower": 1.0165,
+        "profile": 0.3468,
+        "lensPower": 0.9967,
         "rim": 0.7453,
         "ior": 1.5,
         "bezel": 10,

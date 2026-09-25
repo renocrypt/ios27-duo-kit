@@ -48,6 +48,7 @@ free = silhouette([s for s in segments(1, 59.0) if s[1][0] > 75], 0, +1)
 top = silhouette([s for s in segments(0, 41.0) if s[1][0] > 110], 0, +1)
 xmax = max(u for z, u in free); ymax = max(u for z, u in top)
 prof = {"free": [(round(z, 3), round(xmax - u, 3)) for z, u in free], "top": [(round(z, 3), round(ymax - u, 3)) for z, u in top]}
+os.makedirs("/tmp/duo/reference", exist_ok=True)
 json.dump(prof, open("/tmp/duo/reference/edge-profiles.json", "w"))
 for k in ["free", "top"]:
     pts = prof[k]

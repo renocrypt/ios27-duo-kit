@@ -1,6 +1,6 @@
 # Duo — presentation brief
 
-Status: direction, version 0.1, September 23, 2026. Written for `app/`'s next milestones ("per-posture camera choreography" and "the stage's visual direction," `app/README.md` Status). Grounds Chrome-measured Apple data, described industry examples, and our own inferences — each is labeled. Screenshots and page captures opened during research sit in `/tmp/duo/presentation-research/`, disposable; no Apple asset enters this repository.
+Status: direction, version 0.1, September 23, 2026. Written for `app/`'s next milestones ("per-posture camera choreography" and "the stage's visual direction," `app/README.md` Status). Grounds Chrome-measured Apple data, described industry examples, and our own inferences — each is labeled. Screenshots and page captures opened during research were disposable and are gone; no Apple asset enters this repository.
 
 ## Implementation notes (September 23, 2026)
 

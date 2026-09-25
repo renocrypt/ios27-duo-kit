@@ -54,4 +54,5 @@ for prim in stage.Traverse():
     out[prim.GetName()] = [[(round(p[0], 3), round(p[1] - (2.49 if AXIS != 2 else 0), 3)) for p in rdp(c, TOL)] for c in chains if len(c) > 3]
 for n, cs in out.items():
     for c in cs: print(n, len(c), c)
+os.makedirs('/tmp/duo/reference', exist_ok=True)
 json.dump(out, open('/tmp/duo/reference/chain.json', 'w'))

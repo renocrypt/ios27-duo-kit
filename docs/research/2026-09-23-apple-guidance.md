@@ -17,14 +17,14 @@ Apple's term is **Human Interface Guidelines (HIG)**, rather than “HMI guide.�
 | [Design for iPhone Duo — video](https://developer.apple.com/videos/play/tech-talks/111466/) | Apple design team's demonstration of control placement, resizing, sheets, and fold avoidance. |
 | [Materials — HIG](https://developer.apple.com/design/human-interface-guidelines/materials) | Liquid Glass usage and its relationship to content and controls. |
 | [Apple Design Resources](https://developer.apple.com/design/resources/) | Current UI kits and iPhone Duo product bezels. |
-| [Apple unveils iPhone Duo](https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/) | Official product announcement and device context. |
+| [Apple unveils iPhone Duo](https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/) | Official product announcement and device context: from $1,999 (256 GB), preorders October 16 and availability October 23, 2026, in Star White and Night Sky (as read on September 23). |
 
 ## Design context from Apple's guidance
 
 - **Adapt across displays and poses.** Use compact-width and regular-width size classes for the outer and inner displays. Build layouts that resize using margins and safe area insets; avoid fixed widths tied to a particular display.
 - **Preserve continuity.** Keep features, control access, state, and the information hierarchy consistent as the device opens, closes, or changes pose. The inner display can reveal more of the same hierarchy.
 - **Respect reserved regions.** The outer camera, active inner camera, and conditional fold region affect available space. Standard components such as sheets, alerts, menus, and split views adapt automatically. Custom components may need the Reserved Region APIs.
-- **Follow vertical controls.** Toolbars, tab bars, and navigation controls move to the side on the outer display and on the inner display in landscape. The inner display in portrait keeps horizontal bars. Use system placement and overflow behavior where possible.
+- **Follow vertical controls.** Toolbars, tab bars, and navigation controls move to the side on the outer display and on the inner display in landscape. The inner display in portrait keeps horizontal bars. Use system placement and overflow behavior where possible. The [vertical-bars talk](https://developer.apple.com/videos/play/tech-talks/111462/) names the controls: an item's axis is set with `AxisBehavior` (`.horizontalOnly`, `.verticalPreferred`), items that do not fit overflow from the bottom up, and `visibilityPriority` ranks which ones stay visible.
 - **Use Liquid Glass for its intended layer.** Apple's Materials guidance puts it on controls and navigation above content, recommends standard materials in the content layer, and advises sparing use on custom controls. This is general Apple platform guidance applied alongside the Duo-specific HIG.
 
 These points are a working summary, not a replacement for the linked Apple pages. Recheck the live guidance before implementing a specific design, because the HIG can change.

@@ -31,7 +31,7 @@ Each module documents its API in its header. Dependencies run one way, with no c
 | `src/scene/` | The Three.js stage: studio light per mood (blended), framing camera, postures, the device's screens |
 | `src/journey/` | The journey: scenes as data (`scenes.ts`) and the scroll controller |
 | `src/labs/`, `labs/*.html` | Dev tools (below) |
-| `tools/` | Token compiler, fold solver, hinge check, Vite plugins (tokens; fonts and reference files, dev only), `usd/` (Python: measure Apple's AR model) |
+| `tools/` | Token compiler, fold solver, hinge check, Vite plugins (tokens; fonts and reference files, dev only), `usd/` (Python: measure Apple's AR model), `glass-probe/` (capture Liquid Glass from the iOS simulator; the calibration's report), `apple-docs/` (Apple's documentation pages and talk transcripts as text) |
 
 ## Labs (dev server only)
 
@@ -43,7 +43,7 @@ Each module documents its API in its header. Dependencies run one way, with no c
 | `/labs/glyphs.html` | Our glyphs against Apple's UI Kit frames (`/tmp/duo/ios27-kit/`): IoU and outline deviation; `window.fit(...)` |
 | `/labs/inspect.html` | Close-ups of the device at their own fold angles; `?only=N` |
 | `/labs/compare.html` | Our model against Apple's AR model (`/tmp/duo/reference/`): overlay, silhouette diff, sections; `window.compare.metrics()` |
-| `/labs/probe.html` | Liquid Glass as iOS renders it (captures in `/tmp/duo/glass-probe/captures/`, listed in `catalog.json`) against our compositor on the same scenes, measured by the same code: tone, rim, lensing and contrast against depth, frost σ, edges. `?set=<device>/<set>` picks a capture set; `?calibrate` derives every [SIM] glass token into `tokens/glass.sim.tokens.json` (generated; do not edit), writes a report of every residual to `/tmp/duo/glass-probe/reports/` and each tint's iOS and ours side by side to `inspect/` |
+| `/labs/probe.html` | Liquid Glass as iOS renders it (captures in `/tmp/duo/glass-probe/captures/`, listed in `catalog.json`) against our compositor on the same scenes, measured by the same code: tone, rim, lensing and contrast against depth, frost σ, edges. `?set=<device>/<set>` picks a capture set; `?calibrate` derives every [SIM] glass token into `tokens/glass.sim.tokens.json` (generated; do not edit), writes a report of every residual to `tools/glass-probe/report.json` and each tint's iOS and ours side by side to `/tmp/duo/glass-probe/inspect/` |
 | `/labs/specimen.html` | Every token in light and dark, and the spring check |
 
 ## Status (September 24, 2026)
@@ -62,12 +62,9 @@ Done and verified in Chrome:
 Next, in order:
 1. **Symbols to the pixel.** The rail's glyphs are redrawn to SF Symbols' extents and weights, but only the status is verified against the kit's vectors. Add glyph lab cases for the toolbar and tab symbols against measured references (Apple's Mail figures in `/tmp/duo/duo-hig/`), and fit them the way the ring was fitted.
 2. **Portrait layouts from Apple's pose slide.** Seated has the kit's top bar; add the bottom toolbar on the lower half where a view needs one, and a portrait split scene (two apps stacked) if the journey calls for it.
-3. **Liquid Glass, the remaining gaps** (`../docs/liquid-glass.md`, "Refit to the probe"). Every fix goes through the loop: capture (`npm run probe`), calibrate (`/labs/probe.html?calibrate`), look (`/tmp/duo/glass-probe/inspect/`).
-   - the narrow frost at the rim: after the lensing (as now) it loses half the contrast in the outer 5 pt, where iOS keeps it; before the lensing keeps it. Look at the ends at several tints, choose, recalibrate;
-   - the dark crescents in large round glass's band;
-   - clear glass's rim law, and the band's faint vignette;
-   - probe scenes with system controls (glass buttons, a toolbar) to see where flips happen;
-   - motion: materialize, morph, press (`recordVideo`), and tint. The frost is built from the refracted content, so anything that animates a shape (presence, geometry) rebuilds it every frame: a refract pass and six blur passes per compositor. Time that before settling how motion drives the compositor.
+3. **Liquid Glass: what is still guessed** (`../docs/liquid-glass.md`, "Refit to the probe"). The static material is done; its remaining gaps are parked there, measured, and not worked on unless the presentation shows them. One probe pass each, through the loop: capture (`npm run probe`), calibrate (`/labs/probe.html?calibrate`), look (`/tmp/duo/glass-probe/inspect/`).
+   - glyphs and labels on glass: iOS adapts their colour to the content under the glass; ours are fixed CSS colours. Probe scenes with system controls (glass buttons, a toolbar, a tab bar), which also show whether controls flip;
+   - motion: materialize, morph, press (`recordVideo`), and tint. The frost is built from the refracted content, so anything that animates a shape (presence, geometry) rebuilds it every frame: a refract pass and six blur passes per compositor, eight with large glass on screen. Time that before settling how motion drives the compositor.
 4. **The inner Home Screen and the Split View multitasking scene.** These are the Duo layouts the journey does not show yet: 8 columns across the fold, the Dock in the rail, and each app's rail on its own outer edge.
 5. **Findings from the second review (3/5).**
    - Lighting and materials:
@@ -85,7 +82,7 @@ Next, in order:
    - Close-ups: slivers at the frame's end caps by the hinge, the spine cap's height at the top edge, the back-glass edge at the camera corner, and the mic holes drawn as outlines.
    - Copy: headline breaks, the drag hint centred under the device, and the side-button glyph instead of Touch ID.
    - Fixed since: the dawn scrub. The copy's ink follows the sky's contrast, the ramp is even, and the clock runs from 6:41 to 6:58.
-6. The Night Sky finish in the journey (a scene or a toggle).
+6. The Night Sky finish in the journey (a scene or a toggle). A sketch for the toggle: in the scene the viewer turns by hand (`scene.turn`), a radio group under the headline, Star White and Night Sky, each a 30 px swatch in the finish's back colour (`tokens.device.finish.*.back`), the checked one ringed.
 7. Live details on the screens: the clock ticking, the status levels (`status.ts` animates battery, Wi-Fi, cellular), the Live Activity's progress, the timer.
 8. Lay out the next scene's views ahead of the swap, so cuts keep every vsync too.
 9. **Performance, after the look work is accepted** (review of September 24, read-only against the numbers above). Frames are inside the 120 fps budget; only these, in order:

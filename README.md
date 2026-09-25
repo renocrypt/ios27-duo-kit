@@ -14,6 +14,7 @@ A concept prototype that reimagines iPhone Duo (Apple's foldable, announced Sept
 | `docs/research/` | Dated evidence behind the briefs and specs; `2026-09-23-source-index.md` lists the sources |
 | `app/` | The app: code, tokens, build and check tools, dev labs, status and next (`app/README.md`) |
 | `app/tools/usd/` | Scripts that measure Apple's AR model of the device |
+| `docs/research/2026-09-23-device-physical-reference/` | The device's values as data (`duo-device-spec.json`), where Apple's files come from (`SOURCES.md`), and the raw output of the model's measurement |
 
 ## Direction
 

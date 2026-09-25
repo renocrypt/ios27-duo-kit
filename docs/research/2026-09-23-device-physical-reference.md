@@ -1,6 +1,6 @@
 # iPhone Duo physical reference: body, hinge, cameras, controls, materials, and colors
 
-Checked: September 23, 2026. Scope: the physical device beyond what the [geometry and mockups note](2026-09-23-device-geometry-and-mockups.md) already covers — Apple's Accessory Design Guidelines, Apple's AR Quick Look USDZ model (measured directly), rear camera count/arrangement, control positions, hinge and spine, body corner radii and edge profile, materials, finishes, and colors, official reference images, hands-on reports, and third-party cross-checks. Does not repeat display point sizes, corner radii of the *displays*, safe areas, or poses — see the companion note for those. Does not cover Three.js/Anime.js rendering technique — see the [3D approach note](2026-09-23-device-3d-approach.md). Evidence tiers: **A** Apple official · **F** firsthand report · **D** third-party/community. Full machine-readable values are in `/tmp/duo/device-research/duo-device-spec.json`; downloaded references and their licenses are in `/tmp/duo/device-research/references/SOURCES.md` (both stay in `/tmp`, per project rules).
+Checked: September 23, 2026. Scope: the physical device beyond what the [geometry and mockups note](2026-09-23-device-geometry-and-mockups.md) already covers — Apple's Accessory Design Guidelines, Apple's AR Quick Look USDZ model (measured directly), rear camera count/arrangement, control positions, hinge and spine, body corner radii and edge profile, materials, finishes, and colors, official reference images, hands-on reports, and third-party cross-checks. Does not repeat display point sizes, corner radii of the *displays*, safe areas, or poses — see the companion note for those. Does not cover Three.js/Anime.js rendering technique — see the [3D approach note](2026-09-23-device-3d-approach.md). Evidence tiers: **A** Apple official · **F** firsthand report · **D** third-party/community. Full machine-readable values are in [`duo-device-spec.json`](2026-09-23-device-physical-reference/duo-device-spec.json); downloaded references and their licenses are listed in [`SOURCES.md`](2026-09-23-device-physical-reference/SOURCES.md) (the files themselves stay in `/tmp/duo/device-research/references/`, per project rules).
 
 > **Superseded in part (September 23, 2026):** the [geometry pass](2026-09-23-device-geometry-pass.md) measured the body sections, corners, hinge, rim, plateau, controls, and PBR materials directly from the USDZ. Where the two notes differ, the geometry pass and `app/src/device/spec.ts` are current.
 
@@ -34,7 +34,7 @@ Confirmed present at `apple.com/iphone-duo/` ("View in your space"). The file na
 | Node/part names | All 74 mesh objects and their parent empties have randomized names (e.g. `JnJdTkxbQgUtLwU`, `MvKPXGSdYDVvSpk`); no semantic labels ship with the file. Part identity below is inferred from size, position, and shared material, not read from a label | — |
 | Independent cross-check | [agarwalmukul/iPhoneDuo](https://github.com/agarwalmukul/iPhoneDuo) archived the identical file (same SHA-256) and separately measured lens spacing (17.77 mm), lens-ring diameter (16.25 mm), and per-leaf chassis footprint (82.45 × 117.95 mm) — all three match this session's independent Blender measurements exactly | High (for the match itself) |
 
-**Method:** two Python scripts run inside Blender computed world-space vertex bounding boxes per mesh (accounting for the full parent transform chain, not just each object's own transform) and, for a second pass, per-face area-weighted normals to locate flat shell surfaces. Scripts and full text output are kept under `/tmp/duo/device-research/` for reproducibility.
+**Method:** two Python scripts run inside Blender computed world-space vertex bounding boxes per mesh (accounting for the full parent transform chain, not just each object's own transform) and, for a second pass, per-face area-weighted normals to locate flat shell surfaces. Scripts and full text output are kept in [the evidence folder](2026-09-23-device-physical-reference/) for reproducibility, with the usd-core inventories of both finishes.
 
 ## 3. Cameras
 
@@ -115,7 +115,7 @@ Apple's own specs-page diagram (`specs_external_connectors_2x.jpg`) carries no v
 
 ## 8. Reference images downloaded
 
-23 files (Apple official photos, spec diagrams, HIG diagrams, and the USDZ/PDF) are in `/tmp/duo/device-research/references/`, manifested in `SOURCES.md` with URL, contents, and license notes for each. Highlights: `highlights_camera_2x.jpg` (clearest camera shot), `newsroom_hinge_closeup_2x.jpg` (spine cross-section), `newsroom_opening_action_2x.jpg` (asymmetric closed-corner radii, outer camera cutout), `newsroom_colors_2x.jpg` (both colorways), `specs_external_connectors_2x.jpg` + its aria-label (control positions), `specs_dimensions_open/closed_2x.jpg` + aria-labels (restating the published dimensions).
+23 files (Apple official photos, spec diagrams, HIG diagrams, and the USDZ/PDF) are in `/tmp/duo/device-research/references/`, manifested in [`SOURCES.md`](2026-09-23-device-physical-reference/SOURCES.md) with URL, contents, and license notes for each. Highlights: `highlights_camera_2x.jpg` (clearest camera shot), `newsroom_hinge_closeup_2x.jpg` (spine cross-section), `newsroom_opening_action_2x.jpg` (asymmetric closed-corner radii, outer camera cutout), `newsroom_colors_2x.jpg` (both colorways), `specs_external_connectors_2x.jpg` + its aria-label (control positions), `specs_dimensions_open/closed_2x.jpg` + aria-labels (restating the published dimensions).
 
 ## 9. Third-party cross-checks
 
@@ -139,7 +139,7 @@ Apple's own specs-page diagram (`specs_external_connectors_2x.jpg`) carries no v
 
 ## Reviewer pass: USDZ variants
 
-Checked September 23 with `usd-core`, run through `uv` with Python 3.12, reading the file's variant sets directly. The scripts are `usd_variants.py`, `usd_measure.py`, `usd_parts.py`, `usd_layout.py`, and `usd_closed.py`, in `/tmp/duo/device-research/`. The measurements below have been added to `duo-device-spec.json`.
+Checked September 23 with `usd-core`, run through `uv` with Python 3.12, reading the file's variant sets directly. The scripts are `usd_variants.py`, `usd_measure.py`, `usd_parts.py`, `usd_layout.py`, and `usd_closed.py`, in `app/tools/usd/`. The measurements below have been added to `duo-device-spec.json`.
 
 Coordinates for the flat `Landscape` pose: the hinge line is at x = 0 and the bottom edge at y = 0. The camera leaf is x > 0 and the outer-display leaf is x < 0. Part identities are inferred from size, position, and material.
 

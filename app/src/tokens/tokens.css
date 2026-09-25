@@ -71,9 +71,9 @@
   --device-finish-night-sky-screw: #3F4B59;
   --material-glass-tint: 0.5;
   --material-glass-size-blur: 9.82;
-  --material-glass-lens-soften: 1.97;
-  --material-glass-regular-lens: 16.7505;
-  --material-glass-regular-lens-power: 1.0165;
+  --material-glass-lens-soften: 1.962;
+  --material-glass-regular-lens: 17.0122;
+  --material-glass-regular-lens-power: 0.9967;
   --material-glass-regular-bezel-ratio: 0.4513;
   --material-glass-regular-profile: 0.28;
   --material-glass-regular-rim: 0.3946;
@@ -83,10 +83,10 @@
   --material-glass-regular-dispersion: 0.4;
   --material-glass-regular-frost: 1;
   --material-glass-regular-shadow: 0.02;
-  --material-glass-clear-lens: 16.6295;
+  --material-glass-clear-lens: 16.5645;
   --material-glass-clear-bezel-ratio: 0.6329;
-  --material-glass-clear-profile: 0.3402;
-  --material-glass-clear-lens-power: 1.0165;
+  --material-glass-clear-profile: 0.3468;
+  --material-glass-clear-lens-power: 0.9967;
   --material-glass-clear-rim: 0.7453;
   --material-glass-clear-ior: 1.5;
   --material-glass-clear-bezel: 10;

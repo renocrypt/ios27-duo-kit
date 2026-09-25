@@ -4,7 +4,7 @@
  * dev server, and each route serves an allowlist of file names.
  *
  *   /@reference/<name>.glb      Apple's AR model per pose (/tmp/duo/reference/, exported by
- *                               /tmp/duo/device-research/usd_to_glb.py), for compare/
+ *                               tools/usd/usd_to_glb.py), for compare/
  *   /@reference/kit/<name>.svg  frames exported from Apple's iOS 27 UI Kit (/tmp/duo/ios27-kit/),
  *                               for labs/glyphs.html
  *   /@reference/probe/catalog.json, /@reference/probe/<device>/<set>/<scene>/<capture>.png|.json
@@ -12,9 +12,10 @@
  *                               captured by tools/glass-probe/probe.ts), for labs/probe.html
  *
  * And two writes, for labs/probe.html?calibrate only: POST /@probe/tokens (JSON) replaces
- * tokens/glass.sim.tokens.json, the [SIM] values it derives; POST /@probe/report?name=<name> (JSON)
- * writes /tmp/duo/glass-probe/reports/<name>.json; POST /@probe/image?name=<folder>/<name> ({ png:
- * data URL }) writes /tmp/duo/glass-probe/inspect/<folder>/<name>.png, for looking at afterwards.
+ * tokens/glass.sim.tokens.json, the [SIM] values it derives; POST /@probe/report (JSON) replaces
+ * tools/glass-probe/report.json, every residual of that calibration (our numbers, so they are kept
+ * with the tokens); POST /@probe/image?name=<folder>/<name> ({ png: data URL }) writes
+ * /tmp/duo/glass-probe/inspect/<folder>/<name>.png, for looking at afterwards.
  */
 import type { Plugin } from 'vite';
 import { createReadStream, existsSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -46,10 +47,8 @@ export function referencePlugin(): Plugin {
           return res.end(JSON.stringify({ written: file }));
         }
         if (url.pathname === '/tokens') file = resolve(server.config.root, 'tokens', 'glass.sim.tokens.json');
-        else if (url.pathname === '/report' && /^[\w.-]+$/.test(url.searchParams.get('name') ?? '')) {
-          mkdirSync('/tmp/duo/glass-probe/reports', { recursive: true });
-          file = join('/tmp/duo/glass-probe/reports', `${url.searchParams.get('name')}.json`);
-        } else return next();
+        else if (url.pathname === '/report') file = resolve(server.config.root, 'tools', 'glass-probe', 'report.json');
+        else return next();
         writeFileSync(file, JSON.stringify(json, null, 2) + '\n');
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ written: file }));

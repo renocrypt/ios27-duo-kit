@@ -1,0 +1,114 @@
+
+===== ALL MESH OBJECTS (full list, sorted by Z then X) =====
+AjfIgUpXxKaENDl: verts=450 polys=400 size_mm=(1.19,2.53,17.13) center_mm=(40.85,2.83,32.80) mat=pOHYMArkYgGMSvE
+cIpbiCGlEcdljuC: verts=922 polys=970 size_mm=(16.23,1.49,0.40) center_mm=(-0.06,-2.67,0.32) mat=bnbUHmVcBNyhFgl
+EdsRvWYVMNVqBab: verts=2088 polys=2329 size_mm=(11.03,1.20,5.21) center_mm=(-0.06,-2.68,4.61) mat=oEGeLQAOjZgdIFG
+ejUvJHtjfcqjSvM: verts=102 polys=100 size_mm=(0.26,2.09,16.68) center_mm=(41.32,2.83,32.80) mat=MyBIzTBvbXlVjff
+nrYKEbuMfByWbND: verts=32 polys=8 size_mm=(51.37,1.38,0.00) center_mm=(-0.06,2.83,0.61) mat=kJeamnuzMHYZdFm
+VNIQJMrwFmXgrBf: verts=102 polys=100 size_mm=(0.26,2.09,16.68) center_mm=(41.32,2.83,32.80) mat=lncqqAffdcKCPyc
+WzRveeKjvQZVqRA: verts=922 polys=969 size_mm=(16.23,1.49,0.40) center_mm=(-0.06,2.83,0.32) mat=bnbUHmVcBNyhFgl
+aPxlVqZVqWStoGD: verts=80 polys=40 size_mm=(6.11,0.00,6.10) center_mm=(30.72,-5.50,107.30) mat=DHVeopyQCCjAHKQ
+BODTjtonsAnwGZC: verts=101 polys=100 size_mm=(3.39,0.27,3.39) center_mm=(8.31,9.36,102.67) mat=qmxrEFfOvJSYhQO
+bsNHOLGaZbhIluH: verts=884 polys=442 size_mm=(67.20,3.41,117.95) center_mm=(7.78,2.83,58.97) mat=kUUqfCXsMaJHyje
+BwdEgNRIvxgoOrX: verts=81 polys=80 size_mm=(1.34,0.23,1.34) center_mm=(26.08,8.81,102.67) mat=ZdlykFGlVXrMgnF
+eepRwbmxiYwsBNu: verts=101 polys=100 size_mm=(3.39,0.27,3.39) center_mm=(8.31,9.39,102.67) mat=ZdlykFGlVXrMgnF
+eMkYisZsxjfVsku: verts=321 polys=320 size_mm=(3.57,0.25,3.56) center_mm=(8.31,9.65,102.67) mat=ZdlykFGlVXrMgnF
+eTOVbDQVsswgAUz: verts=101 polys=100 size_mm=(1.56,0.15,1.56) center_mm=(30.72,-5.07,107.30) mat=ZdlykFGlVXrMgnF
+FafuGBBSaHXLqhj: verts=44 polys=42 size_mm=(3.31,0.00,1.49) center_mm=(-8.35,8.99,106.97) mat=nyGbnltkiVgOVaK
+fapSTOypmavuPic: verts=2596 polys=2604 size_mm=(80.16,3.73,115.28) center_mm=(-0.04,7.28,58.97) mat=eNDiNFhhBNyrPgP
+fbvEqfwjsAMSDkr: verts=102 polys=100 size_mm=(0.26,2.61,18.26) center_mm=(41.70,2.83,74.99) mat=MyBIzTBvbXlVjff
+FcJBPLgEScWGyXd: verts=502 polys=500 size_mm=(10.91,2.35,1.05) center_mm=(1.60,2.83,117.87) mat=pOHYMArkYgGMSvE
+fdaipPEGAeomuPG: verts=576 polys=414 size_mm=(67.62,4.90,117.95) center_mm=(7.56,-2.92,58.97) mat=yakTRrHfzYtGymu
+gCGRiYiWIxXRhXE: verts=576 polys=504 size_mm=(16.25,1.87,16.23) center_mm=(26.08,8.21,102.67) mat=TJvImvzeubEEDzE
+gjdjMOcCfrwBMYH: verts=1698 polys=1615 size_mm=(81.22,0.78,116.48) center_mm=(0.03,0.39,58.97) mat=AfMuGuGyrRdWvGa
+hhgAIoCGsHXeDPY: verts=166 polys=170 size_mm=(77.39,0.00,112.51) center_mm=(-0.04,-5.50,58.97) mat=bVtHVUZGvQeXwdh
+hMQYrwNoNcNjoRj: verts=126 polys=84 size_mm=(3.41,0.45,1.59) center_mm=(-8.35,8.92,106.97) mat=qsaDpVIHURYREdD
+ieHYvKnnzuKBgyJ: verts=216 polys=144 size_mm=(13.25,0.29,13.24) center_mm=(8.31,11.08,102.67) mat=iWJmrhAGVXsplAU
+iKZSoAlRlDlkSEw: verts=642 polys=360 size_mm=(81.32,4.72,116.75) center_mm=(0.03,-3.14,58.89) mat=udkIoumZEJmNcgx
+itODWJLNRbBbHzD: verts=126 polys=84 size_mm=(3.41,0.45,1.59) center_mm=(-8.35,8.92,106.97) mat=qMQBeWGUCGfErnO
+iUykZAiNlEUXJDD: verts=432 polys=360 size_mm=(14.09,0.19,14.08) center_mm=(8.31,11.14,102.67) mat=KZyHFwBbAcpggBF
+jJermpgmctotTSe: verts=5412 polys=4635 size_mm=(82.45,5.03,117.95) center_mm=(0.15,2.99,58.97) mat=pOHYMArkYgGMSvE
+JnJdTkxbQgUtLwU: verts=960 polys=768 size_mm=(78.85,2.55,113.27) center_mm=(-0.39,0.00,58.97) mat=DHVeopyQCCjAHKQ
+jnMRBCmgCrfRBeG: verts=576 polys=414 size_mm=(67.62,4.90,117.95) center_mm=(7.56,2.92,58.97) mat=yakTRrHfzYtGymu
+JTfSVVYjoeeDWKv: verts=321 polys=320 size_mm=(4.06,0.68,4.06) center_mm=(8.31,9.86,102.67) mat=ZdlykFGlVXrMgnF
+lJPfQMFXvvcmdtA: verts=24 polys=16 size_mm=(166.13,61.09,118.39) center_mm=(-0.01,0.00,59.19) mat=udkIoumZEJmNcgx
+MeQNhtSdEDLOoXj: verts=73 polys=72 size_mm=(13.24,0.00,13.23) center_mm=(26.08,11.23,102.67) mat=VnRXIqfJGJZbeXY
+MhDPaBaaHkLYESY: verts=141 polys=140 size_mm=(3.07,0.66,3.07) center_mm=(26.08,9.12,102.67) mat=ZdlykFGlVXrMgnF
+mjecbCFnfurWWJV: verts=72 polys=92 size_mm=(76.07,4.13,116.61) center_mm=(2.67,2.87,58.97) mat=udkIoumZEJmNcgx
+MnPSgwdtGmrkVcg: verts=1812 polys=2002 size_mm=(63.88,3.69,29.00) center_mm=(8.00,6.85,102.01) mat=hpXWDkYkMocrDql
+MrGmthJDWvDlbwX: verts=120 polys=100 size_mm=(7.69,0.71,7.68) center_mm=(26.08,9.13,102.67) mat=zzpHLLWMeplrvNu
+msUTSJTbdlDoNLs: verts=2161 polys=2160 size_mm=(4.04,0.14,4.04) center_mm=(-8.35,8.61,98.21) mat=yeSylDxiUWUEdUq
+MvKPXGSdYDVvSpk: verts=1300 polys=1289 size_mm=(2.90,8.20,115.58) center_mm=(-41.95,0.00,58.97) mat=isnmyjbXNQZlHGY
+NtYMsWnAcbWQvBP: verts=192 polys=144 size_mm=(7.75,0.65,7.74) center_mm=(8.31,9.93,102.67) mat=zzpHLLWMeplrvNu
+ONfbMSsVikXcwwp: verts=80 polys=40 size_mm=(3.76,0.84,3.75) center_mm=(-8.35,8.27,98.21) mat=qMQBeWGUCGfErnO
+pbUtGkaSVSEWCbb: verts=24 polys=6 size_mm=(14.70,1.38,0.00) center_mm=(-0.07,-2.83,117.34) mat=kJeamnuzMHYZdFm
+PkkUoNvpaBExwuc: verts=432 polys=360 size_mm=(14.09,0.19,14.08) center_mm=(26.08,11.14,102.67) mat=KZyHFwBbAcpggBF
+pmvwSuCeZpxeLmT: verts=996 polys=770 size_mm=(16.44,2.70,117.95) center_mm=(-0.06,-2.68,58.97) mat=kUUqfCXsMaJHyje
+pweTZuphtbJXJdM: verts=81 polys=80 size_mm=(1.34,0.23,1.34) center_mm=(26.08,8.58,102.67) mat=qmxrEFfOvJSYhQO
+PXwNjghIIgDPXsa: verts=424 polys=314 size_mm=(80.26,4.03,115.85) center_mm=(-0.95,-2.22,58.97) mat=udkIoumZEJmNcgx
+pYcHgppzzKEphCf: verts=216 polys=144 size_mm=(13.24,0.28,13.23) center_mm=(26.08,11.09,102.67) mat=iWJmrhAGVXsplAU
+qyiwePzfWzVHIDO: verts=4390 polys=3886 size_mm=(82.45,5.03,117.95) center_mm=(0.15,-2.99,58.97) mat=pOHYMArkYgGMSvE
+RfedWPXoFcsOTjI: verts=281 polys=280 size_mm=(5.00,0.59,5.00) center_mm=(26.08,9.59,102.66) mat=ZdlykFGlVXrMgnF
+rqynQLtWLECDNtb: verts=101 polys=100 size_mm=(1.56,0.15,1.56) center_mm=(30.72,-5.22,107.30) mat=ZdlykFGlVXrMgnF
+RsMYVEApMypWrpd: verts=101 polys=100 size_mm=(1.56,0.19,1.56) center_mm=(30.72,-5.03,107.30) mat=qmxrEFfOvJSYhQO
+RwQzmCvUWHGlFfV: verts=424 polys=314 size_mm=(80.26,4.03,115.85) center_mm=(-0.95,2.22,58.97) mat=udkIoumZEJmNcgx
+SCDZMtVjLrcxENj: verts=804 polys=497 size_mm=(81.40,10.16,116.80) center_mm=(0.07,5.86,58.95) mat=udkIoumZEJmNcgx
+svvOILdVxasRAOk: verts=1600 polys=1524 size_mm=(81.22,0.78,116.48) center_mm=(0.03,-0.39,58.97) mat=AfMuGuGyrRdWvGa
+SxeyDDoPvaCZQxB: verts=576 polys=504 size_mm=(16.25,1.87,16.23) center_mm=(8.31,8.21,102.67) mat=TJvImvzeubEEDzE
+TjnQASEQBIHreGe: verts=720 polys=648 size_mm=(16.25,1.90,16.23) center_mm=(8.31,10.09,102.67) mat=pOHYMArkYgGMSvE
+tkSBzAjLTdhANqx: verts=102 polys=100 size_mm=(0.26,2.61,18.26) center_mm=(41.70,2.83,74.99) mat=lncqqAffdcKCPyc
+tLtsGCMtMAZfCYN: verts=2558 polys=2483 size_mm=(80.16,4.04,115.28) center_mm=(-0.04,7.12,58.97) mat=nfSKIKcFQpPcaTk
+tnxsltexVWtEjsz: verts=169 polys=134 size_mm=(16.33,0.00,20.03) center_mm=(-0.15,5.30,58.20) mat=djGRseSgLsvgsjU
+tYVfzVmYBKhfUhm: verts=169 polys=134 size_mm=(16.33,0.00,20.03) center_mm=(-0.15,5.50,58.20) mat=toNHgGKgNFeCXva
+UPeNpLgJbcWzHun: verts=2456 polys=2380 size_mm=(80.16,3.56,115.28) center_mm=(-0.04,6.79,58.97) mat=hpXWDkYkMocrDql
+uWPCbpPKzwJOmUY: verts=80 polys=101 size_mm=(76.07,4.13,116.61) center_mm=(2.67,-2.87,58.97) mat=udkIoumZEJmNcgx
+UXtkILReLwCJaov: verts=550 polys=500 size_mm=(1.05,3.06,18.71) center_mm=(41.30,2.83,74.99) mat=pOHYMArkYgGMSvE
+UXtsBZYlaUvHoEh: verts=295 polys=295 size_mm=(77.68,2.45,111.03) center_mm=(-0.92,0.00,58.97) mat=UBwioVSWewZpuRX
+vTcSkzvfyxWyWLx: verts=41 polys=40 size_mm=(3.22,0.00,3.21) center_mm=(30.72,-5.50,107.30) mat=VKnKoHfJjSdRybB
+xcCuAfHYtkJLwuT: verts=192 polys=144 size_mm=(10.57,0.25,10.56) center_mm=(26.08,9.94,102.67) mat=zzpHLLWMeplrvNu
+xdyyaajWsatVNxN: verts=1252 polys=1204 size_mm=(11.89,5.08,115.75) center_mm=(-35.14,0.00,58.97) mat=AfMuGuGyrRdWvGa
+xpVpaKuQKnXQhFj: verts=614 polys=500 size_mm=(80.16,0.40,115.28) center_mm=(-0.04,-5.30,58.97) mat=DHVeopyQCCjAHKQ
+XziVXUmXQoAudpp: verts=336 polys=270 size_mm=(55.78,0.00,21.15) center_mm=(8.54,9.14,102.67) mat=toNHgGKgNFeCXva
+YhaSRqOjDUQrQTc: verts=502 polys=500 size_mm=(10.91,2.35,1.05) center_mm=(15.02,2.83,117.87) mat=pOHYMArkYgGMSvE
+ZcRVEBTagyUDrqj: verts=160 polys=120 size_mm=(3.59,0.23,3.59) center_mm=(30.72,-5.28,107.30) mat=tbdwzjlMQCYGFiW
+zdStWfgHXiitQgl: verts=31 polys=30 size_mm=(4.05,0.00,4.02) center_mm=(-8.35,8.39,98.21) mat=uJFPWgDhmWStPgF
+zKTkIrxcXzWwBYK: verts=720 polys=648 size_mm=(16.25,1.90,16.23) center_mm=(26.08,10.09,102.67) mat=pOHYMArkYgGMSvE
+zukXlhkizWJIDav: verts=73 polys=72 size_mm=(13.25,0.00,13.24) center_mm=(8.31,11.23,102.67) mat=VnRXIqfJGJZbeXY
+
+TOTAL MESH COUNT: 74
+
+===== Candidate circular/small parts (X and Z both between 1-20mm, roughly equal) =====
+aPxlVqZVqWStoGD: size_mm=(6.11,0.00,6.10) center_mm=(30.72,-5.50,107.30) mat=DHVeopyQCCjAHKQ
+BODTjtonsAnwGZC: size_mm=(3.39,0.27,3.39) center_mm=(8.31,9.36,102.67) mat=qmxrEFfOvJSYhQO
+BwdEgNRIvxgoOrX: size_mm=(1.34,0.23,1.34) center_mm=(26.08,8.81,102.67) mat=ZdlykFGlVXrMgnF
+eepRwbmxiYwsBNu: size_mm=(3.39,0.27,3.39) center_mm=(8.31,9.39,102.67) mat=ZdlykFGlVXrMgnF
+eMkYisZsxjfVsku: size_mm=(3.57,0.25,3.56) center_mm=(8.31,9.65,102.67) mat=ZdlykFGlVXrMgnF
+eTOVbDQVsswgAUz: size_mm=(1.56,0.15,1.56) center_mm=(30.72,-5.07,107.30) mat=ZdlykFGlVXrMgnF
+gCGRiYiWIxXRhXE: size_mm=(16.25,1.87,16.23) center_mm=(26.08,8.21,102.67) mat=TJvImvzeubEEDzE
+ieHYvKnnzuKBgyJ: size_mm=(13.25,0.29,13.24) center_mm=(8.31,11.08,102.67) mat=iWJmrhAGVXsplAU
+iUykZAiNlEUXJDD: size_mm=(14.09,0.19,14.08) center_mm=(8.31,11.14,102.67) mat=KZyHFwBbAcpggBF
+JTfSVVYjoeeDWKv: size_mm=(4.06,0.68,4.06) center_mm=(8.31,9.86,102.67) mat=ZdlykFGlVXrMgnF
+MeQNhtSdEDLOoXj: size_mm=(13.24,0.00,13.23) center_mm=(26.08,11.23,102.67) mat=VnRXIqfJGJZbeXY
+MhDPaBaaHkLYESY: size_mm=(3.07,0.66,3.07) center_mm=(26.08,9.12,102.67) mat=ZdlykFGlVXrMgnF
+MrGmthJDWvDlbwX: size_mm=(7.69,0.71,7.68) center_mm=(26.08,9.13,102.67) mat=zzpHLLWMeplrvNu
+msUTSJTbdlDoNLs: size_mm=(4.04,0.14,4.04) center_mm=(-8.35,8.61,98.21) mat=yeSylDxiUWUEdUq
+NtYMsWnAcbWQvBP: size_mm=(7.75,0.65,7.74) center_mm=(8.31,9.93,102.67) mat=zzpHLLWMeplrvNu
+ONfbMSsVikXcwwp: size_mm=(3.76,0.84,3.75) center_mm=(-8.35,8.27,98.21) mat=qMQBeWGUCGfErnO
+PkkUoNvpaBExwuc: size_mm=(14.09,0.19,14.08) center_mm=(26.08,11.14,102.67) mat=KZyHFwBbAcpggBF
+pweTZuphtbJXJdM: size_mm=(1.34,0.23,1.34) center_mm=(26.08,8.58,102.67) mat=qmxrEFfOvJSYhQO
+pYcHgppzzKEphCf: size_mm=(13.24,0.28,13.23) center_mm=(26.08,11.09,102.67) mat=iWJmrhAGVXsplAU
+RfedWPXoFcsOTjI: size_mm=(5.00,0.59,5.00) center_mm=(26.08,9.59,102.66) mat=ZdlykFGlVXrMgnF
+rqynQLtWLECDNtb: size_mm=(1.56,0.15,1.56) center_mm=(30.72,-5.22,107.30) mat=ZdlykFGlVXrMgnF
+RsMYVEApMypWrpd: size_mm=(1.56,0.19,1.56) center_mm=(30.72,-5.03,107.30) mat=qmxrEFfOvJSYhQO
+SxeyDDoPvaCZQxB: size_mm=(16.25,1.87,16.23) center_mm=(8.31,8.21,102.67) mat=TJvImvzeubEEDzE
+TjnQASEQBIHreGe: size_mm=(16.25,1.90,16.23) center_mm=(8.31,10.09,102.67) mat=pOHYMArkYgGMSvE
+vTcSkzvfyxWyWLx: size_mm=(3.22,0.00,3.21) center_mm=(30.72,-5.50,107.30) mat=VKnKoHfJjSdRybB
+xcCuAfHYtkJLwuT: size_mm=(10.57,0.25,10.56) center_mm=(26.08,9.94,102.67) mat=zzpHLLWMeplrvNu
+ZcRVEBTagyUDrqj: size_mm=(3.59,0.23,3.59) center_mm=(30.72,-5.28,107.30) mat=tbdwzjlMQCYGFiW
+zdStWfgHXiitQgl: size_mm=(4.05,0.00,4.02) center_mm=(-8.35,8.39,98.21) mat=uJFPWgDhmWStPgF
+zKTkIrxcXzWwBYK: size_mm=(16.25,1.90,16.23) center_mm=(26.08,10.09,102.67) mat=pOHYMArkYgGMSvE
+zukXlhkizWJIDav: size_mm=(13.25,0.00,13.24) center_mm=(8.31,11.23,102.67) mat=VnRXIqfJGJZbeXY
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD import of '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz' took 87.50 ms
+
+Blender quit

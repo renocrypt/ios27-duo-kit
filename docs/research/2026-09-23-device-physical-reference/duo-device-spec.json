@@ -1,0 +1,713 @@
+{
+  "_meta": {
+    "title": "iPhone Duo physical reference spec for 3D modeling",
+    "checked": "2026-09-23",
+    "unit_default": "mm",
+    "tiers": {
+      "A": "Apple official",
+      "F": "firsthand report",
+      "D": "third-party or community"
+    },
+    "notes": [
+      "This file complements, and does not repeat, duo/research/2026-09-23-device-geometry-and-mockups.md, which covers display point sizes, corner radii of the DISPLAYS, safe areas, and poses.",
+      "Values marked source 'Apple AR USDZ (own measurement)' were derived by the author of this file by importing Apple's own published iPhone_Duo_e-sim_Star-White_Variant.usdz AR Quick Look model into Blender 4.5/5.2 (bpy.ops.wm.usd_import) and reading mesh vertex world-space bounding boxes and face normals with a Python script. Node names inside the USDZ are randomized/obfuscated (no semantic labels), so which mesh is which physical part is an inference from size, position, and material clustering, not a label Apple provides. Confidence is set accordingly.",
+      "The USDZ model's own pose is NOT flat-open and NOT fully closed: it is closed with the hinge cracked open a small amount (a common AR/marketing hero pose). Excluding a low-poly invisible bounding/interaction proxy mesh, the visible geometry's plan-view footprint (85.22 x 118.40 mm) matches Apple's published CLOSED footprint (84.1 x 117.8 mm) to about 1 mm, but the thickness axis (16.73 mm) reads well above the published closed depth (11.3 mm) because the halves are slightly splayed. Treat any thickness/angle number from this asset with low confidence; treat plan-view (width/height) positions of parts on either shell as medium confidence.",
+      "SHA-256 of the analyzed USDZ: 5cab2ea636da0bc0b06c8abf4809843498f7c1d680042b4f95e383b5c6a718b2. This matches the file independently archived and measured by the community project agarwalmukul/iPhoneDuo, whose published measurements (lens spacing 17.77 mm, lens-ring diameter 16.25 mm, per-leaf chassis 82.45 x 117.95 mm) match this file's own Blender measurements exactly, cross-validating the method.",
+      "Reviewer pass (2026-09-23): the USDZ has variant sets Pose {Closed, Landscape} and Color {Night_Sky, Star_White}. Pose=Landscape is flat open and true to scale (leaves 2 x 82.45 x 117.95 mm vs spec 164.6 x 117.8). Pose=Closed is flush closed, not cracked open: its 16.73 mm depth is the 11.0 mm body stack plus the camera bump. Values below labeled 'reviewer pass' come from these variants; part identities are inferred from size, position, and material."
+    ]
+  },
+  "body": {
+    "closed_width": {
+      "value": 84.1,
+      "unit": "mm",
+      "source": "Apple, apple.com/iphone-duo/specs/",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Published spec."
+    },
+    "closed_height": {
+      "value": 117.8,
+      "unit": "mm",
+      "source": "Apple, apple.com/iphone-duo/specs/",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Published spec."
+    },
+    "closed_depth": {
+      "value": 11.3,
+      "unit": "mm",
+      "source": "Apple, apple.com/iphone-duo/specs/",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Published spec."
+    },
+    "open_width": {
+      "value": 164.6,
+      "unit": "mm",
+      "source": "Apple, apple.com/iphone-duo/specs/",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Published spec."
+    },
+    "open_height": {
+      "value": 117.8,
+      "unit": "mm",
+      "source": "Apple, apple.com/iphone-duo/specs/",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Published spec."
+    },
+    "open_depth": {
+      "value": 5.2,
+      "unit": "mm",
+      "source": "Apple, apple.com/iphone-duo/specs/",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Published spec."
+    },
+    "weight": {
+      "value": 254,
+      "unit": "g",
+      "source": "Apple, apple.com/iphone-duo/specs/",
+      "tier": "A",
+      "confidence": "high",
+      "note": "254 g / 8.96 oz."
+    },
+    "plan_view_footprint_closed_measured": {
+      "value": [
+        85.22,
+        118.4
+      ],
+      "unit": "mm",
+      "source": "Apple AR USDZ (own measurement)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Includes button and hinge-cover protrusions. The chassis leaf alone is 82.45 x 117.95 mm."
+    },
+    "corner_radius_plan_view": {
+      "value": {
+        "free_side": 12.55,
+        "hinge_side_closed": 3.67
+      },
+      "unit": "mm",
+      "source": "Derived (reviewer pass): display corner radius in mm plus the measured border, assuming concentric corners",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Display radii from the simulator profile (outer 59 pt free / 8 pt hinge, inner 55 pt) at 6.02 pt/mm (466 pt / 77.39 mm). Outer: 9.80 + 2.72 = 12.52 mm; inner: 9.14 + 3.46 = 12.60 mm. The two agree, which supports concentricity. Hinge side: 1.33 + 2.34 = 3.67 mm."
+    },
+    "edge_profile": {
+      "value": "flat chamfer band transitioning to a rounded side wall",
+      "unit": "descriptive",
+      "source": "Apple newsroom hinge/edge close-up photo (newsroom_hinge_closeup_2x.jpg) and design_hero images",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Own visual read of official photography: each half shows a bright flat reflective chamfer facet along the top edge, then curves down into the side wall, similar to the flat-sided, chamfered-edge language Apple used starting with iPhone 12/16-series titanium frames. No numeric chamfer width or wall radius is published."
+    },
+    "frame_around_outer_display": {
+      "value": 3.4,
+      "unit": "mm",
+      "source": "Derived: (84.1-77.2)/2 approx per side using published outer active area",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Duplicated from the companion geometry note for convenience; see that note for the outer/inner active-area derivation."
+    }
+  },
+  "halves": {
+    "outer_display_half_thickness": {
+      "value": 5.03,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Chassis leaf in Pose=Closed, z 0.47..5.50; equal to the other leaf."
+    },
+    "inner_display_half_thickness": {
+      "value": 5.03,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Chassis leaf in Pose=Closed, z -5.50..-0.47. In Landscape, leaf plus inner display surface = 5.23 mm (spec 5.2)."
+    },
+    "per_leaf_chassis_footprint_measured": {
+      "value": [
+        82.45,
+        117.95
+      ],
+      "unit": "mm",
+      "source": "Apple AR USDZ (own measurement); cross-checked exactly against agarwalmukul/iPhoneDuo docs/apple-model-comparison.md",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "[width, height] of a single leaf's exterior shell mesh in the USDZ. Slightly larger than the published closed footprint (84.1 x 117.8 mm total, i.e. this is not simply half); this is the shell's own modeled footprint including its curled edge, not a device-level spec."
+    },
+    "outer_display_active_area": {
+      "value": [
+        77.39,
+        112.51
+      ],
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Outer display mesh; matches the 77.2 x 112.3 derivation from pixels and ppi."
+    },
+    "outer_display_borders": {
+      "value": {
+        "hinge_side": 2.34,
+        "free_side": 2.72,
+        "top": 2.72,
+        "bottom": 2.72
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Distance from the leaf edge to the outer display's active area."
+    },
+    "inner_display_active_area": {
+      "value": [
+        157.99,
+        111.03
+      ],
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Centered on the open device; matches the 157.7 x 110.9 derivation."
+    },
+    "inner_display_border": {
+      "value": 3.46,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Uniform on all four sides of the open device."
+    },
+    "outer_display_leaf": {
+      "value": "x < 0 in Landscape (the left half seen from the inner display)",
+      "unit": null,
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "The outer display is on the back of the LEFT half; the rear camera is on the back of the RIGHT half."
+    }
+  },
+  "hinge": {
+    "component_count": {
+      "value": ">100",
+      "unit": "count",
+      "source": "Apple newsroom, 'apple-unveils-iphone-duo'",
+      "tier": "A",
+      "confidence": "high",
+      "note": "\"engineered from more than 100 components to precisely control opening and closing and support the center of the display\"."
+    },
+    "closure_mechanism": {
+      "value": "integrated magnet array",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "\"together with an integrated magnet array, delivers a satisfying and secure closure.\""
+    },
+    "hinge_cover_material_finish": {
+      "value": "3D-printed titanium hinge cover, micro-blasted finish (contrasts with the mirror-polished body)",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Direct quote: \"a 3D-printed hinge cover with a contrasting micro-blasted finish.\""
+    },
+    "flat_when_open": {
+      "value": true,
+      "unit": "boolean",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "\"it supports the center of the display to hold it flat when opened\"."
+    },
+    "gap_when_closed": {
+      "value": 0.94,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Gap between the two parallel leaves in Pose=Closed (z -0.47..0.47); the folded inner display bulges into the hinge region (z +/-1.23)."
+    },
+    "fold_cycle_rating": {
+      "value": null,
+      "unit": "cycles",
+      "source": null,
+      "tier": null,
+      "confidence": "low",
+      "note": "Apple does not publish a fold-cycle count (noted explicitly by androidheadlines.com's hands-on, which contrasts this with Samsung's published 500,000-fold rating for the Galaxy Z Fold8)."
+    },
+    "internal_reinforcement": {
+      "value": "support ribs for added stiffness; antenna splits with ceramic fiber inserts",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Structural detail, not a dimension."
+    },
+    "hinge_axis_offset_from_center_measured": {
+      "value": 42.0,
+      "unit": "mm",
+      "source": "Apple AR USDZ (own measurement)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "A long hinge-barrel-like mesh (MvKPXGSdYDVvSpk: 2.90 x 8.20 x 115.58 mm) sits at x = -41.95 mm from the model's origin, i.e. almost exactly half the published closed width (84.1 / 2 = 42.05 mm), running nearly the full 117.8 mm height. Own inference of hinge barrel identity from geometry, not an Apple label."
+    },
+    "crease_visibility": {
+      "value": "present but subtle when viewed straight-on; visible at an angle or under direct light",
+      "unit": "descriptive",
+      "source": "Multiple Sept 2026 hands-on reports (Dave2D via pasqualepillitteri.it, MacRumors, HardwareZone Singapore, Mark Ellis Reviews)",
+      "tier": "F",
+      "confidence": "medium",
+      "note": "One outlet (9to5google) rated it as visible 'just as much as' Samsung's Fold 8; most others rated it noticeably better hidden thanks to the nano-texture inner display finish."
+    },
+    "closed_body_stack": {
+      "value": 11.0,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Two 5.03 mm leaves plus the gap; spec says 11.3 mm."
+    },
+    "hinge_core_width": {
+      "value": 8.22,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Mesh centered on the fold line (x -4.11..4.11), full height. Identity inferred."
+    },
+    "fold_zone_band_width": {
+      "value": 23.77,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "low",
+      "note": "Mesh centered on the fold line (x -11.89..11.89) just under the inner display surface; likely the display support in the fold zone. Identity inferred."
+    }
+  },
+  "displays": {
+    "inner_nano_texture": {
+      "value": "custom polymer nano-textured cover layer, up to 40% higher stiffness than industry-standard materials, plus a separate scratch-resistant coating",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Purpose stated by Apple: reduces glare/reflections and minimizes crease visibility; described by MacRumors hands-on as a 'micro lens texture written pixel by pixel using maskless laser lithography'. That fabrication detail is tier F (MacRumors), not confirmed by Apple's own text."
+    },
+    "inner_panel_stack": {
+      "value": "high-strength glass above and below the flexible OLED panel, custom adhesives allowing the layers to glide like pages of a book, titanium plate at the bottom",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Relevant to modeling the fold band's cross-section, not to any single published thickness figure."
+    },
+    "outer_cover_glass": {
+      "value": "Ceramic Shield 2, 3x better scratch resistance than the previous generation, reduces glare",
+      "unit": "descriptive",
+      "source": "Apple newsroom and apple.com/iphone-duo/specs/ ('Ceramic Shield 2 front')",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "back_cover_glass": {
+      "value": "Ceramic Shield",
+      "unit": "descriptive",
+      "source": "Apple newsroom and specs page ('Ceramic Shield back')",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "front_facing_camera_outer": {
+      "value": "visible circular cutout, top-right corner of the outer display",
+      "unit": "descriptive",
+      "source": "Apple official image newsroom_opening_action_2x.jpg",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Own visual read; matches HIG diagram description already covered in the companion geometry note."
+    },
+    "front_facing_camera_inner": {
+      "value": "hidden under-display FaceTime camera, invisible when not in use",
+      "unit": "descriptive",
+      "source": "Apple newsroom: 'a new FaceTime camera stays hidden when not in use to keep the screen uninterrupted'",
+      "tier": "A",
+      "confidence": "high",
+      "note": "No cutout to model when the inner display is treated as active; model as an under-panel component only."
+    }
+  },
+  "cameras": {
+    "rear_camera_count": {
+      "value": 2,
+      "unit": "count",
+      "source": "Apple newsroom ('48MP Fusion Main' + '48MP Fusion Ultra Wide'); Apple AR USDZ (own measurement found exactly two lens-ring mesh clusters)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "The newsroom copy's '2x Telephoto' is an optical-quality digital crop of the 48MP Fusion Main sensor, not a third physical lens; this is corroborated by the USDZ geometry, which has only two lens-sized circular mesh clusters."
+    },
+    "rear_camera_arrangement": {
+      "value": "side-by-side horizontal pair on the back of the half OPPOSITE the outer display (the right half in the open view), near the top edge and the free edge",
+      "unit": "descriptive",
+      "source": "Apple official image highlights_camera_2x.jpg / newsroom_colors_2x.jpg; Apple AR USDZ (own measurement)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Corrected in reviewer pass: the earlier text said the outer-display half, which the USDZ contradicts."
+    },
+    "rear_lens_spacing_center_to_center": {
+      "value": 17.77,
+      "unit": "mm",
+      "source": "Apple AR USDZ (own measurement); exact match to agarwalmukul/iPhoneDuo's independent measurement of the same file",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Two independent measurements of the same official asset agree exactly."
+    },
+    "rear_lens_ring_outer_diameter": {
+      "value": 16.25,
+      "unit": "mm",
+      "source": "Apple AR USDZ (own measurement); exact match to agarwalmukul/iPhoneDuo",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Outer chrome bezel/ring diameter of each lens, not the glass element diameter."
+    },
+    "rear_camera_position_from_top_edge_measured": {
+      "value": 15.29,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Center of the lens nearer the free edge, from the top edge."
+    },
+    "rear_camera_position_from_free_edge_measured": {
+      "value": 15.29,
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Center of the lens nearer the free edge; the other lens center is 33.06 mm from the free edge."
+    },
+    "flash": {
+      "value": "single small circular element, up and to the right of the lens pair",
+      "unit": "descriptive",
+      "source": "Apple official image highlights_camera_2x.jpg; a matching small circular mesh cluster (~6 mm) found near the lenses in the USDZ",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Apple's newsroom text does not name a flash explicitly; identification is from the official photo plus geometry, not an Apple label."
+    },
+    "camera_bump_housing": {
+      "value": "single rounded rectangle / pill-shaped raised chrome-rimmed plate enclosing both lenses and the flash",
+      "unit": "descriptive",
+      "source": "Apple official images (highlights_camera_2x.jpg, newsroom_colors_2x.jpg, design_hero_open_2x.jpg)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Qualitative shape only; footprint and protrusion height could not be reliably isolated from the USDZ mesh (see _meta note on pose) and are not published, so no numeric value is given."
+    },
+    "camera_bump_footprint": {
+      "value": [
+        55.78,
+        21.15
+      ],
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Raised plateau, x 21.72..77.51, y 92.09..113.24: 4.94 mm from the free edge, 4.71 mm from the top edge, 21.72 mm from the hinge edge."
+    },
+    "camera_bump_protrusion": {
+      "value": {
+        "plateau": 3.65,
+        "lens_rings": 5.55,
+        "max": 5.73
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Heights above the back surface (z -2.74) in Pose=Landscape."
+    },
+    "front_camera_module_type": {
+      "value": "Center Stage front (FaceTime) camera",
+      "unit": "descriptive",
+      "source": "Apple newsroom image caption / filename 'Apple-iPhone-Duo-Center-Stage-front-camera'",
+      "tier": "A",
+      "confidence": "medium",
+      "note": null
+    },
+    "flash_candidate": {
+      "value": {
+        "diameter": 4.0,
+        "center_from_free_edge": 49.72,
+        "center_from_top_edge": 19.74
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Round element on the plateau, on the hinge side of the lenses. Identity inferred."
+    }
+  },
+  "controls": {
+    "side_button_touch_id": {
+      "value": "elongated pill button on the free (right) edge, integrates Touch ID",
+      "unit": "descriptive",
+      "source": "Apple newsroom ('Touch ID is integrated into the side button'); Apple specs external-connectors diagram aria-label; official images",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Exact position along the edge (distance from top/bottom) is not published; own visual read from specs_external_connectors_2x.jpg places it above Camera Control, both roughly in the upper-middle third of the free edge."
+    },
+    "camera_control": {
+      "value": "second, shorter pill button below the side button on the free (right) edge",
+      "unit": "descriptive",
+      "source": "Apple newsroom; specs page aria-label; official images",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "volume_buttons": {
+      "value": "two separate buttons on the top edge (folded orientation), toward one side",
+      "unit": "descriptive",
+      "source": "Apple specs page aria-label: 'iPhone Duo, top exterior, folded: built-in stereo speaker, volume up and down'",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Exact spacing/position not published; companion geometry note's simulator-derived button order should be treated as the best available secondary estimate."
+    },
+    "usb_c_port": {
+      "value": "bottom edge (folded orientation), centered between two microphone holes",
+      "unit": "descriptive",
+      "source": "Apple specs page aria-label: 'iPhone Duo, bottom exterior, folded: USB-C connector, built-in microphones, built-in stereo speaker'; official specs_external_connectors_2x.jpg diagram",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "speakers": {
+      "value": "built-in stereo speaker, with grille perforations on both the top and bottom folded edges",
+      "unit": "descriptive",
+      "source": "Apple specs page aria-label (both top and bottom exterior mentions 'built-in stereo speaker')",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "microphones": {
+      "value": "built-in microphones, holes visible on the bottom folded edge in the diagram; the unfolded/interior-display view also calls out a built-in microphone",
+      "unit": "descriptive",
+      "source": "Apple specs page aria-label",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "apple_pencil_support": {
+      "value": "Apple Pencil with USB-C, usable on either display, supported later in the year (not at launch)",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Software/accessory feature, not a physical port; included because it implies no dedicated Pencil garage or magnetic attach point is described."
+    },
+    "no_face_id": {
+      "value": true,
+      "unit": "boolean",
+      "source": "Companion geometry note / absence of any Face ID mention in Apple's Duo materials",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Authentication is Touch ID only, via the side button."
+    },
+    "side_button_geometry": {
+      "value": {
+        "length": 18.71,
+        "from_top_edge": 33.61,
+        "protrusion": 0.45,
+        "leaf": "camera leaf, free edge"
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "y 65.63..84.34."
+    },
+    "camera_control_geometry": {
+      "value": {
+        "length": 17.13,
+        "from_bottom_edge": 24.23,
+        "protrusion": 0.08,
+        "leaf": "camera leaf, free edge"
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "y 24.23..41.36; nearly flush."
+    },
+    "volume_buttons_geometry": {
+      "value": {
+        "length_each": 10.91,
+        "gap": 2.51,
+        "from_free_edge": 20.9,
+        "from_hinge_edge": 37.22,
+        "protrusion": 0.45,
+        "leaf": "camera leaf, top edge"
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "high",
+      "note": "x 37.22..48.13 and 50.64..61.55."
+    },
+    "usb_c_geometry": {
+      "value": {
+        "center_from_hinge_edge": 41.02,
+        "housing": [
+          11.03,
+          5.21
+        ],
+        "leaf": "outer-display leaf, bottom edge"
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Centered on its leaf; the housing mesh is larger than the port opening."
+    },
+    "bottom_grilles_geometry": {
+      "value": {
+        "length": 16.23,
+        "from_hinge_edge": 32.9,
+        "leaves": "both, bottom edge"
+      },
+      "unit": "mm",
+      "source": "Apple AR USDZ, Pose variant 'Landscape' (flat) or 'Closed', measured with usd-core (reviewer pass)",
+      "tier": "A",
+      "confidence": "medium",
+      "note": "Speaker and microphone grilles mirrored on both leaves. Identity inferred."
+    }
+  },
+  "ports": {
+    "usb_c": {
+      "value": "1, bottom edge when folded",
+      "unit": "descriptive",
+      "source": "Apple specs page aria-label",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "sim": {
+      "value": null,
+      "unit": "descriptive",
+      "source": null,
+      "tier": null,
+      "confidence": "low",
+      "note": "Not identified in the checked sources; recent iPhones sold in the US are eSIM-only, which would explain the absence of a tray in the diagrams checked, but this was not explicitly confirmed for iPhone Duo in the sources opened this session."
+    }
+  },
+  "materials": {
+    "frame": {
+      "value": "Grade 5 titanium, mirror-polished finish",
+      "unit": "descriptive",
+      "source": "Apple newsroom: 'crafted from grade 5 titanium... an elegant mirror-polished finish'",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "hinge_cover": {
+      "value": "3D-printed titanium, micro-blasted finish (contrast to the mirror-polished frame)",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "back_panel": {
+      "value": "Ceramic Shield",
+      "unit": "descriptive",
+      "source": "Apple newsroom; specs page",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "outer_display_cover": {
+      "value": "Ceramic Shield 2",
+      "unit": "descriptive",
+      "source": "Apple newsroom; specs page",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "inner_display_cover": {
+      "value": "custom nano-textured polymer cover layer over high-strength glass, plus a separate scratch-resistant coating",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "water_dust_resistance": {
+      "value": "IP68, max depth 6 m up to 30 minutes, IEC 60529",
+      "unit": "descriptive",
+      "source": "Apple specs page",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    },
+    "internal_thermal": {
+      "value": "custom-designed vapor chamber, A20 Pro, dual-battery architecture",
+      "unit": "descriptive",
+      "source": "Apple newsroom",
+      "tier": "A",
+      "confidence": "high",
+      "note": "Not externally visible; included for completeness since the design brief mentions internals imagery."
+    }
+  },
+  "colors": {
+    "night_sky": {
+      "swatch_hex": {
+        "value": "#394452",
+        "unit": "hex",
+        "source": "Apple CSS: apple.com/v/iphone-duo/c/built/styles/overview.built.css, rule '.colornav-swatch-night-sky{background:#394452}' and '--finish-iphoneduo-night-sky:#394452;'",
+        "tier": "A",
+        "confidence": "high",
+        "note": "This is Apple's own small-swatch UI color for the color picker, not a colorimetric measurement of the physical titanium."
+      },
+      "photo_sampled_hex_range": {
+        "value": [
+          "#3c444f",
+          "#4d5560"
+        ],
+        "unit": "hex",
+        "source": "Own pixel sampling of newsroom_colors_2x.jpg (median of 20x20 px patches at 3 flat, non-specular, non-logo points on the back panel, using Python/Pillow)",
+        "tier": "A",
+        "confidence": "medium",
+        "note": "One sampled point fell in a deep-shadow/specular area and read near-black (#0a131c); excluded as unrepresentative. The mid-range sampled values bracket the CSS swatch value closely, cross-validating it."
+      }
+    },
+    "star_white": {
+      "swatch_hex": {
+        "value": "#f7f6f5",
+        "unit": "hex",
+        "source": "Apple CSS: apple.com/v/iphone-duo/c/built/styles/overview.built.css, rule '.colornav-swatch-star-white{background:#f7f6f5}' and '--finish-iphoneduo-star-white:#f7f6f5;'",
+        "tier": "A",
+        "confidence": "high",
+        "note": null
+      },
+      "photo_sampled_hex_range": {
+        "value": [
+          "#f0efed",
+          "#f6f6f4"
+        ],
+        "unit": "hex",
+        "source": "Own pixel sampling of newsroom_colors_2x.jpg (same method as night_sky)",
+        "tier": "A",
+        "confidence": "medium",
+        "note": "One point near a bottom-edge shadow read darker (#d1cecb) and was excluded as unrepresentative."
+      }
+    },
+    "finish_note": {
+      "value": "Both colorways share the same mirror-polished titanium frame; only the back Ceramic Shield panel color differs. The frame itself is not a flat color: it is a high-specular mirror finish and should be modeled with a reflective/metallic material and an environment map rather than a single base color.",
+      "source": "Apple newsroom + own observation of official photography",
+      "tier": "A",
+      "confidence": "high",
+      "note": null
+    }
+  }
+}

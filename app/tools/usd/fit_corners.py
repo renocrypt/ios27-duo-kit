@@ -1,6 +1,7 @@
 # Fit superellipse corners ((ax-u)/ax)^n + ((ay-v)/ay)^n = 1 to measured outline points
 # (u, v = insets from the two straight edges). Reports ax, ay, n and the max radial error.
-import json, math
+# Run it for the frame, glass, and plateau corners; `from fit_corners import fit` for other outlines.
+import json, math, os
 def fit(name, pts):
     best = None
     def err(ax, ay, n):
@@ -37,14 +38,6 @@ glassFree = [(67.613, 116.612), (68.377, 116.604), (69.147, 116.586), (69.914, 1
 glassHinge = [(0.957, 113.024), (0.959, 113.941), (0.968, 114.227), (0.988, 114.528), (1.031, 114.803), (1.105, 115.1), (1.206, 115.353), (1.354, 115.622), (1.518, 115.838), (1.735, 116.055), (1.951, 116.219), (2.22, 116.367), (2.474, 116.468), (2.772, 116.542), (3.047, 116.585), (3.348, 116.605), (3.634, 116.614), (4.56, 116.616)]
 frameHinge = [(0.0, 116.874), (0.001, 117.082), (0.018, 117.271), (0.062, 117.424), (0.135, 117.564), (0.217, 117.67), (0.338, 117.776), (0.478, 117.857), (0.642, 117.913), (0.809, 117.942), (1.08, 117.947), (1.738, 117.948)]
 plateauTop = [(77.284, 100.489), (77.385, 101.027), (77.457, 101.571), (77.5, 102.117), (77.515, 102.665), (77.501, 103.213), (77.457, 103.76), (77.385, 104.302), (77.284, 104.841), (77.155, 105.372), (76.998, 105.896), (76.814, 106.411), (76.603, 106.914), (76.365, 107.406), (76.103, 107.884), (75.815, 108.348), (75.504, 108.795), (75.17, 109.225), (74.814, 109.638), (74.436, 110.031), (74.039, 110.403), (73.622, 110.754), (73.187, 111.083), (72.734, 111.388), (72.265, 111.67), (71.781, 111.926), (71.283, 112.158), (70.772, 112.364), (70.249, 112.545), (69.714, 112.701), (69.169, 112.834), (68.614, 112.943), (68.05, 113.031), (67.477, 113.1), (66.895, 113.152), (66.306, 113.189), (65.71, 113.215), (64.806, 113.236), (63.895, 113.246), (60.119, 113.25)]
-res = {}
-res['frameFree'] = fit('frame free corner', [(82.45 - x, 117.948 - y) for x, y in frame])
-res['glassFree'] = fit('glass free corner', [(81.118 - x, 116.616 - y) for x, y in glassFree])
-res['glassHinge'] = fit('glass hinge corner', [(x - 0.957, 116.616 - y) for x, y in glassHinge])
-res['frameHinge'] = fit('frame hinge corner (mid)', [(x, 117.948 - y) for x, y in frameHinge])
-res['plateauTop'] = fit('plateau top end (upper half)', [(77.515 - x, 113.25 - y) for x, y in plateauTop if y >= 102.665])
-json.dump(res, open('/tmp/duo/geometry/corner-fits.json', 'w'), indent=1)
-
 # Plateau end as one half superellipse spanning the full height (no straight segment on the end).
 def fit_end(pts, hh, xe, yc):
     best = (1e9, None, 0)
@@ -61,4 +54,14 @@ def fit_end(pts, hh, xe, yc):
             if e < best[0]: best = (e, (ax, n), w)
     ax, n = best[1]
     print(f"plateau end half-superellipse: ax {ax:.3f} ay {hh:.3f} n {n:.3f} rms {math.sqrt(best[0]/len(pts)):.4f} max {best[2]:.4f}")
-fit_end(plateauTop, 10.585, 77.515, 102.665)
+
+if __name__ == '__main__':
+    res = {}
+    res['frameFree'] = fit('frame free corner', [(82.45 - x, 117.948 - y) for x, y in frame])
+    res['glassFree'] = fit('glass free corner', [(81.118 - x, 116.616 - y) for x, y in glassFree])
+    res['glassHinge'] = fit('glass hinge corner', [(x - 0.957, 116.616 - y) for x, y in glassHinge])
+    res['frameHinge'] = fit('frame hinge corner (mid)', [(x, 117.948 - y) for x, y in frameHinge])
+    res['plateauTop'] = fit('plateau top end (upper half)', [(77.515 - x, 113.25 - y) for x, y in plateauTop if y >= 102.665])
+    os.makedirs('/tmp/duo/geometry', exist_ok=True)
+    json.dump(res, open('/tmp/duo/geometry/corner-fits.json', 'w'), indent=1)
+    fit_end(plateauTop, 10.585, 77.515, 102.665)

@@ -1,0 +1,251 @@
+
+===== PER-OBJECT: world matrix decomposed =====
+aesUeAGqJmkjoaD type=EMPTY parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+AjfIgUpXxKaENDl type=MESH parent=lThHoEDPRcKxVDj loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+AKVZtTmuRolfwyf type=EMPTY parent=jrAYWVBOuBEKQMx loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+aPxlVqZVqWStoGD type=MESH parent=LQEBZxUIvjuXzdw loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+bjlUhVsGutUqoZH type=EMPTY parent=lDFOThoixLkQaNt loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+bLGVKucFHZXPlJf type=EMPTY parent=xRLfDaARzGhpJRl loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+BODTjtonsAnwGZC type=MESH parent=dTUwdegvXYlCPAJ loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+bsNHOLGaZbhIluH type=MESH parent=GkIhOUZSWGnyiHp loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+BwdEgNRIvxgoOrX type=MESH parent=xUSWCKliopnKdBb loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+cIpbiCGlEcdljuC type=MESH parent=ofINavgRnYcOtBd loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+ddUtWDgQuBTYSEY type=EMPTY parent=xRLfDaARzGhpJRl loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+DsxQCihOdKtPxIe type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+dTUwdegvXYlCPAJ type=EMPTY parent=YpWPjdyVXeCQnCk loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+ecOFHvzjpmGQnNS type=EMPTY parent=VozFyMVAwkoHjOE loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+EdsRvWYVMNVqBab type=MESH parent=iaRYLxAqmkmJLoG loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+eepRwbmxiYwsBNu type=MESH parent=dTUwdegvXYlCPAJ loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+EHrlCLEEYhQBiQK type=EMPTY parent=aesUeAGqJmkjoaD loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+ejUvJHtjfcqjSvM type=MESH parent=lThHoEDPRcKxVDj loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+eMkYisZsxjfVsku type=MESH parent=dTUwdegvXYlCPAJ loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+eTOVbDQVsswgAUz type=MESH parent=FyWFSAioEIdKumD loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+EuKPpVegcQBiQbq type=EMPTY parent=xBrLNRikmrHehEX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+exPlQoAHuiCYXFo type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+FafuGBBSaHXLqhj type=MESH parent=LUOprLNHsMrFOaS loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+fapSTOypmavuPic type=MESH parent=xBrLNRikmrHehEX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+fbvEqfwjsAMSDkr type=MESH parent=bjlUhVsGutUqoZH loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+FcJBPLgEScWGyXd type=MESH parent=mqejrnidkykjHgp loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+fdaipPEGAeomuPG type=MESH parent=aesUeAGqJmkjoaD loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+FyWFSAioEIdKumD type=EMPTY parent=LQEBZxUIvjuXzdw loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+gCGRiYiWIxXRhXE type=MESH parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+gjdjMOcCfrwBMYH type=MESH parent=exPlQoAHuiCYXFo loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+GkIhOUZSWGnyiHp type=EMPTY parent=MHKZGNlFPrDkKom loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+goCnNMWcWNuXUcC type=EMPTY parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+hhgAIoCGsHXeDPY type=MESH parent=goCnNMWcWNuXUcC loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+hMQYrwNoNcNjoRj type=MESH parent=ZtCfdmHJJEMcBCX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+HPnmzcIImWvVtsh type=EMPTY parent=xRLfDaARzGhpJRl loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+HSsYFMrRMLtGMxa type=EMPTY parent=ecOFHvzjpmGQnNS loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+iaRYLxAqmkmJLoG type=EMPTY parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+ieHYvKnnzuKBgyJ type=MESH parent=YpWPjdyVXeCQnCk loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+iKZSoAlRlDlkSEw type=MESH parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+INryeDDYSSKehNA type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+itODWJLNRbBbHzD type=MESH parent=ZtCfdmHJJEMcBCX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+iUykZAiNlEUXJDD type=MESH parent=YpWPjdyVXeCQnCk loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+jJermpgmctotTSe type=MESH parent=GkIhOUZSWGnyiHp loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+JMNlJLaRJqsIYOv type=EMPTY parent=AKVZtTmuRolfwyf loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+JnJdTkxbQgUtLwU type=MESH parent=JMNlJLaRJqsIYOv loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+jnMRBCmgCrfRBeG type=MESH parent=MHKZGNlFPrDkKom loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+jrAYWVBOuBEKQMx type=EMPTY parent=pAozAexmhJgprgi loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+JTfSVVYjoeeDWKv type=MESH parent=dTUwdegvXYlCPAJ loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+KwknaiWiXLGNYdF type=EMPTY parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+lDFOThoixLkQaNt type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+lJPfQMFXvvcmdtA type=MESH parent=AKVZtTmuRolfwyf loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+lkstqCsTPFGjqkq type=EMPTY parent=pAozAexmhJgprgi loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+LQEBZxUIvjuXzdw type=EMPTY parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+lRoKMVsbfCealtF type=EMPTY parent=DsxQCihOdKtPxIe loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+lThHoEDPRcKxVDj type=EMPTY parent=lDFOThoixLkQaNt loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+LUOprLNHsMrFOaS type=EMPTY parent=xBrLNRikmrHehEX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+MeQNhtSdEDLOoXj type=MESH parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+MhDPaBaaHkLYESY type=MESH parent=xUSWCKliopnKdBb loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+MHKZGNlFPrDkKom type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+mjecbCFnfurWWJV type=MESH parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+MjVVZAfVRIEvieS type=EMPTY parent=pAozAexmhJgprgi loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+MnPSgwdtGmrkVcg type=MESH parent=rTXqhGdxSahVgNw loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+mqejrnidkykjHgp type=EMPTY parent=lDFOThoixLkQaNt loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+MrGmthJDWvDlbwX type=MESH parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+msUTSJTbdlDoNLs type=MESH parent=EuKPpVegcQBiQbq loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+MvKPXGSdYDVvSpk type=MESH parent=JMNlJLaRJqsIYOv loc_mm=(-39.39,0.00,58.85) rot_deg=(-180.00,0.00,90.00) scale=(0.010,0.010,0.010)
+nrYKEbuMfByWbND type=MESH parent=INryeDDYSSKehNA loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+NtYMsWnAcbWQvBP type=MESH parent=YpWPjdyVXeCQnCk loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+ofINavgRnYcOtBd type=EMPTY parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+oiUDqkWwTyKwnqQ type=EMPTY parent=VozFyMVAwkoHjOE loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+ONfbMSsVikXcwwp type=MESH parent=EuKPpVegcQBiQbq loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+pAozAexmhJgprgi type=EMPTY parent=xRLfDaARzGhpJRl loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+pbUtGkaSVSEWCbb type=MESH parent=pPSzFBvbxyRnJyd loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+PkkUoNvpaBExwuc type=MESH parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+pmvwSuCeZpxeLmT type=MESH parent=EHrlCLEEYhQBiQK loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+pPSzFBvbxyRnJyd type=EMPTY parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+pweTZuphtbJXJdM type=MESH parent=xUSWCKliopnKdBb loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+PXwNjghIIgDPXsa type=MESH parent=KwknaiWiXLGNYdF loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+pYcHgppzzKEphCf type=MESH parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+qyiwePzfWzVHIDO type=MESH parent=EHrlCLEEYhQBiQK loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+RfedWPXoFcsOTjI type=MESH parent=xUSWCKliopnKdBb loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+rqynQLtWLECDNtb type=MESH parent=FyWFSAioEIdKumD loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+RsMYVEApMypWrpd type=MESH parent=FyWFSAioEIdKumD loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+rTXqhGdxSahVgNw type=EMPTY parent=xBrLNRikmrHehEX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+RwQzmCvUWHGlFfV type=MESH parent=exPlQoAHuiCYXFo loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+SCDZMtVjLrcxENj type=MESH parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+SiftyleUEEZwLhF type=EMPTY parent=AKVZtTmuRolfwyf loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+svvOILdVxasRAOk type=MESH parent=KwknaiWiXLGNYdF loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+SxeyDDoPvaCZQxB type=MESH parent=YpWPjdyVXeCQnCk loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+tgAwAdzrbYmlxSK type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+TjnQASEQBIHreGe type=MESH parent=YpWPjdyVXeCQnCk loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+tkSBzAjLTdhANqx type=MESH parent=bjlUhVsGutUqoZH loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+tLtsGCMtMAZfCYN type=MESH parent=xBrLNRikmrHehEX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+tnxsltexVWtEjsz type=MESH parent=xTelJGdtyasCWdl loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+tYVfzVmYBKhfUhm type=MESH parent=xTelJGdtyasCWdl loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+UPeNpLgJbcWzHun type=MESH parent=rTXqhGdxSahVgNw loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+upTUAKvMVkPOMKq type=EMPTY parent=AKVZtTmuRolfwyf loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+uWPCbpPKzwJOmUY type=MESH parent=upTUAKvMVkPOMKq loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+UXtkILReLwCJaov type=MESH parent=bjlUhVsGutUqoZH loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+UXtsBZYlaUvHoEh type=MESH parent=JMNlJLaRJqsIYOv loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+VNIQJMrwFmXgrBf type=MESH parent=lThHoEDPRcKxVDj loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+VozFyMVAwkoHjOE type=EMPTY parent=None loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+vTcSkzvfyxWyWLx type=MESH parent=LQEBZxUIvjuXzdw loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+WzRveeKjvQZVqRA type=MESH parent=tgAwAdzrbYmlxSK loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+xBrLNRikmrHehEX type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+xcCuAfHYtkJLwuT type=MESH parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+xdyyaajWsatVNxN type=MESH parent=JMNlJLaRJqsIYOv loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+XhlWHFWIcGllwzN type=EMPTY parent=lDFOThoixLkQaNt loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+xpVpaKuQKnXQhFj type=MESH parent=goCnNMWcWNuXUcC loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+xRLfDaARzGhpJRl type=EMPTY parent=oiUDqkWwTyKwnqQ loc_mm=(0.00,0.00,0.00) rot_deg=(90.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+xTelJGdtyasCWdl type=EMPTY parent=SiftyleUEEZwLhF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+xUSWCKliopnKdBb type=EMPTY parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+XziVXUmXQoAudpp type=MESH parent=ZtCfdmHJJEMcBCX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+YhaSRqOjDUQrQTc type=MESH parent=XhlWHFWIcGllwzN loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+YpWPjdyVXeCQnCk type=EMPTY parent=DsxQCihOdKtPxIe loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+ZcRVEBTagyUDrqj type=MESH parent=LQEBZxUIvjuXzdw loc_mm=(-40.96,0.00,58.85) rot_deg=(0.00,-180.00,-0.00) scale=(0.010,0.010,0.010)
+zdStWfgHXiitQgl type=MESH parent=EuKPpVegcQBiQbq loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+zKTkIrxcXzWwBYK type=MESH parent=lRoKMVsbfCealtF loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+ZtCfdmHJJEMcBCX type=EMPTY parent=xBrLNRikmrHehEX loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+zukXlhkizWJIDav type=MESH parent=YpWPjdyVXeCQnCk loc_mm=(-40.96,0.00,58.85) rot_deg=(180.00,-0.00,0.00) scale=(0.010,0.010,0.010)
+
+===== MESH OBJECTS: vertex count, world AABB (mm), poly count =====
+lJPfQMFXvvcmdtA: verts=24 polys=16 size_mm=(166.13,61.09,118.39) center_mm=(-0.01,0.00,59.19) mat=udkIoumZEJmNcgx
+SCDZMtVjLrcxENj: verts=804 polys=497 size_mm=(81.40,10.16,116.80) center_mm=(0.07,5.86,58.95) mat=udkIoumZEJmNcgx
+qyiwePzfWzVHIDO: verts=4390 polys=3886 size_mm=(82.45,5.03,117.95) center_mm=(0.15,-2.99,58.97) mat=pOHYMArkYgGMSvE
+jJermpgmctotTSe: verts=5412 polys=4635 size_mm=(82.45,5.03,117.95) center_mm=(0.15,2.99,58.97) mat=pOHYMArkYgGMSvE
+iKZSoAlRlDlkSEw: verts=642 polys=360 size_mm=(81.32,4.72,116.75) center_mm=(0.03,-3.14,58.89) mat=udkIoumZEJmNcgx
+fdaipPEGAeomuPG: verts=576 polys=414 size_mm=(67.62,4.90,117.95) center_mm=(7.56,-2.92,58.97) mat=yakTRrHfzYtGymu
+jnMRBCmgCrfRBeG: verts=576 polys=414 size_mm=(67.62,4.90,117.95) center_mm=(7.56,2.92,58.97) mat=yakTRrHfzYtGymu/private/tmp/duo/device-research/blender_inspect2.py:108: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.use_nodes:
+
+PXwNjghIIgDPXsa: verts=424 polys=314 size_mm=(80.26,4.03,115.85) center_mm=(-0.95,-2.22,58.97) mat=udkIoumZEJmNcgx
+RwQzmCvUWHGlFfV: verts=424 polys=314 size_mm=(80.26,4.03,115.85) center_mm=(-0.95,2.22,58.97) mat=udkIoumZEJmNcgx
+tLtsGCMtMAZfCYN: verts=2558 polys=2483 size_mm=(80.16,4.04,115.28) center_mm=(-0.04,7.12,58.97) mat=nfSKIKcFQpPcaTk
+uWPCbpPKzwJOmUY: verts=80 polys=101 size_mm=(76.07,4.13,116.61) center_mm=(2.67,-2.87,58.97) mat=udkIoumZEJmNcgx
+mjecbCFnfurWWJV: verts=72 polys=92 size_mm=(76.07,4.13,116.61) center_mm=(2.67,2.87,58.97) mat=udkIoumZEJmNcgx
+fapSTOypmavuPic: verts=2596 polys=2604 size_mm=(80.16,3.73,115.28) center_mm=(-0.04,7.28,58.97) mat=eNDiNFhhBNyrPgP
+UPeNpLgJbcWzHun: verts=2456 polys=2380 size_mm=(80.16,3.56,115.28) center_mm=(-0.04,6.79,58.97) mat=hpXWDkYkMocrDql
+bsNHOLGaZbhIluH: verts=884 polys=442 size_mm=(67.20,3.41,117.95) center_mm=(7.78,2.83,58.97) mat=kUUqfCXsMaJHyje
+JnJdTkxbQgUtLwU: verts=960 polys=768 size_mm=(78.85,2.55,113.27) center_mm=(-0.39,0.00,58.97) mat=DHVeopyQCCjAHKQ
+UXtsBZYlaUvHoEh: verts=295 polys=295 size_mm=(77.68,2.45,111.03) center_mm=(-0.92,0.00,58.97) mat=UBwioVSWewZpuRX
+svvOILdVxasRAOk: verts=1600 polys=1524 size_mm=(81.22,0.78,116.48) center_mm=(0.03,-0.39,58.97) mat=AfMuGuGyrRdWvGa
+gjdjMOcCfrwBMYH: verts=1698 polys=1615 size_mm=(81.22,0.78,116.48) center_mm=(0.03,0.39,58.97) mat=AfMuGuGyrRdWvGa
+xdyyaajWsatVNxN: verts=1252 polys=1204 size_mm=(11.89,5.08,115.75) center_mm=(-35.14,0.00,58.97) mat=AfMuGuGyrRdWvGa
+MnPSgwdtGmrkVcg: verts=1812 polys=2002 size_mm=(63.88,3.69,29.00) center_mm=(8.00,6.85,102.01) mat=hpXWDkYkMocrDql
+pmvwSuCeZpxeLmT: verts=996 polys=770 size_mm=(16.44,2.70,117.95) center_mm=(-0.06,-2.68,58.97) mat=kUUqfCXsMaJHyje
+xpVpaKuQKnXQhFj: verts=614 polys=500 size_mm=(80.16,0.40,115.28) center_mm=(-0.04,-5.30,58.97) mat=DHVeopyQCCjAHKQ
+MvKPXGSdYDVvSpk: verts=1300 polys=1289 size_mm=(2.90,8.20,115.58) center_mm=(-41.95,0.00,58.97) mat=isnmyjbXNQZlHGY
+zKTkIrxcXzWwBYK: verts=720 polys=648 size_mm=(16.25,1.90,16.23) center_mm=(26.08,10.09,102.67) mat=pOHYMArkYgGMSvE
+TjnQASEQBIHreGe: verts=720 polys=648 size_mm=(16.25,1.90,16.23) center_mm=(8.31,10.09,102.67) mat=pOHYMArkYgGMSvE
+gCGRiYiWIxXRhXE: verts=576 polys=504 size_mm=(16.25,1.87,16.23) center_mm=(26.08,8.21,102.67) mat=TJvImvzeubEEDzE
+SxeyDDoPvaCZQxB: verts=576 polys=504 size_mm=(16.25,1.87,16.23) center_mm=(8.31,8.21,102.67) mat=TJvImvzeubEEDzE
+EdsRvWYVMNVqBab: verts=2088 polys=2329 size_mm=(11.03,1.20,5.21) center_mm=(-0.06,-2.68,4.61) mat=oEGeLQAOjZgdIFG
+UXtkILReLwCJaov: verts=550 polys=500 size_mm=(1.05,3.06,18.71) center_mm=(41.30,2.83,74.99) mat=pOHYMArkYgGMSvE
+
+===== TRUE WORLD AABB across ALL mesh vertices (mm) =====
+ALL meshes incl. proxies: size_mm = (166.13, 61.09, 118.40)
+Excluding low-poly (<=30 poly) proxies: size_mm = (85.22, 16.73, 118.40)
+
+===== Attempt to find the two back-shell meshes and their face normals =====
+mjecbCFnfurWWJV: area=191444463.1mm^2 normal=(0.711,-0.640,0.292) size_mm=(76.07,4.13,116.61) minsize_mm=4.127
+uWPCbpPKzwJOmUY: area=190529905.7mm^2 normal=(0.045,0.999,0.027) size_mm=(76.07,4.13,116.61) minsize_mm=4.127
+UXtsBZYlaUvHoEh: area=173790318.4mm^2 normal=(1.000,-0.000,0.000) size_mm=(77.68,2.45,111.03) minsize_mm=2.453
+fapSTOypmavuPic: area=88425437.2mm^2 normal=(0.000,-1.000,0.000) size_mm=(80.16,3.73,115.28) minsize_mm=3.726
+hhgAIoCGsHXeDPY: area=86351138.2mm^2 normal=(-0.000,-1.000,0.000) size_mm=(77.39,0.00,112.51) minsize_mm=0.000
+UPeNpLgJbcWzHun: area=86023182.9mm^2 normal=(0.000,1.000,-0.000) size_mm=(80.16,3.56,115.28) minsize_mm=3.562
+tLtsGCMtMAZfCYN: area=82333849.6mm^2 normal=(-0.000,1.000,-0.000) size_mm=(80.16,4.04,115.28) minsize_mm=4.039
+MnPSgwdtGmrkVcg: area=36045110.1mm^2 normal=(0.007,1.000,0.013) size_mm=(63.88,3.69,29.00) minsize_mm=3.689
+qyiwePzfWzVHIDO: area=19640593.0mm^2 normal=(0.826,-0.562,0.039) size_mm=(82.45,5.03,117.95) minsize_mm=5.028
+jJermpgmctotTSe: area=18889130.5mm^2 normal=(0.721,0.686,-0.100) size_mm=(82.45,5.03,117.95) minsize_mm=5.028
+MvKPXGSdYDVvSpk: area=14758910.0mm^2 normal=(-1.000,-0.000,0.000) size_mm=(2.90,8.20,115.58) minsize_mm=2.902
+RwQzmCvUWHGlFfV: area=12304190.5mm^2 normal=(-0.423,-0.906,0.000) size_mm=(80.26,4.03,115.85) minsize_mm=4.032
+PXwNjghIIgDPXsa: area=12304190.3mm^2 normal=(-0.423,0.906,-0.000) size_mm=(80.26,4.03,115.85) minsize_mm=4.032
+svvOILdVxasRAOk: area=8403623.8mm^2 normal=(0.136,0.991,-0.000) size_mm=(81.22,0.78,116.48) minsize_mm=0.782
+gjdjMOcCfrwBMYH: area=8401034.1mm^2 normal=(0.136,-0.991,0.000) size_mm=(81.22,0.78,116.48) minsize_mm=0.782
+
+===== Material name -> object name mapping (all) =====
+pOHYMArkYgGMSvE -> ['AjfIgUpXxKaENDl', 'FcJBPLgEScWGyXd', 'jJermpgmctotTSe', 'qyiwePzfWzVHIDO', 'TjnQASEQBIHreGe', 'UXtkILReLwCJaov', 'YhaSRqOjDUQrQTc', 'zKTkIrxcXzWwBYK']
+DHVeopyQCCjAHKQ -> ['aPxlVqZVqWStoGD', 'JnJdTkxbQgUtLwU', 'xpVpaKuQKnXQhFj']
+qmxrEFfOvJSYhQO -> ['BODTjtonsAnwGZC', 'pweTZuphtbJXJdM', 'RsMYVEApMypWrpd']
+kUUqfCXsMaJHyje -> ['bsNHOLGaZbhIluH', 'pmvwSuCeZpxeLmT']
+ZdlykFGlVXrMgnF -> ['BwdEgNRIvxgoOrX', 'eepRwbmxiYwsBNu', 'eMkYisZsxjfVsku', 'eTOVbDQVsswgAUz', 'JTfSVVYjoeeDWKv', 'MhDPaBaaHkLYESY', 'RfedWPXoFcsOTjI', 'rqynQLtWLECDNtb']
+bnbUHmVcBNyhFgl -> ['cIpbiCGlEcdljuC', 'WzRveeKjvQZVqRA']
+oEGeLQAOjZgdIFG -> ['EdsRvWYVMNVqBab']
+MyBIzTBvbXlVjff -> ['ejUvJHtjfcqjSvM', 'fbvEqfwjsAMSDkr']
+nyGbnltkiVgOVaK -> ['FafuGBBSaHXLqhj']
+eNDiNFhhBNyrPgP -> ['fapSTOypmavuPic']
+yakTRrHfzYtGymu -> ['fdaipPEGAeomuPG', 'jnMRBCmgCrfRBeG']
+TJvImvzeubEEDzE -> ['gCGRiYiWIxXRhXE', 'SxeyDDoPvaCZQxB']
+AfMuGuGyrRdWvGa -> ['gjdjMOcCfrwBMYH', 'svvOILdVxasRAOk', 'xdyyaajWsatVNxN']
+bVtHVUZGvQeXwdh -> ['hhgAIoCGsHXeDPY']
+qsaDpVIHURYREdD -> ['hMQYrwNoNcNjoRj']
+iWJmrhAGVXsplAU -> ['ieHYvKnnzuKBgyJ', 'pYcHgppzzKEphCf']
+udkIoumZEJmNcgx -> ['iKZSoAlRlDlkSEw', 'lJPfQMFXvvcmdtA', 'mjecbCFnfurWWJV', 'PXwNjghIIgDPXsa', 'RwQzmCvUWHGlFfV', 'SCDZMtVjLrcxENj', 'uWPCbpPKzwJOmUY']
+qMQBeWGUCGfErnO -> ['itODWJLNRbBbHzD', 'ONfbMSsVikXcwwp']
+KZyHFwBbAcpggBF -> ['iUykZAiNlEUXJDD', 'PkkUoNvpaBExwuc']
+VnRXIqfJGJZbeXY -> ['MeQNhtSdEDLOoXj', 'zukXlhkizWJIDav']
+hpXWDkYkMocrDql -> ['MnPSgwdtGmrkVcg', 'UPeNpLgJbcWzHun']
+zzpHLLWMeplrvNu -> ['MrGmthJDWvDlbwX', 'NtYMsWnAcbWQvBP', 'xcCuAfHYtkJLwuT']
+yeSylDxiUWUEdUq -> ['msUTSJTbdlDoNLs']
+isnmyjbXNQZlHGY -> ['MvKPXGSdYDVvSpk']
+kJeamnuzMHYZdFm -> ['nrYKEbuMfByWbND', 'pbUtGkaSVSEWCbb']
+lncqqAffdcKCPyc -> ['tkSBzAjLTdhANqx', 'VNIQJMrwFmXgrBf']
+nfSKIKcFQpPcaTk -> ['tLtsGCMtMAZfCYN']
+djGRseSgLsvgsjU -> ['tnxsltexVWtEjsz']
+toNHgGKgNFeCXva -> ['tYVfzVmYBKhfUhm', 'XziVXUmXQoAudpp']
+UBwioVSWewZpuRX -> ['UXtsBZYlaUvHoEh']
+VKnKoHfJjSdRybB -> ['vTcSkzvfyxWyWLx']
+tbdwzjlMQCYGFiW -> ['ZcRVEBTagyUDrqj']
+uJFPWgDhmWStPgF -> ['zdStWfgHXiitQgl']
+
+===== Material properties (base color, roughness, metallic if available) =====
+{'name': 'AfMuGuGyrRdWvGa', 'base_color_rgba': (0.002, 0.002, 0.002, 1.0), 'metallic': 0.0, 'roughness': 0.5}
+{'name': 'bnbUHmVcBNyhFgl', 'base_color_rgba': (0.89, 0.8832, 0.8695, 1.0), 'metallic': 1.0, 'roughness': 0.15000000596046448}
+{'name': 'bVtHVUZGvQeXwdh', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 1.0}
+{'name': 'DHVeopyQCCjAHKQ', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 1.0}
+{'name': 'djGRseSgLsvgsjU', 'base_color_rgba': (1.0, 0.974, 0.94, 1.0), 'metallic': 0.10000000149011612, 'roughness': 1.0}
+{'name': 'eNDiNFhhBNyrPgP', 'base_color_rgba': (1.0, 0.98, 0.94, 1.0), 'metallic': 0.0, 'roughness': 0.5}
+{'name': 'hpXWDkYkMocrDql', 'base_color_rgba': (0.8, 0.8, 0.8, 1.0), 'metallic': 0.10000000149011612, 'roughness': 1.0, 'base_color_texture': 'GSWJxiCgBOzzWvI.jpg'}
+{'name': 'isnmyjbXNQZlHGY', 'base_color_rgba': (0.89, 0.8603, 0.801, 1.0), 'metallic': 1.0, 'roughness': 0.5}
+{'name': 'iWJmrhAGVXsplAU', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 0.800000011920929}
+{'name': 'kJeamnuzMHYZdFm', 'base_color_rgba': (0.8, 0.8, 0.8, 1.0), 'metallic': 0.0, 'roughness': 0.5, 'base_color_texture': 'FTaCvSOaoEkwlkh.jpg'}
+{'name': 'kUUqfCXsMaJHyje', 'base_color_rgba': (0.6, 0.5779, 0.54, 1.0), 'metallic': 1.0, 'roughness': 0.5}
+{'name': 'KZyHFwBbAcpggBF', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 1.0, 'roughness': 0.10000000149011612}
+{'name': 'lncqqAffdcKCPyc', 'base_color_rgba': (0.89, 0.8455, 0.7832, 1.0), 'metallic': 1.0, 'roughness': 0.009999999776482582}
+{'name': 'MyBIzTBvbXlVjff', 'base_color_rgba': (0.9, 0.8813, 0.855, 1.0), 'metallic': 0.800000011920929, 'roughness': 1.0}
+{'name': 'nfSKIKcFQpPcaTk', 'base_color_rgba': (0.8, 0.8, 0.8, 1.0), 'metallic': 0.10000000149011612, 'roughness': 0.5, 'base_color_texture': 'JPjlyCIBrJGaate.jpg'}
+{'name': 'nyGbnltkiVgOVaK', 'base_color_rgba': (0.8, 0.8, 0.8, 1.0), 'metallic': 0.0, 'roughness': 0.5, 'base_color_texture': 'VTnktJhSuvwHttZ.png'}
+{'name': 'oEGeLQAOjZgdIFG', 'base_color_rgba': (0.6, 0.5779, 0.54, 1.0), 'metallic': 0.0, 'roughness': 0.5}
+{'name': 'pOHYMArkYgGMSvE', 'base_color_rgba': (0.89, 0.8506, 0.7832, 1.0), 'metallic': 1.0, 'roughness': 0.05000000074505806}
+{'name': 'qMQBeWGUCGfErnO', 'base_color_rgba': (0.933, 0.8747, 0.793, 1.0), 'metallic': 0.026799999177455902, 'roughness': 0.75}
+{'name': 'qmxrEFfOvJSYhQO', 'base_color_rgba': (0.0195, 0.0281, 0.033, 1.0), 'metallic': 1.0, 'roughness': 0.5}
+{'name': 'qsaDpVIHURYREdD', 'base_color_rgba': (0.977, 0.9159, 0.8304, 1.0), 'metallic': 0.02500000037252903, 'roughness': 0.5}
+{'name': 'tbdwzjlMQCYGFiW', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 0.6499999761581421}
+{'name': 'TJvImvzeubEEDzE', 'base_color_rgba': (0.955, 0.9359, 0.8977, 1.0), 'metallic': 1.0, 'roughness': 1.0}
+{'name': 'toNHgGKgNFeCXva', 'base_color_rgba': (1.0, 1.0, 1.0, 1.0), 'metallic': 0.20000000298023224, 'roughness': 0.05000000074505806}
+{'name': 'UBwioVSWewZpuRX', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 1.0}
+{'name': 'udkIoumZEJmNcgx', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 1.0}
+{'name': 'uJFPWgDhmWStPgF', 'base_color_rgba': (0.8, 0.8, 0.8, 1.0), 'metallic': 0.0, 'roughness': 0.33000001311302185, 'base_color_texture': 'TvJgPVlZXbHKHmC.png'}
+{'name': 'VKnKoHfJjSdRybB', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 1.0}
+{'name': 'VnRXIqfJGJZbeXY', 'base_color_rgba': (0.0, 0.0, 0.0, 1.0), 'metallic': 0.0, 'roughness': 0.05000000074505806}
+{'name': 'yakTRrHfzYtGymu', 'base_color_rgba': (0.5, 0.4798, 0.45, 1.0), 'metallic': 0.0, 'roughness': 1.0}
+{'name': 'yeSylDxiUWUEdUq', 'base_color_rgba': (1.0, 1.0, 1.0, 1.0), 'metallic': 0.0, 'roughness': 0.25}
+{'name': 'ZdlykFGlVXrMgnF', 'base_color_rgba': (0.8, 0.8, 0.8, 1.0), 'metallic': 0.0, 'roughness': 0.0010000000474974513, 'base_color_texture': 'rfsQSaQvLDpPofO.png'}
+{'name': 'zzpHLLWMeplrvNu', 'base_color_rgba': (0.0064, 0.0064, 0.01, 1.0), 'metallic': 0.0, 'roughness': 0.6499999761581421}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+USD import of '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz' took 88.24 ms
+
+Blender quit

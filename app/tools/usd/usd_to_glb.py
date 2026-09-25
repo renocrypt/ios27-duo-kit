@@ -43,6 +43,7 @@ def export(pose, out):
             "accessors": accessors, "bufferViews": views, "buffers": [{"byteLength": len(buf)}]}
     js = json.dumps(gltf).encode(); js += b" " * ((4 - len(js) % 4) % 4)
     glb = struct.pack("<III", 0x46546C67, 2, 12 + 8 + len(js) + 8 + len(buf)) + struct.pack("<II", len(js), 0x4E4F534A) + js + struct.pack("<II", len(buf), 0x004E4942) + bytes(buf)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "wb").write(glb)
     print(f"{pose}: {len(nodes)} meshes -> {out} ({len(glb)//1024} KB)")
 

@@ -43,4 +43,4 @@ for i, k in enumerate(used):
     P = [p for kk, a, b in segs if kk == k for p in (a, b) if inside(p)]
     label = f"{names[k]}  u {min(p[0] for p in P):.2f}..{max(p[0] for p in P):.2f}  v {min(p[1] for p in P):.2f}..{max(p[1] for p in P):.2f}"
     d.text((8, 8 + 13 * i), label, fill=col[k]); print(label)
-out = f"/tmp/duo/device-research/atlas-{POSE}-{sys.argv[2]}{VALUE:g}.png"; img.save(out); print("wrote", out, img.size)
+out = f"/tmp/duo/device-research/atlas-{POSE}-{sys.argv[2]}{VALUE:g}.png"; os.makedirs(os.path.dirname(out), exist_ok=True); img.save(out); print("wrote", out, img.size)
