@@ -30,6 +30,7 @@ Skip unless a task is about them: `app/src/tokens/` and `app/tokens/glass.sim.to
 
 - `npm run check` in `app/`: tokens, types, the hinge sweep, the production build.
 - The dev server is `127.0.0.1:5190`. Inside Claude Code's sandbox, start it with `DUO_POLL=1 npm run dev`: file events do not reach the sandbox, and without polling it serves stale modules. On the presentation, `window.duo` holds `{ stage, journey, surfaces }`; the progress rail's buttons jump between scenes. Dev labs are listed in `app/README.md`.
+- Git: `github.com/renocrypt/duo` (private), branch `main`. Inside Claude Code's sandbox, commits work; pushing and `gh` do not (the token is in the Keychain, and TLS cannot be verified there), so run them outside it.
 - Screenshots and scratch files go to `/tmp/duo/<task>/`, never into this folder. The glass probe keeps `/tmp/duo/glass-probe/` in four folders: `captures/<device>-<os>-<display>/<set>/` (iOS), `reports/` (calibration residuals), `inspect/<date>/` (pictures to look at), `scratch/`, plus `build/`.
 
 ## Reference library (outside this folder)
