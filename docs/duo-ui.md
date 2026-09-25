@@ -18,7 +18,7 @@ September 23, 2026. This is the layout model our screens (`app/src/kit/` for the
 | [M] | Our measurements from those images, in points, converted with the canvas sizes (inner 951 × 669 pt, outer 466 × 678 pt). Accurate to about ±2 pt. |
 | [C] | Our own design choice, where Apple shows nothing. |
 
-The raw material and images are kept in `/tmp/duo/duo-hig/` and `/tmp/duo/ios27-kit/`, not in this folder. The HIG and the developer docs publish no point dimensions for Duo's bars [HIG, DOC]; Apple's UI Kit does [KIT], and it is the source for section 2. Two frames of it, the vertical status in dark and light, were exported as vectors to `/tmp/duo/ios27-kit/` for the glyph lab (`app/labs/glyphs.html`); everything else was read in the Inspector. (Scripted bulk export from the kit is not allowed in this project's sessions; read numbers instead.)
+The raw material and images are kept in `.references/` (`apple-web/`, `owner/`, `ui-kit/`), not in the repository. The HIG and the developer docs publish no point dimensions for Duo's bars [HIG, DOC]; Apple's UI Kit does [KIT], and it is the source for section 2. Two frames of it, the vertical status in dark and light, were exported as vectors to `.references/ui-kit/` for the glyph lab (`app/labs/glyphs.html`); everything else was read in the Inspector. (Scripted bulk export from the kit is not allowed in this project's sessions; read numbers instead.)
 
 ## 1. The core pattern: controls on the side
 

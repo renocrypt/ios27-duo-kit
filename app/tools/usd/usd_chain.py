@@ -4,7 +4,7 @@
 import sys, math, json
 from pxr import Usd, UsdGeom, Gf
 import os
-USDZ = os.environ.get('DUO_USDZ', '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz')  # Apple's asset stays in /tmp
+USDZ = os.environ.get('DUO_USDZ', os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../../.references/apple-model/iPhone_Duo_e-sim_Star-White_Variant.usdz'))  # Apple's asset: in .references/, never in git
 POSE, AXIS, VALUE = sys.argv[1], 'xyz'.index(sys.argv[2]), float(sys.argv[3])
 U0, U1, V0, V1, TOL = map(float, sys.argv[4:9]); NAMES = set(sys.argv[9:])
 stage = Usd.Stage.Open(USDZ)
@@ -54,5 +54,5 @@ for prim in stage.Traverse():
     out[prim.GetName()] = [[(round(p[0], 3), round(p[1] - (2.49 if AXIS != 2 else 0), 3)) for p in rdp(c, TOL)] for c in chains if len(c) > 3]
 for n, cs in out.items():
     for c in cs: print(n, len(c), c)
-os.makedirs('/tmp/duo/reference', exist_ok=True)
-json.dump(out, open('/tmp/duo/reference/chain.json', 'w'))
+os.makedirs('/tmp/duo/usd', exist_ok=True)
+json.dump(out, open('/tmp/duo/usd/chain.json', 'w'))

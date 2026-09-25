@@ -1,6 +1,6 @@
 # USD measurement tools
 
-Scripts that measure Apple's iPhone Duo AR Quick Look model. The model itself never enters this folder: it stays in `/tmp/duo/device-research/references/` (override with `DUO_USDZ=/path/to/model.usdz`). Only the numbers these scripts print are recorded in the project, in `app/src/device/spec.ts` and `docs/research/2026-09-23-device-geometry-pass.md`.
+Scripts that measure Apple's iPhone Duo AR Quick Look model. The model itself never enters git: it lives in `.references/apple-model/` (ignored; override with `DUO_USDZ=/path/to/model.usdz`), and scratch output (sections, atlases, fits) goes to `/tmp/duo/usd/`. Only the numbers these scripts print are recorded in the project, in `app/src/device/spec.ts` and `docs/research/2026-09-23-device-geometry-pass.md`.
 
 Run with `uv run -q --python 3.12 --with usd-core [--with pillow] python <script> ...` (usd-core has no wheel for Python 3.13 yet).
 
@@ -20,6 +20,6 @@ Run with `uv run -q --python 3.12 --with usd-core [--with pillow] python <script
 | `usd_profiles.py` | Dense wall profiles (inset against height) of the free and top edges |
 | `fit_corners.py` | Fits superellipse corners to outline points: `ax`, `ay`, `n`, and the error. Run, it fits the frame, glass, and plateau corners; `from fit_corners import fit` for other outlines |
 | `fit_display_corners.py` | The display areas' corners and the bumper's (outlines from `usd_boundary.py`): the source of `spec.ts`'s `inner.corner` and `outer.corners`. Plain Python |
-| `usd_to_glb.py` | Exports both poses to GLB in `/tmp/duo/reference/` for the compare tool (`/labs/compare.html`, dev server only) |
+| `usd_to_glb.py` | Exports both poses to GLB next to the model, for the compare tool (`/labs/compare.html`, dev server only) |
 
 Apple's frame: x across the fold (hinge at x = 0), y from the bottom edge (0) to the top edge (117.95), z out of the inner display (display surface 2.49, back −2.74). Our device frame shifts y by −58.975 and z by −2.49.

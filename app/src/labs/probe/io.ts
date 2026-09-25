@@ -1,6 +1,6 @@
 /**
  * The glass probe's inputs and our side of it, shared by the comparison view (main.ts) and the
- * calibration (calibrate.ts): iOS's captures (served from /tmp/duo/glass-probe/captures/ by the
+ * calibration (calibrate.ts): iOS's captures (served from .references/glass-probe/captures/ by the
  * reference plugin), our compositor over the same scene, and one shape's measurements.
  *
  *   const catalog = await loadCatalog();           // { "duo-27.1-inner/tint-0.5": { tint, window, ... } }

@@ -1,6 +1,6 @@
 # Building a realistic, foldable, animatable iPhone Duo in Three.js and Anime.js
 
-Checked: September 23, 2026. Scope: modeling pipeline, the flexible-display bend, live hub UI on the two canvases, materials and lighting in Three.js r186, Anime.js 4.5's Three.js adapter (read from package source), hinge kinematics, tooling, and a brief reading of Apple's marketing license as it applies to 3D. Does not research device measurements; see the [geometry note](2026-09-23-device-geometry-and-mockups.md) for those, cited here as needed. Evidence tiers: **V** official docs/source (I opened the file or the doc) · **F** firsthand/practitioner report · **D** opinion, forum, or secondhand. Scratch packages and notes are under `/tmp/duo/device-research/tech/`.
+Checked: September 23, 2026. Scope: modeling pipeline, the flexible-display bend, live hub UI on the two canvases, materials and lighting in Three.js r186, Anime.js 4.5's Three.js adapter (read from package source), hinge kinematics, tooling, and a brief reading of Apple's marketing license as it applies to 3D. Does not research device measurements; see the [geometry note](2026-09-23-device-geometry-and-mockups.md) for those, cited here as needed. Evidence tiers: **V** official docs/source (I opened the file or the doc) · **F** firsthand/practitioner report · **D** opinion, forum, or secondhand. The scratch packages and notes were disposable.
 
 ## Short answer
 
@@ -63,7 +63,7 @@ Checked: September 23, 2026. Scope: modeling pipeline, the flexible-display bend
 
 ## 5. Anime.js 4.5 with Three.js — verified against package source
 
-Package inspected: `animejs@4.5.0` unpacked at `/tmp/duo/device-research/tech/animejs`. The Three.js binding is not part of the default `animejs` import; it must be imported once as a side effect: `import 'animejs/adapters/three'` (its files are declared under `sideEffects` in `package.json` [V], and `threeAdapter` self-registers on import via `registerAdapter()` in `adapter.js` [V]).
+Package inspected: `animejs@4.5.0` unpacked in a scratch folder (the same version is in `app/node_modules/`). The Three.js binding is not part of the default `animejs` import; it must be imported once as a side effect: `import 'animejs/adapters/three'` (its files are declared under `sideEffects` in `package.json` [V], and `threeAdapter` self-registers on import via `registerAdapter()` in `adapter.js` [V]).
 
 **What it adds beyond plain object-property animation** (all read directly from `object3d.js`, `resolvers.js`, `uniform.js`, `instance.js` [V]):
 - Duck-typed target detection (`isObject3D`, `isMaterial`, `isTexture`, `isFog`, `isColor`, `isVector2/3/4`, `isUniformNode`) means you `animate()` a mesh, a material, a color, or a texture the same way you'd animate a DOM element.

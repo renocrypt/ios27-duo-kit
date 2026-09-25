@@ -1,6 +1,6 @@
 /**
  * Glass probe lab (dev tool): Liquid Glass as iOS renders it (captures by tools/glass-probe/probe.ts,
- * listed in /tmp/duo/glass-probe/captures/catalog.json) against our compositor on the same scenes,
+ * listed in .references/glass-probe/captures/catalog.json) against our compositor on the same scenes,
  * measured by the same code (measure.ts).
  *
  *   /labs/probe.html                 every scene of the default set: the two renders side by side,

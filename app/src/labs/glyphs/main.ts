@@ -1,6 +1,6 @@
 /**
  * Glyph lab (dev tool): measures our glyphs against Apple's iOS 27 UI Kit, so they are drawn to
- * numbers rather than by eye. The kit frames live in /tmp/duo/ios27-kit/ and reach this page only
+ * numbers rather than by eye. The kit frames live in .references/ui-kit/ and reach this page only
  * through the dev server (/@reference/kit/, tools/vite-plugin-reference.ts); nothing of Apple's
  * enters the project.
  *

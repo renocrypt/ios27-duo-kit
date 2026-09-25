@@ -5,7 +5,7 @@ import sys, colorsys
 from pxr import Usd, UsdGeom, Gf
 from PIL import Image, ImageDraw
 import os
-USDZ = os.environ.get('DUO_USDZ', '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz')  # Apple's asset stays in /tmp
+USDZ = os.environ.get('DUO_USDZ', os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../../.references/apple-model/iPhone_Duo_e-sim_Star-White_Variant.usdz'))  # Apple's asset: in .references/, never in git
 POSE, AXIS, VALUE = sys.argv[1], 'xyz'.index(sys.argv[2]), float(sys.argv[3])
 U0, U1, V0, V1 = map(float, sys.argv[4:8]); S = float(sys.argv[8]) if len(sys.argv) > 8 else 60
 stage = Usd.Stage.Open(USDZ)
@@ -43,4 +43,4 @@ for i, k in enumerate(used):
     P = [p for kk, a, b in segs if kk == k for p in (a, b) if inside(p)]
     label = f"{names[k]}  u {min(p[0] for p in P):.2f}..{max(p[0] for p in P):.2f}  v {min(p[1] for p in P):.2f}..{max(p[1] for p in P):.2f}"
     d.text((8, 8 + 13 * i), label, fill=col[k]); print(label)
-out = f"/tmp/duo/device-research/atlas-{POSE}-{sys.argv[2]}{VALUE:g}.png"; os.makedirs(os.path.dirname(out), exist_ok=True); img.save(out); print("wrote", out, img.size)
+out = f"/tmp/duo/usd/atlas-{POSE}-{sys.argv[2]}{VALUE:g}.png"; os.makedirs(os.path.dirname(out), exist_ok=True); img.save(out); print("wrote", out, img.size)

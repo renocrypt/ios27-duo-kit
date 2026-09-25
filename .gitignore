@@ -4,3 +4,4 @@ dist/
 .claude/.cc-writes/
 .shots/
 __pycache__/
+.references/

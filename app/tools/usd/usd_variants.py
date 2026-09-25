@@ -2,7 +2,7 @@
 import os
 from pxr import Usd, UsdGeom
 
-USDZ = os.environ.get('DUO_USDZ', '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz')  # Apple's asset stays in /tmp
+USDZ = os.environ.get('DUO_USDZ', os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../../.references/apple-model/iPhone_Duo_e-sim_Star-White_Variant.usdz'))  # Apple's asset: in .references/, never in git
 stage = Usd.Stage.Open(USDZ)
 print("metersPerUnit:", UsdGeom.GetStageMetersPerUnit(stage), "upAxis:", UsdGeom.GetStageUpAxis(stage))
 

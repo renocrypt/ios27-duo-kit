@@ -1,6 +1,6 @@
 # Liquid Glass: Apple's own specification
 
-Checked: September 23, 2026. Scope: what Apple itself says Liquid Glass *is* and *does* — optics, adaptivity, API surface, motion, shape, and accessibility — from Apple's HIG, developer documentation, and WWDC session transcripts, plus Apple's own support page and WWDC26 transcripts for post-launch changes. Does not cover how to *render* it (shaders, blur kernels, WebGL/Three.js technique) — that is the parallel rendering-research track. Raw downloads, JSON, and transcripts are in `/tmp/duo/liquid-glass-research/apple/` (not committed here, per project rules).
+Checked: September 23, 2026. Scope: what Apple itself says Liquid Glass *is* and *does* — optics, adaptivity, API surface, motion, shape, and accessibility — from Apple's HIG, developer documentation, and WWDC session transcripts, plus Apple's own support page and WWDC26 transcripts for post-launch changes. Does not cover how to *render* it (shaders, blur kernels, WebGL/Three.js technique) — that is the parallel rendering-research track. Raw downloads, JSON, and transcripts are in `.references/apple-web/docs/` (ignored by git, per project rules).
 
 ## Short answer
 

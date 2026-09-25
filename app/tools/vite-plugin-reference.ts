@@ -1,15 +1,15 @@
 /**
- * Dev-only Vite plugin: serves Apple reference material from /tmp/duo/ to our internal comparison
- * tools. The files never enter the project and are never bundled: this plugin only exists on the
- * dev server, and each route serves an allowlist of file names.
+ * Dev-only Vite plugin: serves reference material from ../.references/ (next to app/, ignored by
+ * git) to our internal comparison tools. The files never enter the repository and are never
+ * bundled: this plugin only exists on the dev server, and each route serves an allowlist of names.
  *
- *   /@reference/<name>.glb      Apple's AR model per pose (/tmp/duo/reference/, exported by
+ *   /@reference/<name>.glb      Apple's AR model per pose (.references/apple-model/, exported by
  *                               tools/usd/usd_to_glb.py), for compare/
- *   /@reference/kit/<name>.svg  frames exported from Apple's iOS 27 UI Kit (/tmp/duo/ios27-kit/),
+ *   /@reference/kit/<name>.svg  frames exported from Apple's iOS 27 UI Kit (.references/ui-kit/),
  *                               for labs/glyphs.html
  *   /@reference/probe/catalog.json, /@reference/probe/<device>/<set>/<scene>/<capture>.png|.json
- *                               Liquid Glass as the iOS simulator renders it (/tmp/duo/glass-probe/captures/,
- *                               captured by tools/glass-probe/probe.ts), for labs/probe.html
+ *                               Liquid Glass as the iOS simulator renders it (.references/glass-probe/
+ *                               captures/, captured by tools/glass-probe/probe.ts), for labs/probe.html
  *
  * And two writes, for labs/probe.html?calibrate only: POST /@probe/tokens (JSON) replaces
  * tokens/glass.sim.tokens.json, the [SIM] values it derives; POST /@probe/report (JSON) replaces
@@ -21,10 +21,11 @@ import type { Plugin } from 'vite';
 import { createReadStream, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
+/** Under .references/, next to app/. */
 const ROUTES: { prefix: string; dir: string; allow: RegExp }[] = [
-  { prefix: '/@reference/kit/', dir: '/tmp/duo/ios27-kit', allow: /^[\w .-]+\.svg$/ },
-  { prefix: '/@reference/probe/', dir: '/tmp/duo/glass-probe/captures', allow: /^(catalog\.json|[\w.-]+\/[\w.-]+\/(index\.json|[\w-]+\/[\w-]+\.(png|json)))$/ },
-  { prefix: '/@reference/', dir: '/tmp/duo/reference', allow: /^apple-duo-(closed|landscape)\.glb$/ },
+  { prefix: '/@reference/kit/', dir: 'ui-kit', allow: /^[\w .-]+\.svg$/ },
+  { prefix: '/@reference/probe/', dir: 'glass-probe/captures', allow: /^(catalog\.json|[\w.-]+\/[\w.-]+\/(index\.json|[\w-]+\/[\w-]+\.(png|json)))$/ },
+  { prefix: '/@reference/', dir: 'apple-model', allow: /^apple-duo-(closed|landscape)\.glb$/ },
 ];
 const TYPES: Record<string, string> = { svg: 'image/svg+xml', glb: 'model/gltf-binary', png: 'image/png', json: 'application/json' };
 
@@ -56,7 +57,7 @@ export function referencePlugin(): Plugin {
       for (const route of ROUTES) {
         server.middlewares.use(route.prefix, (req, res, next) => {
           const name = decodeURIComponent((req.url ?? '').replace(/^\//, '').split('?')[0]);
-          const file = join(route.dir, name);
+          const file = join(server.config.root, '..', '.references', route.dir, name);
           if (!route.allow.test(name) || !existsSync(file)) return next();
           res.setHeader('Content-Type', TYPES[name.split('.').pop()!]);
           res.setHeader('Cache-Control', 'no-store');

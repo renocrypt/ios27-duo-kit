@@ -40,10 +40,10 @@ Each module documents its API in its header. Dependencies run one way, with no c
 | `/labs/screens.html` | Every hub screen flat through the real pipeline; `?v=kitchen` shows one large |
 | `/labs/stage.html` | The stage with controls: posture, mood, finish, camera, orbit, test patterns |
 | `/labs/glass.html` | Liquid Glass review and tuning: shapes, light, accessibility modes, scenes, token export |
-| `/labs/glyphs.html` | Our glyphs against Apple's UI Kit frames (`/tmp/duo/ios27-kit/`): IoU and outline deviation; `window.fit(...)` |
+| `/labs/glyphs.html` | Our glyphs against Apple's UI Kit frames (`.references/ui-kit/`): IoU and outline deviation; `window.fit(...)` |
 | `/labs/inspect.html` | Close-ups of the device at their own fold angles; `?only=N` |
-| `/labs/compare.html` | Our model against Apple's AR model (`/tmp/duo/reference/`): overlay, silhouette diff, sections; `window.compare.metrics()` |
-| `/labs/probe.html` | Liquid Glass as iOS renders it (captures in `/tmp/duo/glass-probe/captures/`, listed in `catalog.json`) against our compositor on the same scenes, measured by the same code: tone, rim, lensing and contrast against depth, frost σ, edges. `?set=<device>/<set>` picks a capture set; `?calibrate` derives every [SIM] glass token into `tokens/glass.sim.tokens.json` (generated; do not edit), writes a report of every residual to `tools/glass-probe/report.json` and each tint's iOS and ours side by side to `/tmp/duo/glass-probe/inspect/` |
+| `/labs/compare.html` | Our model against Apple's AR model (`.references/apple-model/`): overlay, silhouette diff, sections; `window.compare.metrics()` |
+| `/labs/probe.html` | Liquid Glass as iOS renders it (captures in `.references/glass-probe/captures/`, listed in `catalog.json`) against our compositor on the same scenes, measured by the same code: tone, rim, lensing and contrast against depth, frost σ, edges. `?set=<device>/<set>` picks a capture set; `?calibrate` derives every [SIM] glass token into `tokens/glass.sim.tokens.json` (generated; do not edit), writes a report of every residual to `tools/glass-probe/report.json` and each tint's iOS and ours side by side to `/tmp/duo/glass-probe/inspect/` |
 | `/labs/specimen.html` | Every token in light and dark, and the spring check |
 
 ## Status (September 24, 2026)
@@ -60,7 +60,7 @@ Done and verified in Chrome:
 - performance on the development Mac at 2880 × 1724: idle frames render nothing (stage, glass, and screen repaints all at 0); a frame costs 1.2 to 1.4 ms of GPU time (the fold trace 0.07 ms, a light blend 0.02 ms); device moves hold 120 fps (unfold and fold: max frame 10.3 ms); a scene that swaps a screen's interface misses one or two vsyncs at the swap, when the new view is laid out (no frame reaches 50 ms).
 
 Next, in order:
-1. **Symbols to the pixel.** The rail's glyphs are redrawn to SF Symbols' extents and weights, but only the status is verified against the kit's vectors. Add glyph lab cases for the toolbar and tab symbols against measured references (Apple's Mail figures in `/tmp/duo/duo-hig/`), and fit them the way the ring was fitted.
+1. **Symbols to the pixel.** The rail's glyphs are redrawn to SF Symbols' extents and weights, but only the status is verified against the kit's vectors. Add glyph lab cases for the toolbar and tab symbols against measured references (Apple's Mail figures in `.references/apple-web/images/`), and fit them the way the ring was fitted.
 2. **Portrait layouts from Apple's pose slide.** Seated has the kit's top bar; add the bottom toolbar on the lower half where a view needs one, and a portrait split scene (two apps stacked) if the journey calls for it.
 3. **Liquid Glass: what is still guessed** (`../docs/liquid-glass.md`, "Refit to the probe"). The static material is done; its remaining gaps are parked there, measured, and not worked on unless the presentation shows them. One probe pass each, through the loop: capture (`npm run probe`), calibrate (`/labs/probe.html?calibrate`), look (`/tmp/duo/glass-probe/inspect/`).
    - glyphs and labels on glass: iOS adapts their colour to the content under the glass; ours are fixed CSS colours. Probe scenes with system controls (glass buttons, a toolbar, a tab bar), which also show whether controls flip;

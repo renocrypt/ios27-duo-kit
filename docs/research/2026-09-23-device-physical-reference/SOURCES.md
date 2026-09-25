@@ -1,7 +1,7 @@
 # Reference asset manifest — iPhone Duo physical reference
 
-Checked: September 23, 2026. The files listed here stay outside the project,
-in `/tmp/duo/device-research/references/`: disposable working references for
+Checked: September 23, 2026. The files listed here stay out of the repository,
+in `.references/apple-model/` and `.references/apple-web/` (ignored by git): disposable working references for
 measuring and describing the real device, and this manifest is how to get them
 again. Per project rules, none of Apple's images, PDFs, or 3D models are copied
 into the `duo/` project folder — only descriptions, numbers, and citations

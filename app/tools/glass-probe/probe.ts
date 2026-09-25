@@ -7,7 +7,7 @@
  *   node tools/glass-probe/probe.ts --set default edge   # one set, one scene (* wildcards)
  *   node tools/glass-probe/probe.ts --no-build --device "iPhone 18 Pro" --set default
  *
- * Output, outside this folder: /tmp/duo/glass-probe/captures/<device>-<os>-<display>/<set>/<scene>/
+ * Output, ignored by git: .references/glass-probe/captures/<device>-<os>-<display>/<set>/<scene>/
  * ref.png (the stimulus alone) and glass-<phase>.png, each with the probe's layout report (.json),
  * and captures/catalog.json listing every set (read by labs/probe.html). The slider is set with
  * UIKit's UIViewGlassTintAmount and restored afterwards. Each capture is taken from the display
@@ -25,8 +25,10 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const OUT = '/tmp/duo/glass-probe';
-const APP = join(OUT, 'build', 'Probe.app');
+/** iOS's renders: kept, in .references/ (never in git); the build is disposable. */
+const CAPTURES = join(HERE, '..', '..', '..', '.references', 'glass-probe', 'captures');
+const BUILD = '/tmp/duo/glass-probe/build';
+const APP = join(BUILD, 'Probe.app');
 const BUNDLE = 'studio.duo.glassprobe';
 const DEVICE = 'Duo Probe';
 const DEVICE_TYPE = 'com.apple.CoreSimulator.SimDeviceType.iPhone-Duo';
@@ -69,7 +71,7 @@ const plist = (minOS: string) => `<?xml version="1.0" encoding="UTF-8"?>
 function build(minOS: string) {
   mkdirSync(APP, { recursive: true });
   run('xcrun', ['-sdk', 'iphonesimulator', 'swiftc', '-parse-as-library', '-O',
-    '-target', `arm64-apple-ios${minOS}-simulator`, '-module-cache-path', join(OUT, 'build', 'cache'),
+    '-target', `arm64-apple-ios${minOS}-simulator`, '-module-cache-path', join(BUILD, 'cache'),
     join(HERE, 'Probe.swift'), '-o', join(APP, 'Probe')]);
   writeFileSync(join(APP, 'Info.plist'), plist(minOS));
   copyFileSync(join(HERE, 'scenes.json'), join(APP, 'scenes.json'));
@@ -146,6 +148,7 @@ interface SetDef { tint: number | 'default'; scenes: string[] }
 
 async function main() {
   const { udid, os } = device();
+  mkdirSync(BUILD, { recursive: true });
   if (!flag('--no-build')) build(os);
   simctl('bootstatus', udid, '-b');
   simctl('install', udid, APP);
@@ -155,13 +158,13 @@ async function main() {
 
   // Where the captures go: the device, its OS, and the display the probe appears on (a folded Duo
   // shows it outside, an open one inside), found with a first launch.
-  const probe = await capture(udid, ready, Object.keys(file.scenes)[0], 0, false, join(OUT, 'build', 'first'));
+  const probe = await capture(udid, ready, Object.keys(file.scenes)[0], 0, false, join(BUILD, 'first'));
   const shown = deviceName === DEVICE ? (probe.width < 500 ? 'outer' : 'inner') : 'main';
   const slug = `${deviceName === DEVICE ? 'duo' : deviceName.toLowerCase().replace(/[^a-z0-9]/g, '')}-${os}-${shown}`;
   console.log(`${deviceName} (iOS ${os}, ${shown} display, ${probe.width} × ${probe.height} pt) → captures/${slug}/`);
 
   const before = tintOf(udid);
-  const catalogPath = join(OUT, 'captures', 'catalog.json');
+  const catalogPath = join(CAPTURES, 'catalog.json');
   const catalog = existsSync(catalogPath) ? JSON.parse(readFileSync(catalogPath, 'utf8')) : {};
   try {
     for (const [name, set] of Object.entries(file.sets)) {
@@ -170,7 +173,7 @@ async function main() {
       const ids = Object.keys(file.scenes).filter((id) => set.scenes.some((p) => glob(p, id)) && (!patterns.length || patterns.some((p) => glob(p, id))));
       const index: Record<string, { phases: number; files: string[] }> = {};
       for (const id of ids) {
-        const dir = join(OUT, 'captures', slug, name, id);
+        const dir = join(CAPTURES, slug, name, id);
         mkdirSync(dir, { recursive: true });
         const phases = file.scenes[id].phases ?? 1;
         const files = ['ref'];
@@ -178,7 +181,7 @@ async function main() {
         for (let p = 0; p < phases; p++) { await capture(udid, ready, id, p, true, join(dir, `glass-${p}`)); files.push(`glass-${p}`); }
         index[id] = { phases, files };
       }
-      const indexPath = join(OUT, 'captures', slug, name, 'index.json');
+      const indexPath = join(CAPTURES, slug, name, 'index.json');
       const previous = existsSync(indexPath) ? JSON.parse(readFileSync(indexPath, 'utf8')) : {};
       writeFileSync(indexPath, JSON.stringify({ ...previous, ...index }, null, 1));
       catalog[`${slug}/${name}`] = { tint: set.tint === 'default' ? 'default' : set.tint, device: deviceName, os, display: shown,

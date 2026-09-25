@@ -3,7 +3,7 @@
 import json
 from pxr import Usd, UsdGeom, Gf
 import os
-USDZ = os.environ.get('DUO_USDZ', '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz')  # Apple's asset stays in /tmp
+USDZ = os.environ.get('DUO_USDZ', os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../../.references/apple-model/iPhone_Duo_e-sim_Star-White_Variant.usdz'))  # Apple's asset: in .references/, never in git
 stage = Usd.Stage.Open(USDZ)
 stage.GetPrimAtPath("/VozFyMVAwkoHjOE").GetVariantSets().GetVariantSet("Pose").SetVariantSelection("Landscape")
 mm = UsdGeom.GetStageMetersPerUnit(stage) * 1000
@@ -48,8 +48,8 @@ free = silhouette([s for s in segments(1, 59.0) if s[1][0] > 75], 0, +1)
 top = silhouette([s for s in segments(0, 41.0) if s[1][0] > 110], 0, +1)
 xmax = max(u for z, u in free); ymax = max(u for z, u in top)
 prof = {"free": [(round(z, 3), round(xmax - u, 3)) for z, u in free], "top": [(round(z, 3), round(ymax - u, 3)) for z, u in top]}
-os.makedirs("/tmp/duo/reference", exist_ok=True)
-json.dump(prof, open("/tmp/duo/reference/edge-profiles.json", "w"))
+os.makedirs("/tmp/duo/usd", exist_ok=True)
+json.dump(prof, open("/tmp/duo/usd/edge-profiles.json", "w"))
 for k in ["free", "top"]:
     pts = prof[k]
     print(f"{k}: {len(pts)} samples; outermost at z = {min(pts, key=lambda p: p[1])[0]}")

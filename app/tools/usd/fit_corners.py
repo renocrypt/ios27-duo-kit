@@ -62,6 +62,6 @@ if __name__ == '__main__':
     res['glassHinge'] = fit('glass hinge corner', [(x - 0.957, 116.616 - y) for x, y in glassHinge])
     res['frameHinge'] = fit('frame hinge corner (mid)', [(x, 117.948 - y) for x, y in frameHinge])
     res['plateauTop'] = fit('plateau top end (upper half)', [(77.515 - x, 113.25 - y) for x, y in plateauTop if y >= 102.665])
-    os.makedirs('/tmp/duo/geometry', exist_ok=True)
-    json.dump(res, open('/tmp/duo/geometry/corner-fits.json', 'w'), indent=1)
+    os.makedirs('/tmp/duo/usd', exist_ok=True)
+    json.dump(res, open('/tmp/duo/usd/corner-fits.json', 'w'), indent=1)
     fit_end(plateauTop, 10.585, 77.515, 102.665)

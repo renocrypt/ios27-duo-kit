@@ -1,9 +1,9 @@
 # Export Apple's Duo AR model, per Pose variant, to GLB for internal geometry comparison only.
-# Output stays in /tmp/duo/reference/ (never in the project). Units: millimetres, Apple's frame.
+# Output goes to .references/apple-model/, next to the model (never in git). Units: millimetres, Apple's frame.
 import struct, json, sys
 from pxr import Usd, UsdGeom, Gf
 import os
-USDZ = os.environ.get('DUO_USDZ', '/tmp/duo/device-research/references/iPhone_Duo_e-sim_Star-White_Variant.usdz')  # Apple's asset stays in /tmp
+USDZ = os.environ.get('DUO_USDZ', os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../../.references/apple-model/iPhone_Duo_e-sim_Star-White_Variant.usdz'))  # Apple's asset: in .references/, never in git
 
 def export(pose, out):
     stage = Usd.Stage.Open(USDZ)
@@ -48,4 +48,4 @@ def export(pose, out):
     print(f"{pose}: {len(nodes)} meshes -> {out} ({len(glb)//1024} KB)")
 
 for pose in ["Closed", "Landscape"]:
-    export(pose, f"/tmp/duo/reference/apple-duo-{pose.lower()}.glb")
+    export(pose, os.path.join(os.path.dirname(USDZ), f"apple-duo-{pose.lower()}.glb"))

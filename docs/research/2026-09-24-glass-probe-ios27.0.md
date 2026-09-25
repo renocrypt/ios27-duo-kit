@@ -1,6 +1,6 @@
 # Glass probe, first pass: iOS 27.0 (September 24, 2026)
 
-Liquid Glass as iOS renders it, measured with the glass probe (`app/tools/glass-probe/`, `app/labs/probe.html`). The probe app was built with Xcode 27.1 beta's SDK and run on the iPhone 18 Pro simulator with iOS 27.0, before the iOS 27.1 runtime (and so the iPhone Duo simulator) was installed. The material does not depend on the device, and shapes are sized in points. Raw `glassEffect` views (`.regular`, `.clear`), with no toolbar or button styles. The captures are in `/tmp/duo/glass-probe/captures/iphone18pro-27.0-main/default/`. The colour pipeline was checked: the reference captures match the requested stimulus to an RMSE of 0.1 to 0.8 of 255; the only outliers are the Dynamic Island's pixels. Values are sRGB 0 to 255, lengths are in points, and "ours" is the compositor as of this date.
+Liquid Glass as iOS renders it, measured with the glass probe (`app/tools/glass-probe/`, `app/labs/probe.html`). The probe app was built with Xcode 27.1 beta's SDK and run on the iPhone 18 Pro simulator with iOS 27.0, before the iOS 27.1 runtime (and so the iPhone Duo simulator) was installed. The material does not depend on the device, and shapes are sized in points. Raw `glassEffect` views (`.regular`, `.clear`), with no toolbar or button styles. The captures are in `.references/glass-probe/captures/iphone18pro-27.0-main/default/`. The colour pipeline was checked: the reference captures match the requested stimulus to an RMSE of 0.1 to 0.8 of 255; the only outliers are the Dynamic Island's pixels. Values are sRGB 0 to 255, lengths are in points, and "ours" is the compositor as of this date.
 
 ## Frost: two scales, not one
 
@@ -72,11 +72,11 @@ Below is a 48 pt shape over a flat grey tile (96 pt), measured at the centre. Wi
 
 ## Confirmed on iOS 27.1, iPhone Duo (same day)
 
-Every scene was repeated on the iPhone Duo simulator (iOS 27.1, build 24A94401, the outer display at 466 × 678 pt, 3x); the captures are in `/tmp/duo/glass-probe/captures/duo-27.1-outer/default/`. The numbers match the table above to the first decimal: frost σ 3.89 (48 regular) and 1.3 (clear); the lensing profiles within 0.1 pt; the tone curves and the rims level for level. The only differences are on the 360 × 180 panel, whose modulation is so low that its phase is noise. So the material is the same in 27.0 and 27.1 and does not depend on the device, and the renderer is deterministic.
+Every scene was repeated on the iPhone Duo simulator (iOS 27.1, build 24A94401, the outer display at 466 × 678 pt, 3x); the captures are in `.references/glass-probe/captures/duo-27.1-outer/default/`. The numbers match the table above to the first decimal: frost σ 3.89 (48 regular) and 1.3 (clear); the lensing profiles within 0.1 pt; the tone curves and the rims level for level. The only differences are on the 360 × 180 panel, whose modulation is so low that its phase is noise. So the material is the same in 27.0 and 27.1 and does not depend on the device, and the renderer is deterministic.
 
 ## The clear-to-tinted slider (Settings > Liquid Glass)
 
-The slider is UIKit's `UIViewGlassTintAmount`, from 0 (clear) to 1 (tinted), in `com.apple.UIKit`. The probe sets it with `simctl spawn … defaults write` (`probe.ts --tint`). Five positions were captured on the iPhone Duo, which was open, so these are on the inner display. The captures are in `/tmp/duo/glass-probe/captures/duo-27.1-inner/tint-*/`.
+The slider is UIKit's `UIViewGlassTintAmount`, from 0 (clear) to 1 (tinted), in `com.apple.UIKit`. The probe sets it with `simctl spawn … defaults write` (`probe.ts --tint`). Five positions were captured on the iPhone Duo, which was open, so these are on the inner display. The captures are in `.references/glass-probe/captures/duo-27.1-inner/tint-*/`.
 
 **The default is the middle.** An untouched device matches 0.5 in every measurement, and every table above was measured at 0.5.
 

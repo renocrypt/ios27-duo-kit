@@ -74,7 +74,7 @@ Ground truth is the renderer itself. The development Mac has Xcode 27.1 beta (bu
 - colour patches, which give tint and dispersion;
 - frame-by-frame curves for materialize, morph, and press, which give the springs (planned; `recordVideo`).
 
-Captures stay in `/tmp/duo/`, and only the numbers come in, cited to the simulator. One limit: the simulator has no device motion, so how the specular responds to tilt stays [C].
+Captures stay out of the repository (`.references/glass-probe/captures/`), and only the numbers come in, cited to the simulator. One limit: the simulator has no device motion, so how the specular responds to tilt stays [C].
 
 ### Refit to the probe (September 24)
 
