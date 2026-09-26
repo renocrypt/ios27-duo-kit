@@ -1,18 +1,4 @@
 User-agent: *
 Allow: /
 
-# GEO: AI crawlers are welcome. See llms.txt for the machine-readable map.
-User-agent: GPTBot
-Allow: /
-User-agent: OAI-SearchBot
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: Applebot-Extended
-Allow: /
-
 Sitemap: https://duo.renocrypt.com/sitemap.xml
